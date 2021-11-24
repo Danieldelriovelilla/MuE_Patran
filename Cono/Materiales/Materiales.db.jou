@@ -26,3 +26,76 @@ uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 24-Nov-21 13:50:03
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 24-Nov-21 17:29:54
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+material.create( "Analysis code ID", 1, "Analysis type ID", 1,  @
+"Plie_Compression", 0, "Date: 24-Nov-21           Time: 12:36:33",  @
+"2d Orthotropic", 5, "Directionality", 4, "Linearity", 1, "Homogeneous", 0,  @
+"Linear Elastic", 1, "Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, @
+ 0], "Active Flag", 1, "Create", 10, "External Flag", FALSE, "Property IDs", [ @
+"Elastic Modulus 11", "Elastic Modulus 22", "Poisson Ratio 12",  @
+"Shear Modulus 12", "Shear Modulus 23", "Shear Modulus 13", "Density"], [2, 3, @
+ 5, 8, 9, 10, 16, 0], "Property Values", ["1.409321119472876e+02",  @
+"9.712303673491480", "0.356333333333333", "4.648791929756596",  @
+"4.648791929756596", "4.648791929756596", "1.58", ""] )
+material.rename( "Plie_Tension", "Plie_Tension" )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Plie_Tension", @
+ 1, "Date: 24-Nov-21           Time: 12:36:33", "2d Orthotropic", 5,  @
+"Directionality", 4, "Linearity", 0, "Homogeneous", 0, "Failure", 4,  @
+"Model Options & IDs", ["Stress", "Hill", "", "", ""], [6, 2, 0, 0, 0],  @
+"Active Flag", 1, "Modify", 31, "External Flag", FALSE, "Property IDs", ["",  @
+""], [0], "Property Values", [""] )
+uil_primary_file.db_save(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 24-Nov-21 17:39:43
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 24-Nov-21 17:52:40
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+$# Error reported from application MATERIALS
+$#     A ply thickness of 0. was entered.  Ply thicknesses must be positive.
+$? NO 28003022 
+mat_create_lam3( "Laminate_Tension_10", "", 1, ["Plie_Tension", "Plie_Tension" @
+, "Plie_Tension", "Plie_Tension", "Plie_Tension", "Plie_Tension",  @
+"Plie_Tension", "Plie_Tension", "Plie_Tension", ""], [" 2.000000E-01",  @
+" 2.000000E-01", " 2.000000E-01", " 2.000000E-01", " 2.000000E-01",  @
+" 2.000000E-01", " 2.000000E-01", " 2.000000E-01", " 2.000000E-01", ""], [ @
+" 0.000000E+00", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00", ""], ["", "", "", "", "", "", "", "", "", ""], 9, "",  @
+"Create" )
+$# Warning reported from application MATERIALS
+$#     Neither the linearly elastic nor the thermal constitutive model is 
+$# defined for material Plie_Tension so no composite material properties can 
+$# be generated.
+mat_create_lam3( "Laminate_Compresson_10", "", 1, ["Plie_Compression",  @
+"Plie_Compression", "Plie_Compression", "Plie_Compression", "Plie_Compression" @
+, "Plie_Compression", "Plie_Compression", "Plie_Compression",  @
+"Plie_Compression", ""], [" 2.000000E-01", " 2.000000E-01", " 2.000000E-01",  @
+" 2.000000E-01", " 2.000000E-01", " 2.000000E-01", " 2.000000E-01",  @
+" 2.000000E-01", " 2.000000E-01", ""], [" 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00", " 0.000000E+00", " 0.000000E+00", ""], ["", "", "", "", "",  @
+"", "", "", "", ""], 9, "", "Create" )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 24-Nov-21 17:57:26

@@ -1,6 +1,6 @@
 $# Creating journal file 
 $# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\01.db.jou at 
-$# 24-Nov-21 11:15:40
+$# 24-Nov-21 17:40:18
 uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
 "/template.db","C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\01.db")
 $# Synchronizing the User Data Manager
@@ -10,7 +10,24 @@ $# shown.
 $#                                                                            
 $#                                   
 db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
-$# Checking for Patran 2021.1  (Student Edition) module license...
+sys_poll_option( 2 )
+ga_group_create( "Helix" )
+ga_group_current_set( "Helix" )
+$# Group "Helix" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "Vertical" )
+ga_group_current_set( "Vertical" )
+$# Group "Vertical" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+$# UNDO: Create Group "Horizontal"
+sys_poll_option( 2 )
+ga_group_create( "Horizontal" )
+ga_group_current_set( "Horizontal" )
+$# Group "Horizontal" created.
+sys_poll_option( 0 )
+ga_group_current_set( "Helix" )
 $# Warning reported from application FILE
 $#     Import/Export of STEP using non-Parasolid method is a deprecated 
 $# feature and may be removed in future release.  The preferred method is to 
@@ -31,17 +48,8 @@ p3_express_import_exit( TRUE, TRUE )
 uil_file_import_step203.import_cc1_data(  @
 "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Helix.stp" )
 uil_toolbar.model_center(  )
-ga_view_aa_set( -62.140594, -0.235228, -12.282323 )
-$# UNDO: STEP AP203 Model Import: C:\Users\Usuario\Desktop\MuE_Patran\Cono\O...
-sys_poll_option( 2 )
-ga_group_create( "Helix" )
-ga_group_entity_add( "Helix", " Point 1:112  Surface 1:48" )
-ga_group_current_set( "Helix" )
-$# Group "Helix" created.
-sys_poll_option( 0 )
-uil_viewport_post_groups.posted_groups( "default_viewport", 1, [ @
-"default_group"] )
-uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
+ga_group_current_set( "Horizontal" )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Horizontal"] )
 uil_file_import_step203.p3_step203_import(  @
 "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Horizon" // @
 "tal.stp" )
@@ -55,26 +63,9 @@ uil_file_import_step203.import_cc1_data(  @
 "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Horizon" // @
 "tal.stp" )
 uil_toolbar.model_center(  )
-ga_view_aa_set( -11.597543, -11.474420, -16.893286 )
-ga_view_aa_set( -2.843712, 47.786087, 42.433918 )
-ga_view_aa_set( 17.587038, 33.955448, 44.930702 )
-ga_view_aa_set( 38.018406, 2.094148, 64.537437 )
-ga_view_aa_set( 0.663276, -11.357529, 60.709095 )
-sys_poll_option( 2 )
-ga_group_create( "Horizontal" )
-ga_group_entity_add( "Horizontal", "Surface 51 49 50 57:55:-1 60:58:-1 53 " // @
-"54 52" )
-ga_group_current_set( "Horizontal" )
-$# Group "Horizontal" created.
-sys_poll_option( 0 )
-ga_view_aa_set( -77.303001, 7.557467, 60.574814 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
 uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Horizontal"] )
-ga_view_aa_set( -50.904556, -5.881124, 28.625620 )
-$# UNDO: STEP AP203 Model Import: C:\Users\Usuario\Desktop\MuE_Patran\Cono\O...
-$# UNDO: STEP AP203 Model Import: C:\Users\Usuario\Desktop\MuE_Patran\Cono\O...
-ga_group_current_set( "default_group" )
-ga_view_aa_set( -22.282387, 0.854151, -133.917374 )
-ga_view_aa_set( -32.518875, -7.389014, 123.782234 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Vertical"] )
 uil_file_import_step203.p3_step203_import(  @
 "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Vertica" // @
 "l.stp" )
@@ -88,31 +79,75 @@ uil_file_import_step203.import_cc1_data(  @
 "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Vertica" // @
 "l.stp" )
 uil_toolbar.model_center(  )
-ga_view_aa_set( 6.693219, 4.606547, 126.712418 )
-ga_view_aa_set( 36.964573, -28.268837, 138.265976 )
-ga_view_aa_set( 9.785116, -41.984764, 145.154144 )
-ga_view_aa_set( -37.104542, -41.294044, 146.809906 )
-ga_view_aa_set( -75.967407, -11.095825, -164.893433 )
-ga_view_aa_set( 45.053562, 30.353430, -129.206696 )
-ga_view_aa_set( 30.449049, 5.688205, -109.315926 )
-ga_view_aa_set( 9.819319, -16.321720, -102.908287 )
-ga_view_aa_set( -8.368805, 7.560385, -102.043587 )
-ga_view_aa_set( -15.990874, -22.741064, -112.442825 )
-ga_view_aa_set( -16.697174, -6.953998, -103.531693 )
-ga_view_aa_set( 3.302227, -5.954010, -103.537010 )
-ga_view_aa_set( 2.284536, 0.036945, -103.864571 )
+ga_view_aa_set( -67., 0., -34. )
+uil_primary_file.db_save(  )
 sys_poll_option( 2 )
-ga_group_create( "Vertical" )
-ga_group_entity_add( "Vertical", "Surface 68 61:64 66:68 65:63:-1 66 68 63" )
-ga_group_current_set( "Vertical" )
-$# Group "Vertical" created.
+ga_group_color_set( "default_group", 1 )
+ga_group_color_set( "Helix", 2 )
+ga_group_color_set( "Vertical", 3 )
+ga_group_color_set( "Horizontal", 4 )
+coloring_method( 2 )
 sys_poll_option( 0 )
-ga_view_aa_set( -45.656651, -0.455573, -69.732018 )
-uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
-ga_view_aa_set( -43.254322, -12.241936, -83.423737 )
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( -48.989037, 0. )
+ga_view_center_set( -97.978073, 0. )
+ga_view_center_set( -48.989037, 0. )
+ga_view_center_set( 0., 0. )
+ga_view_center_set( 0., -48.989037 )
+ga_view_center_set( 0., 0. )
+uil_primary_file.db_save(  )
 uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Vertical"] )
 uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Horizontal"] )
 uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
-ga_view_aa_set( -68.356293, 1.100004, -60.000000 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, [ @
+"default_group"] )
+ga_group_current_set( "Helix" )
+sys_poll_option( 2 )
+uil_group_delete_group.delete_groups( FALSE, 1, ["default_group"] )
+sys_poll_option( 0 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["Helix",  @
+"Horizontal", "Vertical"] )
+ga_view_aa_set( 157., 34, -180. )
+ga_view_aa_set( 23., 56., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -67., 0., -34. )
+gm_visibility_widget( "", FALSE )
+gm_visibility_widget( " Point 1:152  Surface 1:68", FALSE )
+gm_visibility_widget( " Point 1:152  Surface 1:68", TRUE )
+uil_toolbar.hidden_line(  )
+uil_toolbar.wireframe(  )
+uil_toolbar.wireframe(  )
+uil_toolbar.wireframe(  )
+uil_toolbar.hidden_line(  )
+sys_poll_option( 2 )
+ga_group_color_set( "Helix", 10 )
+coloring_method( 2 )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_color_set( "Helix", 10 )
+coloring_method( 2 )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_color_set( "Helix", 10 )
+coloring_method( 2 )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_color_set( "Helix", 10 )
+coloring_method( 2 )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_color_set( "Helix", 10 )
+coloring_method( 2 )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_color_set( "Vertical", 8 )
+coloring_method( 2 )
+sys_poll_option( 0 )
+gm_visibility_widget( " Point 1:152  Surface 1:68", FALSE )
+gm_visibility_widget( " Point 1:152  Surface 1:68", TRUE )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.hidden_line(  )
+uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
-$# Journal file stopped recording at 24-Nov-21 11:22:04
+$# Journal file stopped recording at 24-Nov-21 17:50:51
