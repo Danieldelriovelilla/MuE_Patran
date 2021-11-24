@@ -1,0 +1,28 @@
+$# Creating journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 24-Nov-21 12:36:21
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materi" // @
+"ales.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Plie_Tension", @
+ 0, "Date: 24-Nov-21           Time: 12:36:33", "2d Orthotropic", 5,  @
+"Directionality", 4, "Linearity", 0, "Homogeneous", 0, "Failure", 4,  @
+"Model Options & IDs", ["Stress", "Hill", "", "", ""], [6, 2, 0, 0, 0],  @
+"Active Flag", 1, "Create", 10, "External Flag", FALSE, "Property IDs", [ @
+"Tension Stress Limit 11", "Tension Stress Limit 22",  @
+"Compress Stress Limit 11", "Compress Stress Limit 22", "Shear Stress Limit",  @
+"Bonding Shear Stress Limit"], [99, 102, 100, 103, 101, 132, 0],  @
+"Property Values", ["2.233077856412412", "0.046333120547832",  @
+"1.417907393925760", "0.254726342940573", "0.087935932604777",  @
+"0.087935932604777", ""] )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 24-Nov-21 13:50:03

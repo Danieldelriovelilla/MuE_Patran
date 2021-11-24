@@ -1,0 +1,118 @@
+$# Creating journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\01.db.jou at 
+$# 24-Nov-21 11:15:40
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\01.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 4.9999999E-06, "" )
+$# Checking for Patran 2021.1  (Student Edition) module license...
+$# Warning reported from application FILE
+$#     Import/Export of STEP using non-Parasolid method is a deprecated 
+$# feature and may be removed in future release.  The preferred method is to 
+$# use the "Import to Parasolid" method.
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Helix.stp" )
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\callap203import.dll
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+INTEGER uil_file_import_s_express_count(64,2)
+p3_express_import( "express.opt", "Cone_Helix.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+$# The Global Model Tolerance has been changed from 5E-06 to the newly 
+$# calculated Global Model Tolerance of 0.005.
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Helix.stp" )
+uil_toolbar.model_center(  )
+ga_view_aa_set( -62.140594, -0.235228, -12.282323 )
+$# UNDO: STEP AP203 Model Import: C:\Users\Usuario\Desktop\MuE_Patran\Cono\O...
+sys_poll_option( 2 )
+ga_group_create( "Helix" )
+ga_group_entity_add( "Helix", " Point 1:112  Surface 1:48" )
+ga_group_current_set( "Helix" )
+$# Group "Helix" created.
+sys_poll_option( 0 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, [ @
+"default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Horizon" // @
+"tal.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "Cone_Horizontal.exp", FALSE, TRUE, FALSE,  @
+TRUE, uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Horizon" // @
+"tal.stp" )
+uil_toolbar.model_center(  )
+ga_view_aa_set( -11.597543, -11.474420, -16.893286 )
+ga_view_aa_set( -2.843712, 47.786087, 42.433918 )
+ga_view_aa_set( 17.587038, 33.955448, 44.930702 )
+ga_view_aa_set( 38.018406, 2.094148, 64.537437 )
+ga_view_aa_set( 0.663276, -11.357529, 60.709095 )
+sys_poll_option( 2 )
+ga_group_create( "Horizontal" )
+ga_group_entity_add( "Horizontal", "Surface 51 49 50 57:55:-1 60:58:-1 53 " // @
+"54 52" )
+ga_group_current_set( "Horizontal" )
+$# Group "Horizontal" created.
+sys_poll_option( 0 )
+ga_view_aa_set( -77.303001, 7.557467, 60.574814 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Horizontal"] )
+ga_view_aa_set( -50.904556, -5.881124, 28.625620 )
+$# UNDO: STEP AP203 Model Import: C:\Users\Usuario\Desktop\MuE_Patran\Cono\O...
+$# UNDO: STEP AP203 Model Import: C:\Users\Usuario\Desktop\MuE_Patran\Cono\O...
+ga_group_current_set( "default_group" )
+ga_view_aa_set( -22.282387, 0.854151, -133.917374 )
+ga_view_aa_set( -32.518875, -7.389014, 123.782234 )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Vertica" // @
+"l.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "Cone_Vertical.exp", FALSE, TRUE, FALSE,  @
+TRUE, uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\Cone_Vertica" // @
+"l.stp" )
+uil_toolbar.model_center(  )
+ga_view_aa_set( 6.693219, 4.606547, 126.712418 )
+ga_view_aa_set( 36.964573, -28.268837, 138.265976 )
+ga_view_aa_set( 9.785116, -41.984764, 145.154144 )
+ga_view_aa_set( -37.104542, -41.294044, 146.809906 )
+ga_view_aa_set( -75.967407, -11.095825, -164.893433 )
+ga_view_aa_set( 45.053562, 30.353430, -129.206696 )
+ga_view_aa_set( 30.449049, 5.688205, -109.315926 )
+ga_view_aa_set( 9.819319, -16.321720, -102.908287 )
+ga_view_aa_set( -8.368805, 7.560385, -102.043587 )
+ga_view_aa_set( -15.990874, -22.741064, -112.442825 )
+ga_view_aa_set( -16.697174, -6.953998, -103.531693 )
+ga_view_aa_set( 3.302227, -5.954010, -103.537010 )
+ga_view_aa_set( 2.284536, 0.036945, -103.864571 )
+sys_poll_option( 2 )
+ga_group_create( "Vertical" )
+ga_group_entity_add( "Vertical", "Surface 68 61:64 66:68 65:63:-1 66 68 63" )
+ga_group_current_set( "Vertical" )
+$# Group "Vertical" created.
+sys_poll_option( 0 )
+ga_view_aa_set( -45.656651, -0.455573, -69.732018 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
+ga_view_aa_set( -43.254322, -12.241936, -83.423737 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Vertical"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Horizontal"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Helix"] )
+ga_view_aa_set( -68.356293, 1.100004, -60.000000 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 24-Nov-21 11:22:04
