@@ -99,3 +99,31 @@ mat_create_lam3( "Laminate_Compresson_10", "", 1, ["Plie_Compression",  @
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 24-Nov-21 17:57:26
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 24-Nov-21 21:41:02
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+sys_poll_option( 2 )
+ga_group_create( "Helix" )
+ga_group_current_set( "Helix" )
+$# Group "Helix" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "Vertical" )
+ga_group_current_set( "Vertical" )
+$# Group "Vertical" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "Horizontal" )
+ga_group_current_set( "Horizontal" )
+$# Group "Horizontal" created.
+sys_poll_option( 0 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 24-Nov-21 21:53:47

@@ -4,8 +4,8 @@ HEADER;
 FILE_DESCRIPTION(('''
 User Options for importing/exporting files between MSC.Patran and MSC.Patran
 '''));
-FILE_NAME('express.opt','''Wednesday, 24 November 2021, 17:43:31
-(Wednesday, 24 November 2021, 17:43:31 Greenwich)''',('''MSC.Patran'''),
+FILE_NAME('express.opt','''Thursday, 25 November 2021, 10:09:01
+(Thursday, 25 November 2021, 10:09:01 Greenwich)''',('''MSC.Patran'''),
 ('''MSC.Software'''),
 ('''The MSC.Software Corp, PATRAN Procedural Interface, Version 1.0'''));
 FILE_SCHEMA('MSC_Express_NeutralFile_V1');
