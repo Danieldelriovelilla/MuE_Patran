@@ -127,3 +127,33 @@ uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 24-Nov-21 21:53:47
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 26-Nov-21 15:43:26
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "SHell_Ten10", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111, @
+ 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Laminate_Tension_10", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "SHell_Ten10" created.
+elementprops_create( "SHell_Com10", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111, @
+ 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Laminate_Compresson_10", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "SHell_Com10" created.
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 26-Nov-21 15:45:22
