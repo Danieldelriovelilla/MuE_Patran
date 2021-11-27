@@ -157,3 +157,44 @@ uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 26-Nov-21 15:45:22
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 27-Nov-21 11:03:35
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_group_current_set( "default_group" )
+sys_poll_option( 2 )
+uil_group_delete_group.delete_groups( FALSE, 1, ["Helix"] )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+uil_group_delete_group.delete_groups( FALSE, 1, ["Horizontal"] )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+uil_group_delete_group.delete_groups( FALSE, 1, ["Vertical"] )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "H1" )
+ga_group_current_set( "H1" )
+$# Group "H1" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "H2" )
+ga_group_current_set( "H2" )
+$# Group "H2" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "R" )
+ga_group_current_set( "R" )
+$# Group "R" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "V" )
+ga_group_current_set( "V" )
+$# Group "V" created.
+sys_poll_option( 0 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 27-Nov-21 11:06:19

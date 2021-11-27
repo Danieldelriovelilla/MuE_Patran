@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('CATIA V5 STEP Exchange'),'2;1');
 
-FILE_NAME('C:\\Users\\Usuario\\Desktop\\MuE_Patran\\Cono\\Optimizacion\\01\\CAD\\R.stp','2021-11-26T12:01:41+00:00',('none'),('none'),'CATIA Version 5 Release 21 GA (IN-10)','CATIA V5 STEP AP203','none');
+FILE_NAME('C:\\Users\\Usuario\\Desktop\\MuE_Patran\\Cono\\Optimizacion\\01\\CAD\\R.stp','2021-11-27T10:53:33+00:00',('none'),('none'),'CATIA Version 5 Release 21 GA (IN-10)','CATIA V5 STEP AP203','none');
 
 FILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));
 
@@ -121,7 +121,7 @@ DATA;
 #20=APPROVAL_STATUS('not_yet_approved') ;
 #19=APPROVAL_ROLE('APPROVER') ;
 #13=DATE_AND_TIME(#11,#12) ;
-#12=LOCAL_TIME(13,1,41.,#10) ;
+#12=LOCAL_TIME(11,53,33.,#10) ;
 #10=COORDINATED_UNIVERSAL_TIME_OFFSET(0,0,.AHEAD.) ;
 #87=ORIENTED_EDGE('',*,*,#66,.F.) ;
 #88=ORIENTED_EDGE('',*,*,#73,.T.) ;
@@ -182,7 +182,7 @@ DATA;
 #288=ADVANCED_FACE('Revolute.4',(#287),#236,.F.) ;
 #4=APPLICATION_PROTOCOL_DEFINITION('international standard','config_control_design',1994,#1) ;
 #32=APPROVAL_DATE_TIME(#13,#21) ;
-#11=CALENDAR_DATE(2021,26,11) ;
+#11=CALENDAR_DATE(2021,27,11) ;
 #30=CC_DESIGN_APPROVAL(#21,(#16,#6,#14)) ;
 #18=CC_DESIGN_DATE_AND_TIME_ASSIGNMENT(#13,#17,(#16)) ;
 #29=CC_DESIGN_DATE_AND_TIME_ASSIGNMENT(#13,#28,(#14)) ;

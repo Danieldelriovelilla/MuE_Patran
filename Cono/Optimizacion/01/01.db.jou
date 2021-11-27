@@ -1,6 +1,6 @@
 $# Creating journal file 
 $# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\01.db.jou at 
-$# 26-Nov-21 15:45:52
+$# 27-Nov-21 11:07:42
 uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
 "/template.db","C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\01.db")
 $# Synchronizing the User Data Manager
@@ -9,8 +9,7 @@ $# The current working directory has been changed to the database location
 $# shown.                                                                     
 $#                                                                            
 $#                                   
-db_set_pref( 303, 3, 0, FALSE, 4.9999999E-05, "" )
-uil_primary_file.db_save(  )
+db_set_pref( 303, 3, 0, FALSE, 0.2, "" )
 db_import_database_v3( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiale" // @
 "s\Materiales.db", ["Point", "Curve", "Surface", "Solid", "Coordinate Frame",  @
 "Plane", "Vector", "Node", "Element", "MPC", "User Data", "Connector", "Job",  @
@@ -23,20 +22,1716 @@ db_import_database_v3( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiale" // @
 "", "", "", "", "", "", "", "", "", "SM_001_", "SM_001_", "SM_001_", "SM_001_" @
 , "SM_001_", "SM_001_", "SM_001_"], ["DATA_AND_NAME", "DATA_AND_NAME",  @
 "DATA_AND_NAME", "DATA_AND_NAME", "DATA_AND_NAME", "DATA_AND_NAME",  @
-"DATA_AND_NAME"], 3, TRUE, TRUE, "cube", 4.9999999E-05, TRUE, ["useprim",  @
-"useprim", "useprim"] )
+"DATA_AND_NAME"], 3, TRUE, TRUE, "cube", 0.2, TRUE, ["useprim", "useprim",  @
+"useprim"] )
 $# Loading 1 "User Data" entities.
 $# Loading 1 "Job" entities.
 $# Loading 4 "Material" entities.
 $# Loading 2 "Element Property" entities.
 $# Loading 1 "Load/BC, Load Case" entities.
-$# Loading 4 "Group" entities.
+$# Loading 5 "Group" entities.
 $# Loading all referenced entities.
-$# Saving 13 entities.
+$# Saving 14 entities.
 $# Posting all entities.
+uil_viewport_post_groups.posted_groups( "default_viewport", 6, ["H1", "H2",  @
+"R", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 6, ["H1", "H2",  @
+"R", "SM_001", "V", "default_group"] )
+sys_poll_option( 2 )
+uil_group_delete_group.delete_groups( FALSE, 1, ["SM_001"] )
+sys_poll_option( 0 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+$# Checking for Patran 2021.1  (Student Edition) module license...
+$# Warning reported from application FILE
+$#     Import/Export of STEP using non-Parasolid method is a deprecated 
+$# feature and may be removed in future release.  The preferred method is to 
+$# use the "Import to Parasolid" method.
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\H1.stp" )
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\callap203import.dll
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+INTEGER uil_file_import_s_express_count(64,2)
+p3_express_import( "express.opt", "H1.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+$# The Global Model Tolerance has been changed from 0.2 to the newly 
+$# calculated Global Model Tolerance of 0.005.
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\H1.stp" )
+uil_toolbar.model_center(  )
+ga_view_aa_set( -46.989304, -0.354633, -1.482268 )
+ga_view_center_set( 15.376411, -1.598877 )
+ga_view_zoom_set( 171.147446 )
+ga_view_center_set( 32.674850, -3.397614 )
+ga_view_zoom_set( 192.540878 )
+ga_view_center_set( 41.199711, -3.354546 )
+ga_view_zoom_set( 216.608490 )
+ga_view_center_set( 50.499519, -3.306137 )
+ga_view_zoom_set( 243.684555 )
+ga_view_center_set( 41.199718, -4.129532 )
+ga_view_zoom_set( 216.608490 )
+ga_view_center_set( 26.319977, -5.601997 )
+ga_view_zoom_set( 173.286789 )
+ga_view_center_set( 13.789692, -6.841980 )
+ga_view_zoom_set( 136.805359 )
+ga_view_center_set( 4.103458, -8.026993 )
+ga_view_zoom_set( 108.004234 )
+ga_view_center_set( -3.543571, -9.043884 )
+ga_view_zoom_set( 85.266502 )
+ga_view_center_set( -9.516476, -9.846695 )
+ga_view_zoom_set( 67.315659 )
+ga_view_center_set( -6.716660, -9.470390 )
+ga_view_zoom_set( 75.730118 )
+ga_view_center_set( -0.417107, -8.623680 )
+ga_view_zoom_set( 94.662643 )
+ga_view_center_set( 7.719803, -7.530006 )
+ga_view_zoom_set( 119.117157 )
+ga_view_center_set( 17.958755, -6.153793 )
+ga_view_zoom_set( 149.889084 )
+ga_view_center_set( 24.192951, -5.315857 )
+ga_view_zoom_set( 168.625214 )
+ga_view_center_set( 31.206429, -4.373184 )
+ga_view_zoom_set( 189.703369 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\H2.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "H2.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\H2.stp" )
+uil_toolbar.model_center(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\R.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "R.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\R.stp" )
+uil_toolbar.model_center(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\V.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "V.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\01\CAD\V.stp" )
+uil_toolbar.model_center(  )
+ga_view_aa_set( -61.985966, -0.120429, -1.663599 )
+ga_view_center_set( -0.817438, 8.742043 )
+ga_view_zoom_set( 272.092651 )
+ga_view_center_set( -3.007838, 26.873432 )
+ga_view_zoom_set( 340.115814 )
+ga_view_center_set( -5.837063, 47.778271 )
+ga_view_zoom_set( 427.979065 )
+ga_view_center_set( -9.397184, 72.501251 )
+ga_view_zoom_set( 538.540344 )
+ga_view_center_set( -13.876922, 103.113243 )
+ga_view_zoom_set( 677.663269 )
+ga_view_center_set( -9.283112, 71.721573 )
+ga_view_zoom_set( 534.997314 )
+ga_view_center_set( -5.656221, 46.938705 )
+ga_view_zoom_set( 422.366302 )
+ga_view_center_set( -2.793002, 27.373268 )
+ga_view_zoom_set( 333.447083 )
+ga_view_center_set( 0.220912, 11.173393 )
+ga_view_zoom_set( 263.247711 )
+ga_view_center_set( 9.393730, -13.888081 )
+ga_view_zoom_set( 171.683289 )
+ga_view_center_set( 6.322475, -17.334728 )
+ga_view_zoom_set( 152.607361 )
+ga_view_center_set( 1.408463, -22.849346 )
+ga_view_zoom_set( 122.085892 )
+ga_view_center_set( -2.729639, -27.677166 )
+ga_view_zoom_set( 96.383598 )
+ga_view_center_set( -5.923979, -31.778976 )
+ga_view_zoom_set( 76.092316 )
+ga_view_center_set( -8.331188, -35.131897 )
+ga_view_zoom_set( 60.072880 )
+ga_view_center_set( -7.229668, -33.560226 )
+ga_view_zoom_set( 67.581993 )
+ga_view_center_set( -5.990459, -31.792091 )
+ga_view_zoom_set( 76.029739 )
+ga_view_aa_set( -76.352859, -5.641931, -23.942217 )
+ga_view_aa_set( -59.741997, -3.243419, -16.301069 )
+ga_view_center_set( -3.916302, -28.850880 )
+ga_view_zoom_set( 85.533455 )
+ga_view_center_set( 0.750538, -22.233135 )
+ga_view_zoom_set( 106.916817 )
+ga_view_center_set( 6.778553, -13.685215 )
+ga_view_zoom_set( 134.536987 )
+ga_view_center_set( 10.569187, -8.480633 )
+ga_view_zoom_set( 151.354111 )
+ga_view_aa_set( -53.635578, -1.581763, -13.802573 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 4, ["H2", "R", "V" @
+, "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"R", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+ga_view_center_set( 0.090851, -14.441933 )
+ga_view_zoom_set( 204.400009 )
+ga_view_center_set( 1.228421, -24.477104 )
+ga_view_zoom_set( 181.688904 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Surface 1.2 1.3 1.4 1.1 2.2 2.3 2.4 3.3 3.4 3.2 4.1 4.2" // @
+" 4.3 4.4 5.3 5.4 5.2 6.3 6.4 6.2 7.1 7.2 7.3 7.4 8.3 8.4 8.2 9.3 9.4 9.2 " // @
+"10.1 10.2 10.3 10.4 11.3 11.4 11.2 12.3 12.4 12.2 13.1 13.2 13.3 13.4 14." // @
+"3 14.4 14.2 15.3 15.4 15.2 16.1 16.2 16.3 16.4 17.3 17.4 17.2 18.3 18.4 1" // @
+"8.2 19.1 19.2 19.3 19.4 20.3 20.4 20.2 21.3 21.4 21.2 22.1 22.2 22.3 22.4" // @
+" 23.3 23.4 23.2 24.3 24.4 24.2", 2, 0, 0., 2.5, 0. )
+ga_view_aa_set( -48.614384, -9.851639, -23.880859 )
+ga_view_center_set( 4.984280, -27.835701 )
+ga_view_zoom_set( 161.501251 )
+ga_view_center_set( -2.628513, -21.640968 )
+ga_view_zoom_set( 203.222412 )
+ga_view_center_set( -12.208012, -14.409447 )
+ga_view_zoom_set( 255.721527 )
+ga_view_center_set( -24.262119, -5.309738 )
+ga_view_zoom_set( 321.782928 )
+ga_view_center_set( -39.430271, 6.140671 )
+ga_view_zoom_set( 404.910187 )
+ga_view_center_set( -58.516819, 20.549179 )
+ga_view_zoom_set( 509.511993 )
+ga_view_center_set( -48.591957, 11.535690 )
+ga_view_zoom_set( 452.899536 )
+ga_view_center_set( -31.876263, -3.644760 )
+ga_view_zoom_set( 357.552277 )
+ga_view_center_set( -18.679731, -15.629395 )
+ga_view_zoom_set( 282.278107 )
+ga_view_center_set( -13.293413, -18.939758 )
+ga_view_zoom_set( 250.913879 )
+ga_view_center_set( -4.675249, -24.236328 )
+ga_view_zoom_set( 200.731110 )
+ga_view_center_set( 7.315214, -31.605469 )
+ga_view_zoom_set( 130.911591 )
+ga_view_center_set( 12.048307, -34.514336 )
+ga_view_zoom_set( 103.351257 )
+ga_view_center_set( 15.784954, -36.810818 )
+ga_view_zoom_set( 81.593102 )
+ga_view_center_set( 17.341885, -37.767681 )
+ga_view_zoom_set( 72.527199 )
+ga_view_center_set( 19.964100, -39.379238 )
+ga_view_zoom_set( 57.258316 )
+ga_view_center_set( 22.034264, -40.651527 )
+ga_view_zoom_set( 45.203934 )
+ga_view_center_set( 23.668598, -41.655968 )
+ga_view_zoom_set( 35.687317 )
+ga_view_center_set( 24.958866, -42.448940 )
+ga_view_zoom_set( 28.174198 )
+ga_view_center_set( 25.843685, -43.115353 )
+ga_view_zoom_set( 25.043732 )
+ga_view_center_set( 27.259394, -44.181622 )
+ga_view_zoom_set( 20.034985 )
+ga_view_center_set( 28.451571, -45.079525 )
+ga_view_zoom_set( 15.817093 )
+ga_view_center_set( 29.392761, -45.788399 )
+ga_view_zoom_set( 12.487179 )
+ga_view_center_set( 30.135811, -46.348034 )
+ga_view_zoom_set( 9.858299 )
+ga_view_center_set( 29.787506, -46.085705 )
+ga_view_zoom_set( 11.090587 )
+ga_view_center_set( 29.395664, -45.790585 )
+ga_view_zoom_set( 12.476910 )
+ga_view_center_set( 28.484634, -45.104427 )
+ga_view_zoom_set( 15.700111 )
+ga_view_center_set( 27.338253, -44.241020 )
+ga_view_zoom_set( 19.755974 )
+ga_view_center_set( 25.895721, -43.154560 )
+ga_view_zoom_set( 24.859600 )
+ga_view_center_set( 24.080540, -41.787422 )
+ga_view_zoom_set( 31.281664 )
+ga_view_center_set( 22.975330, -40.955013 )
+ga_view_zoom_set( 35.191872 )
+ga_view_center_set( 20.488602, -39.082092 )
+ga_view_zoom_set( 43.989838 )
+ga_view_center_set( 17.276588, -36.662907 )
+ga_view_zoom_set( 55.353878 )
+ga_view_center_set( 13.234783, -33.618774 )
+ga_view_zoom_set( 69.653633 )
+ga_view_center_set( 10.773857, -31.765297 )
+ga_view_zoom_set( 78.360336 )
+ga_view_center_set( 14.013565, -30.908638 )
+ga_view_zoom_set( 69.653633 )
+ga_view_center_set( 16.561020, -29.981033 )
+ga_view_zoom_set( 61.914341 )
+ga_view_center_set( 20.548351, -28.496845 )
+ga_view_zoom_set( 49.531471 )
+ga_view_center_set( 23.906094, -27.247017 )
+ga_view_zoom_set( 39.103794 )
+ga_view_center_set( 26.556946, -26.260311 )
+ga_view_zoom_set( 30.871416 )
+ga_view_center_set( 25.314358, -26.722828 )
+ga_view_zoom_set( 34.730343 )
+ga_view_center_set( 22.518528, -27.763496 )
+ga_view_zoom_set( 43.412930 )
+ga_view_center_set( 15.179504, -30.495239 )
+ga_view_zoom_set( 66.204720 )
+ga_view_center_set( 3.987453, -34.661163 )
+ga_view_zoom_set( 100.962204 )
+ga_view_center_set( 0.149441, -36.264091 )
+ga_view_zoom_set( 113.582481 )
+ga_view_center_set( -8.384495, -39.769096 )
+ga_view_zoom_set( 141.978104 )
+ga_view_center_set( -19.407444, -44.296394 )
+ga_view_zoom_set( 178.655777 )
+ga_view_center_set( -46.924934, -55.538277 )
+ga_view_zoom_set( 272.450073 )
+ga_view_center_set( -33.603012, -60.033058 )
+ga_view_zoom_set( 242.177841 )
+ga_view_center_set( -22.627769, -63.835915 )
+ga_view_zoom_set( 215.269196 )
+ga_view_center_set( -7.686001, -68.842171 )
+ga_view_zoom_set( 172.215363 )
+ga_view_center_set( -1.524441, -70.587944 )
+ga_view_zoom_set( 153.080322 )
+ga_view_center_set( 0.848925, -66.236839 )
+ga_view_zoom_set( 136.071396 )
+ga_view_center_set( 2.601532, -55.185577 )
+ga_view_zoom_set( 108.857117 )
+ga_view_center_set( 2.765520, -43.501457 )
+ga_view_zoom_set( 85.939827 )
+ga_view_center_set( 2.765512, -33.565079 )
+ga_view_zoom_set( 67.847229 )
+$# UNDO: FEM Create Mesh Surface for Surface 1:24
+mesh_seed_create( "Surface 1.2 1.3 1.4 1.1 2.2 2.3 2.4 3.3 3.4 3.2 4.1 4.2" // @
+" 4.3 4.4 5.3 5.4 5.2 6.3 6.4 6.2 7.1 7.2 7.3 7.4 8.3 8.4 8.2 9.3 9.4 9.2 " // @
+"10.1 10.2 10.3 10.4 11.3 11.4 11.2 12.3 12.4 12.2 13.1 13.2 13.3 13.4 14." // @
+"3 14.4 14.2 15.3 15.4 15.2 16.1 16.2 16.3 16.4 17.3 17.4 17.2 18.3 18.4 1" // @
+"8.2 19.1 19.2 19.3 19.4 20.3 20.4 20.2 21.3 21.4 21.2 22.1 22.2 22.3 22.4" // @
+" 23.3 23.4 23.2 24.3 24.4 24.2", 2, 0, 0., 5., 0. )
+$# Question from application FEM
+$#     Surface 1.2 already has a mesh seed. Do you wish to replace it?
+$? YESFORALL 2001026 
+ga_view_center_set( -295.623077, 18.779911 )
+ga_view_zoom_set( 341.557861 )
+ga_view_center_set( -398.273590, 3.351826 )
+ga_view_zoom_set( 426.947327 )
+ga_view_center_set( -530.864197, -16.576199 )
+ga_view_zoom_set( 537.242065 )
+ga_view_center_set( -697.707092, -41.652264 )
+ga_view_zoom_set( 676.029602 )
+ga_view_center_set( -607.139709, -29.155544 )
+ga_view_zoom_set( 600.915222 )
+ga_view_center_set( -462.232117, -9.160885 )
+ga_view_zoom_set( 480.732178 )
+ga_view_center_set( -340.204651, 7.676762 )
+ga_view_zoom_set( 379.525421 )
+ga_view_center_set( -159.621368, 31.664692 )
+ga_view_zoom_set( 228.859558 )
+ga_view_center_set( -102.217918, 39.163380 )
+ga_view_zoom_set( 180.678604 )
+ga_view_center_set( -57.171631, 44.811176 )
+ga_view_zoom_set( 142.641006 )
+ga_view_center_set( -50.650558, 40.926914 )
+ga_view_zoom_set( 126.792007 )
+ga_view_center_set( -41.849976, 34.893524 )
+ga_view_zoom_set( 101.433609 )
+ga_view_center_set( -34.591766, 29.812786 )
+ga_view_zoom_set( 80.079163 )
+ga_view_center_set( -28.921911, 25.862003 )
+ga_view_zoom_set( 63.220394 )
+ga_view_center_set( -31.127277, 26.045792 )
+ga_view_zoom_set( 71.122940 )
+ga_view_center_set( -36.089340, 26.395691 )
+ga_view_zoom_set( 88.903671 )
+ga_view_center_set( -42.498672, 26.847626 )
+ga_view_zoom_set( 111.870453 )
+ga_view_center_set( -47.001526, 27.322945 )
+ga_view_zoom_set( 125.854263 )
+ga_view_center_set( -57.132904, 29.292931 )
+ga_view_zoom_set( 157.317825 )
+ga_view_center_set( -70.219299, 33.000755 )
+ga_view_zoom_set( 197.958267 )
+ga_view_center_set( -86.137421, 39.130165 )
+ga_view_zoom_set( 249.097488 )
+ga_view_center_set( -104.556091, 50.756981 )
+ga_view_zoom_set( 313.447662 )
+ga_view_center_set( -114.368828, 61.901482 )
+ga_view_zoom_set( 352.628632 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:24", 1, ["1.28161"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 44 nodes and 21 elements created for Surface 1.
+$# 6 nodes and 2 elements created for Surface 2.
+$# 86 nodes and 42 elements created for Surface 3.
+$# 44 nodes and 21 elements created for Surface 4.
+$# 6 nodes and 2 elements created for Surface 5.
+$# 86 nodes and 42 elements created for Surface 6.
+$# 44 nodes and 21 elements created for Surface 7.
+$# 6 nodes and 2 elements created for Surface 8.
+$# 86 nodes and 42 elements created for Surface 9.
+$# 44 nodes and 21 elements created for Surface 10.
+$# 6 nodes and 2 elements created for Surface 11.
+$# 86 nodes and 42 elements created for Surface 12.
+$# 44 nodes and 21 elements created for Surface 13.
+$# 6 nodes and 2 elements created for Surface 14.
+$# 86 nodes and 42 elements created for Surface 15.
+$# 44 nodes and 21 elements created for Surface 16.
+$# 6 nodes and 2 elements created for Surface 17.
+$# 86 nodes and 42 elements created for Surface 18.
+$# 44 nodes and 21 elements created for Surface 19.
+$# 6 nodes and 2 elements created for Surface 20.
+$# 86 nodes and 42 elements created for Surface 21.
+$# 44 nodes and 21 elements created for Surface 22.
+$# 6 nodes and 2 elements created for Surface 23.
+$# 86 nodes and 42 elements created for Surface 24.
+$# === 1088 nodes created.  IDs  = 1:1088.
+$# === 520 elements created.  IDs  = 1:520.
+ga_view_aa_set( -50.315315, 0.425766, 6.553160 )
+ga_view_center_set( -94.743340, 51.598038 )
+ga_view_zoom_set( 313.447662 )
+ga_view_center_set( -62.893913, 35.336868 )
+ga_view_zoom_set( 250.758133 )
+ga_view_center_set( -36.073318, 21.643257 )
+ga_view_zoom_set( 197.966949 )
+ga_view_center_set( -14.899185, 11.727173 )
+ga_view_zoom_set( 156.289703 )
+ga_view_center_set( -6.635811, 5.917931 )
+ga_view_zoom_set( 138.924179 )
+ga_view_center_set( 6.585636, -3.376846 )
+ga_view_zoom_set( 111.139343 )
+ga_view_center_set( 17.719437, -11.204029 )
+ga_view_zoom_set( 87.741585 )
+ga_view_center_set( 21.346992, -13.837528 )
+ga_view_zoom_set( 77.992523 )
+ga_view_center_set( 27.095264, -17.995281 )
+ga_view_zoom_set( 62.394020 )
+ga_view_center_set( 31.888924, -21.402565 )
+ga_view_zoom_set( 49.258438 )
+ga_view_center_set( 35.562092, -23.832815 )
+ga_view_zoom_set( 38.888241 )
+ga_view_center_set( 35.562096, -24.598091 )
+ga_view_zoom_set( 34.567326 )
+ga_view_center_set( 35.537354, -25.797775 )
+ga_view_zoom_set( 27.653860 )
+ga_view_center_set( 35.474869, -26.745546 )
+ga_view_zoom_set( 21.831995 )
+ga_view_center_set( 35.621326, -26.389189 )
+ga_view_zoom_set( 24.560995 )
+ga_view_center_set( 35.950855, -25.587357 )
+ga_view_zoom_set( 30.701244 )
+ga_view_center_set( 36.376499, -24.551643 )
+ga_view_zoom_set( 38.632401 )
+ga_view_center_set( 36.912106, -23.248383 )
+ga_view_zoom_set( 48.612438 )
+ga_view_center_set( 35.085873, -24.128918 )
+ga_view_zoom_set( 54.688992 )
+ga_view_center_set( 30.991520, -26.125561 )
+ga_view_zoom_set( 68.816978 )
+ga_view_center_set( 26.093906, -28.638004 )
+ga_view_zoom_set( 86.594696 )
+ga_view_center_set( 23.460403, -30.129040 )
+ga_view_zoom_set( 97.419037 )
+ga_view_center_set( 17.796494, -33.396709 )
+ga_view_zoom_set( 121.773796 )
+ga_view_center_set( 11.043392, -37.504856 )
+ga_view_zoom_set( 153.232025 )
+ga_view_center_set( 3.537151, -41.824512 )
+ga_view_zoom_set( 192.816971 )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( -9.311634, -32.640705 )
+ga_view_zoom_set( 216.919098 )
+ga_view_center_set( -21.341106, -22.987995 )
+ga_view_zoom_set( 244.033981 )
+ga_view_center_set( -43.670841, -1.673229 )
+ga_view_zoom_set( 307.076080 )
+ga_view_center_set( -65.241333, 24.296383 )
+ga_view_zoom_set( 386.404053 )
+ga_view_center_set( -39.172821, -10.526478 )
+ga_view_zoom_set( 277.655609 )
+ga_view_center_set( -24.951475, -29.244267 )
+ga_view_zoom_set( 219.201797 )
+ga_view_center_set( -13.558989, -44.021473 )
+ga_view_zoom_set( 173.054047 )
+ga_view_center_set( -4.564941, -55.687687 )
+ga_view_zoom_set( 136.621613 )
+ga_view_center_set( 2.638535, -64.794952 )
+ga_view_zoom_set( 107.859169 )
+ga_view_center_set( 7.741013, -68.975555 )
+ga_view_zoom_set( 95.874817 )
+ga_view_center_set( 16.334621, -76.016556 )
+ga_view_zoom_set( 75.690643 )
+ga_view_center_set( 23.119061, -81.575256 )
+ga_view_zoom_set( 59.755772 )
+ga_view_center_set( 28.475189, -85.963699 )
+ga_view_zoom_set( 47.175610 )
+ga_view_center_set( 32.845856, -89.392738 )
+ga_view_zoom_set( 37.243904 )
+ga_view_center_set( 35.496082, -90.747490 )
+ga_view_zoom_set( 33.105694 )
+ga_view_center_set( 39.736450, -92.915077 )
+ga_view_zoom_set( 26.484554 )
+ga_view_center_set( 42.221180, -93.920570 )
+ga_view_zoom_set( 23.541826 )
+ga_view_center_set( 46.196758, -95.529358 )
+ga_view_zoom_set( 18.833462 )
+ga_view_center_set( 49.544617, -96.884132 )
+ga_view_zoom_set( 14.868523 )
+ga_view_aa_set( -69.761734, -9.280380, -9.745884 )
+ga_view_center_set( 49.887440, -97.312653 )
+ga_view_zoom_set( 13.216465 )
+ga_view_center_set( 50.435955, -97.998291 )
+ga_view_zoom_set( 10.573172 )
+ga_view_center_set( 50.679752, -98.303009 )
+ga_view_zoom_set( 9.398375 )
+ga_view_center_set( 50.435970, -97.998276 )
+ga_view_zoom_set( 10.573172 )
+ga_view_center_set( 50.161720, -97.655441 )
+ga_view_zoom_set( 11.894818 )
+ga_view_center_set( 49.524071, -96.858368 )
+ga_view_zoom_set( 14.967647 )
+ga_view_center_set( 48.721691, -95.855385 )
+ga_view_zoom_set( 18.834288 )
+ga_view_center_set( 47.712029, -94.593300 )
+ga_view_zoom_set( 23.699812 )
+ga_view_center_set( 47.839218, -94.905975 )
+ga_view_zoom_set( 26.662289 )
+ga_view_center_set( 47.982304, -95.257729 )
+ga_view_zoom_set( 29.995075 )
+ga_view_center_set( 48.314987, -96.075577 )
+ga_view_zoom_set( 37.743801 )
+ga_view_center_set( 48.733620, -97.104698 )
+ga_view_zoom_set( 47.494282 )
+ga_view_center_set( 46.524582, -97.518883 )
+ga_view_zoom_set( 53.431068 )
+ga_view_center_set( 37.778709, -98.403030 )
+ga_view_zoom_set( 66.788834 )
+ga_view_center_set( 24.074478, -100.162354 )
+ga_view_zoom_set( 84.042618 )
+ga_view_center_set( 28.852097, -100.412918 )
+ga_view_aa_set( -59.183285, -3.251379, 4.047798 )
+ga_view_center_set( 36.496269, -100.813835 )
+ga_view_zoom_set( 59.763641 )
+ga_view_center_set( 42.933472, -101.151443 )
+ga_view_zoom_set( 47.181824 )
+ga_view_center_set( 45.615631, -101.292107 )
+ga_view_zoom_set( 41.939400 )
+ga_view_center_set( 40.072479, -101.001381 )
+ga_view_zoom_set( 52.773743 )
+ga_view_center_set( 33.097336, -100.635544 )
+ga_view_zoom_set( 66.406960 )
+ga_view_center_set( 24.320297, -100.175209 )
+ga_view_zoom_set( 83.562088 )
+ga_view_center_set( 13.275841, -99.595978 )
+ga_view_zoom_set( 105.148956 )
+ga_view_center_set( -0.621765, -98.867088 )
+ga_view_zoom_set( 132.312439 )
+ga_view_center_set( -18.109566, -97.949898 )
+ga_view_zoom_set( 166.493149 )
+ga_view_center_set( -28.757423, -97.391457 )
+ga_view_zoom_set( 187.304794 )
+ga_view_center_set( -18.109566, -97.949898 )
+ga_view_zoom_set( 166.493149 )
+ga_view_center_set( -8.644844, -98.446312 )
+ga_view_zoom_set( 147.993912 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["H1", "H2"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+ga_view_center_set( -13.822121, -88.062286 )
+ga_view_zoom_set( 131.550140 )
+ga_view_center_set( -17.901218, -81.551460 )
+ga_view_zoom_set( 116.933456 )
+ga_view_center_set( -24.507000, -71.026245 )
+ga_view_zoom_set( 92.315887 )
+ga_view_center_set( -29.722103, -62.786400 )
+ga_view_zoom_set( 72.880966 )
+ga_view_center_set( -27.407894, -66.648819 )
+ga_view_zoom_set( 81.991089 )
+ga_view_center_set( -22.860973, -75.412621 )
+ga_view_zoom_set( 102.488861 )
+ga_view_center_set( -18.219322, -86.637810 )
+ga_view_zoom_set( 128.965149 )
+ga_view_center_set( -13.570560, -100.524452 )
+ga_view_zoom_set( 162.281143 )
+ga_view_center_set( -9.520771, -117.848473 )
+ga_view_zoom_set( 204.203766 )
+ga_view_center_set( -14.087086, -133.510803 )
+ga_view_zoom_set( 229.729233 )
+ga_view_center_set( -24.361164, -169.367462 )
+ga_view_zoom_set( 287.161530 )
+ga_view_center_set( -35.508591, -222.317627 )
+ga_view_zoom_set( 361.344910 )
+ga_view_aa_set( -48.649147, -24.318380, 20.309748 )
+ga_view_aa_set( -65.365746, -1.675832, 73.732841 )
+mesh_seed_create( "Surface 25.2 25.3 25.4 25.1 26.2 26.3 26.4 27.3 27.4 27" // @
+".2 28.1 28.2 28.3 28.4 29.3 29.4 29.2 30.3 30.4 30.2 31.1 31.2 31.3 31.4 " // @
+"32.3 32.4 32.2 33.3 33.4 33.2 34.1 34.2 34.3 34.4 35.3 35.4 35.2 36.3 36." // @
+"4 36.2 37.1 37.2 37.3 37.4 38.3 38.4 38.2 39.3 39.4 39.2 40.1 40.2 40.3 4" // @
+"0.4 41.3 41.4 41.2 42.3 42.4 42.2 43.1 43.2 43.3 43.4 44.3 44.4 44.2 45.3" // @
+" 45.4 45.2 46.1 46.2 46.3 46.4 47.3 47.4 47.2 48.3 48.4 48.2", 2, 0, 0., 5.,  @
+0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 25:48", 1, ["1.28161"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 44 nodes and 21 elements created for Surface 25.
+$# 6 nodes and 2 elements created for Surface 26.
+$# 86 nodes and 42 elements created for Surface 27.
+$# 44 nodes and 21 elements created for Surface 28.
+$# 6 nodes and 2 elements created for Surface 29.
+$# 86 nodes and 42 elements created for Surface 30.
+$# 44 nodes and 21 elements created for Surface 31.
+$# 6 nodes and 2 elements created for Surface 32.
+$# 86 nodes and 42 elements created for Surface 33.
+$# 44 nodes and 21 elements created for Surface 34.
+$# 6 nodes and 2 elements created for Surface 35.
+$# 86 nodes and 42 elements created for Surface 36.
+$# 44 nodes and 21 elements created for Surface 37.
+$# 6 nodes and 2 elements created for Surface 38.
+$# 86 nodes and 42 elements created for Surface 39.
+$# 44 nodes and 21 elements created for Surface 40.
+$# 6 nodes and 2 elements created for Surface 41.
+$# 86 nodes and 42 elements created for Surface 42.
+$# 44 nodes and 21 elements created for Surface 43.
+$# 6 nodes and 2 elements created for Surface 44.
+$# 86 nodes and 42 elements created for Surface 45.
+$# 44 nodes and 21 elements created for Surface 46.
+$# 6 nodes and 2 elements created for Surface 47.
+$# 86 nodes and 42 elements created for Surface 48.
+$# === 1088 nodes created.  IDs  = 1089:2176.
+$# === 520 elements created.  IDs  = 521:1040.
+ga_view_center_set( -38.372223, 53.930252 )
+ga_view_zoom_set( 406.513031 )
+ga_view_center_set( -29.645554, 89.745628 )
+ga_view_zoom_set( 508.141296 )
+ga_view_center_set( -18.373833, 136.007111 )
+ga_view_zoom_set( 639.411133 )
+ga_view_center_set( -4.781189, 193.628448 )
+ga_view_zoom_set( 804.592346 )
+ga_view_center_set( -9.898994, 163.402252 )
+ga_view_zoom_set( 715.193176 )
+ga_view_center_set( -18.518326, 112.495033 )
+ga_view_zoom_set( 564.626221 )
+ga_view_center_set( -25.322960, 72.305099 )
+ga_view_zoom_set( 445.757538 )
+ga_view_center_set( -34.198517, 19.883415 )
+ga_view_zoom_set( 290.711456 )
+ga_view_center_set( -37.702068, -0.152428 )
+ga_view_zoom_set( 229.509048 )
+ga_view_center_set( -39.161884, -7.953262 )
+ga_view_zoom_set( 204.008041 )
+ga_view_center_set( -40.913666, -20.288620 )
+ga_view_zoom_set( 163.206436 )
+ga_view_center_set( -41.774212, -30.184570 )
+ga_view_zoom_set( 128.847183 )
+ga_view_aa_set( -61.435825, 2.653272, 82.748329 )
+ga_view_center_set( -41.159557, -34.564011 )
+ga_view_zoom_set( 114.530830 )
+ga_view_center_set( -40.124340, -42.026150 )
+ga_view_zoom_set( 90.419075 )
+ga_view_center_set( -39.238968, -47.849209 )
+ga_view_zoom_set( 71.383484 )
+ga_view_center_set( -38.539978, -52.392590 )
+ga_view_zoom_set( 56.355381 )
+ga_view_center_set( -37.945709, -55.894588 )
+ga_view_zoom_set( 44.491093 )
+ga_view_center_set( -35.540306, -56.734718 )
+ga_view_zoom_set( 39.547638 )
+ga_view_center_set( -31.691652, -58.078911 )
+ga_view_zoom_set( 31.638111 )
+ga_view_center_set( -28.426859, -59.210876 )
+ga_view_zoom_set( 24.977457 )
+ga_view_center_set( -25.849390, -60.104530 )
+ga_view_zoom_set( 19.719046 )
+ga_view_center_set( -27.057579, -59.685646 )
+ga_view_zoom_set( 22.183926 )
+ga_view_center_set( -29.776001, -58.723282 )
+ga_view_zoom_set( 27.729908 )
+ga_view_center_set( -33.287292, -57.480240 )
+ga_view_zoom_set( 34.893467 )
+ga_view_center_set( -37.705673, -55.916073 )
+ga_view_zoom_set( 43.907612 )
+ga_view_center_set( -43.224884, -53.907238 )
+ga_view_zoom_set( 55.250412 )
+ga_view_center_set( -46.535957, -52.659424 )
+ga_view_zoom_set( 62.156715 )
+ga_view_center_set( -53.985878, -49.851822 )
+ga_view_zoom_set( 77.695892 )
+ga_view_center_set( -63.321419, -46.153511 )
+ga_view_zoom_set( 97.767334 )
+ga_view_center_set( -74.165016, -41.228722 )
+ga_view_zoom_set( 123.023895 )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( -59.835461, -37.634132 )
+ga_view_zoom_set( 109.354576 )
+ga_view_center_set( -37.534180, -31.334999 )
+ga_view_zoom_set( 87.483658 )
+ga_view_center_set( -18.885944, -25.964577 )
+ga_view_zoom_set( 69.066048 )
+ga_view_center_set( -27.534660, -28.667305 )
+ga_view_zoom_set( 77.699303 )
+ga_view_center_set( -47.283836, -34.807503 )
+ga_view_zoom_set( 97.771622 )
+ga_view_center_set( -96.869263, -50.325912 )
+ga_view_zoom_set( 149.101730 )
+ga_view_center_set( -134.078003, -61.970879 )
+ga_view_zoom_set( 187.619675 )
+ga_view_center_set( -156.397675, -69.312866 )
+ga_view_zoom_set( 211.072128 )
+ga_view_center_set( -206.805695, -86.021179 )
+ga_view_zoom_set( 263.840149 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 25:48",  @
+fem_delete_mesh__deleted_labels, fem_delete_mes_not_found_labels )
+$# Meshes deleted from 24 surfaces: Surface 25:48
+ga_view_aa_set( -58.972927, -10.752198, 60.370514 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 1:24", fem_delete_mesh__deleted_labels, @
+ fem_delete_mes_not_found_labels )
+$# Meshes deleted from 24 surfaces: Surface 1:24
+ga_view_aa_set( -67.828392, 5.500515, 91.451767 )
+ga_view_center_set( -7.249695, -5.774284 )
+ga_view_zoom_set( 257.397461 )
+ga_view_center_set( -30.272774, -2.205711 )
+ga_view_zoom_set( 321.746826 )
+ga_view_center_set( -58.226578, 1.511528 )
+ga_view_zoom_set( 404.864746 )
+ga_view_center_set( -89.285545, 4.692284 )
+ga_view_zoom_set( 509.454803 )
+ga_view_center_set( -119.421417, 4.927742 )
+ga_view_zoom_set( 641.063965 )
+ga_view_center_set( -106.679230, 5.819725 )
+ga_view_zoom_set( 569.834656 )
+ga_view_center_set( -85.218475, 7.321968 )
+ga_view_zoom_set( 449.869476 )
+ga_view_center_set( -68.275848, 8.507942 )
+ga_view_zoom_set( 355.160126 )
+ga_view_center_set( -46.176697, 10.054878 )
+ga_view_zoom_set( 231.626175 )
+ga_view_center_set( -37.278934, 11.014427 )
+ga_view_zoom_set( 182.862778 )
+ga_view_center_set( -32.844582, 12.141212 )
+ga_view_zoom_set( 162.544693 )
+ga_view_center_set( -25.749615, 13.827713 )
+ga_view_zoom_set( 130.035751 )
+ga_view_center_set( -19.774902, 15.247940 )
+ga_view_zoom_set( 102.659805 )
+ga_view_center_set( -15.058019, 16.369164 )
+ga_view_zoom_set( 81.047218 )
+ga_view_center_set( -20.060055, 15.843605 )
+ga_view_zoom_set( 91.178123 )
+ga_view_center_set( -31.314610, 14.824173 )
+ga_view_zoom_set( 113.972656 )
+ga_view_center_set( -45.746361, 13.507416 )
+ga_view_zoom_set( 143.415588 )
+ga_view_center_set( -63.773804, 12.115601 )
+ga_view_zoom_set( 180.464615 )
+mesh_seed_create( "Surface 1.2 1.3 1.4 1.1 2.3 2.4 2.2 3.2 3.3 3.4 4.2 4.3" // @
+" 4.4 4.1 5.3 5.4 5.2 6.2 6.3 6.4 7.2 7.3 7.4 7.1 8.3 8.4 8.2 9.2 9.3 9.4 " // @
+"10.2 10.3 10.4 10.1 11.3 11.4 11.2 12.2 12.3 12.4 13.3 13.4 13.2 14.2 14." // @
+"3 14.4 15.3 15.4 15.2 16.2 16.3 16.4 17.3 17.4 17.2 18.3 18.4 18.2 19.1 1" // @
+"9.2 19.3 19.4 20.3 20.4 20.2 21.3 21.4 21.2 22.1 22.2 22.3 22.4 23.3 23.4" // @
+" 23.2 24.3 24.4 24.2", 2, 0, 0., 5., 0. )
+ga_view_aa_set( -38.380035, 2.349646, 85.270027 )
+ga_view_center_set( -49.712555, 2.466484 )
+ga_view_zoom_set( 160.412994 )
+ga_view_center_set( -27.214554, -13.086906 )
+ga_view_zoom_set( 128.330399 )
+ga_view_center_set( -8.268875, -26.184490 )
+ga_view_zoom_set( 101.313477 )
+ga_view_center_set( -14.204498, -20.769871 )
+ga_view_zoom_set( 113.977661 )
+ga_view_center_set( -27.056747, -8.918385 )
+ga_view_zoom_set( 143.421890 )
+ga_view_center_set( -42.036102, 5.066811 )
+ga_view_zoom_set( 180.472549 )
+ga_view_center_set( -49.380890, 10.272831 )
+ga_view_zoom_set( 203.031616 )
+ga_view_center_set( -65.906738, 21.986252 )
+ga_view_zoom_set( 253.789520 )
+ga_view_center_set( -87.252563, 37.116058 )
+ga_view_zoom_set( 319.351807 )
+ga_view_center_set( -114.112793, 56.154404 )
+ga_view_zoom_set( 401.851013 )
+ga_view_aa_set( -91.454910, -2.375768, 77.806541 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:24", 1, ["1.28161"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 44 nodes and 21 elements created for Surface 1.
+$# 6 nodes and 2 elements created for Surface 2.
+$# 86 nodes and 42 elements created for Surface 3.
+$# 44 nodes and 21 elements created for Surface 4.
+$# 6 nodes and 2 elements created for Surface 5.
+$# 86 nodes and 42 elements created for Surface 6.
+$# 44 nodes and 21 elements created for Surface 7.
+$# 6 nodes and 2 elements created for Surface 8.
+$# 86 nodes and 42 elements created for Surface 9.
+$# 44 nodes and 21 elements created for Surface 10.
+$# 6 nodes and 2 elements created for Surface 11.
+$# 86 nodes and 42 elements created for Surface 12.
+$# 44 nodes and 21 elements created for Surface 13.
+$# 6 nodes and 2 elements created for Surface 14.
+$# 86 nodes and 42 elements created for Surface 15.
+$# 44 nodes and 21 elements created for Surface 16.
+$# 6 nodes and 2 elements created for Surface 17.
+$# 86 nodes and 42 elements created for Surface 18.
+$# 44 nodes and 21 elements created for Surface 19.
+$# 6 nodes and 2 elements created for Surface 20.
+$# 86 nodes and 42 elements created for Surface 21.
+$# 44 nodes and 21 elements created for Surface 22.
+$# 6 nodes and 2 elements created for Surface 23.
+$# 86 nodes and 42 elements created for Surface 24.
+$# === 1088 nodes created.  IDs  = 1:1088.
+$# === 520 elements created.  IDs  = 1:520.
+fem_associate_elems_to_ep( "SHell_Com10", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 520 Element(s) associated to the Element Property SHell_Com10.
+ga_view_aa_set( -83.246368, -2.336547, 82.809280 )
+ga_view_center_set( -96.700134, 34.029053 )
+ga_view_zoom_set( 357.200897 )
+ga_view_center_set( -81.222107, 14.362061 )
+ga_view_zoom_set( 317.511902 )
+ga_view_center_set( -56.457310, -17.105133 )
+ga_view_zoom_set( 254.009521 )
+ga_view_center_set( -35.602760, -43.603821 )
+ga_view_zoom_set( 200.533829 )
+ga_view_center_set( -19.289684, -63.919655 )
+ga_view_zoom_set( 158.316177 )
+ga_view_center_set( -15.009993, -60.678459 )
+ga_view_zoom_set( 140.725494 )
+ga_view_center_set( -11.989027, -56.063141 )
+ga_view_zoom_set( 125.089325 )
+ga_view_aa_set( -49.122440, 2.075369, 93.841637 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+ga_view_aa_set( -56.084496, -0.884113, 89.814156 )
+mesh_seed_display_mgr.erase(  )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 25:48",  @
+fem_delete_mesh__deleted_labels, fem_delete_mes_not_found_labels )
+$# No meshes deleted from surfaces.
+$# Mesh does not exist on 24 entities: Surface 25:48
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 25:48", 1, ["1.28161"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 44 nodes and 21 elements created for Surface 25.
+$# 6 nodes and 2 elements created for Surface 26.
+$# 86 nodes and 42 elements created for Surface 27.
+$# 44 nodes and 21 elements created for Surface 28.
+$# 6 nodes and 2 elements created for Surface 29.
+$# 86 nodes and 42 elements created for Surface 30.
+$# 44 nodes and 21 elements created for Surface 31.
+$# 6 nodes and 2 elements created for Surface 32.
+$# 86 nodes and 42 elements created for Surface 33.
+$# 44 nodes and 21 elements created for Surface 34.
+$# 6 nodes and 2 elements created for Surface 35.
+$# 86 nodes and 42 elements created for Surface 36.
+$# 44 nodes and 21 elements created for Surface 37.
+$# 6 nodes and 2 elements created for Surface 38.
+$# 86 nodes and 42 elements created for Surface 39.
+$# 44 nodes and 21 elements created for Surface 40.
+$# 6 nodes and 2 elements created for Surface 41.
+$# 86 nodes and 42 elements created for Surface 42.
+$# 44 nodes and 21 elements created for Surface 43.
+$# 6 nodes and 2 elements created for Surface 44.
+$# 86 nodes and 42 elements created for Surface 45.
+$# 44 nodes and 21 elements created for Surface 46.
+$# 6 nodes and 2 elements created for Surface 47.
+$# 86 nodes and 42 elements created for Surface 48.
+$# === 1088 nodes created.  IDs  = 1089:2176.
+$# === 520 elements created.  IDs  = 521:1040.
+fem_associate_elems_to_ep( "SHell_Com10", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 520 Element(s) associated to the Element Property SHell_Com10.
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["H2", "R"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R"] )
+mesh_seed_create( "Surface 49.2 49.3 49.4 49.1 50.4 50.2 51.1 51.2 51.3 51" // @
+".4 52.4 52.2 53.1 53.2 53.3 53.4 54.4 54.2 55.2 55.3 55.4 55.1 56.4 56.2", 2, @
+ 0, 0., 5., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 49:56", 1, ["1.97473"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# Warning reported from application FEM
+$#     Triangle elements were produced on 8 surface(s).  This can be avoided 
+$# by making the total number of elements around each surface perimeter an 
+$# even number.
+$# 159 nodes and 79 elements created for Surface 49.
+$# 159 nodes and 79 elements created for Surface 50.
+$# 65 nodes and 32 elements created for Surface 51.
+$# 65 nodes and 32 elements created for Surface 52.
+$# 139 nodes and 69 elements created for Surface 53.
+$# 139 nodes and 69 elements created for Surface 54.
+$# 109 nodes and 54 elements created for Surface 55.
+$# 109 nodes and 54 elements created for Surface 56.
+$# === 944 nodes created.  IDs  = 2177:3120.
+$# === 468 elements created.  IDs  = 1041:1508.
+fem_associate_elems_to_ep( "SHell_Ten10", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 468 Element(s) associated to the Element Property SHell_Ten10.
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["R", "V"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+mesh_seed_create( "Surface 57.2 57.3 57.4 57.1 58.2 58.3 58.4 58.1 59.1 59" // @
+".2 59.3 59.4 60.2 60.3 60.4 60.1 61.1 61.2 61.3 61.4 62.2 62.3 62.4 62.1 " // @
+"63.1 63.2 63.3 63.4 64.2 64.3 64.4 64.1", 2, 0, 0., 5., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 57:64", 1, ["1.96609"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 118 nodes and 58 elements created for Surface 57.
+$# 118 nodes and 58 elements created for Surface 58.
+$# 118 nodes and 58 elements created for Surface 59.
+$# 118 nodes and 58 elements created for Surface 60.
+$# 118 nodes and 58 elements created for Surface 61.
+$# 118 nodes and 58 elements created for Surface 62.
+$# 118 nodes and 58 elements created for Surface 63.
+$# 118 nodes and 58 elements created for Surface 64.
+$# === 944 nodes created.  IDs  = 3121:4064.
+$# === 464 elements created.  IDs  = 1509:1972.
+fem_associate_elems_to_ep( "SHell_Com10", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 464 Element(s) associated to the Element Property SHell_Com10.
+ga_view_aa_set( -47.097664, 1.432608, 93.072037 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"R", "V", "default_group"] )
+ga_view_aa_set( -31.215101, -4.572009, 89.396805 )
+ga_view_aa_set( -80.289528, -10.322042, 74.221489 )
+ga_view_center_set( 1.537798, -0.497719 )
+ga_view_zoom_set( 272.694946 )
+ga_view_center_set( 6.416100, -0.375740 )
+ga_view_zoom_set( 340.868683 )
+ga_view_center_set( 12.717192, -0.218239 )
+ga_view_zoom_set( 428.926422 )
+ga_view_center_set( 20.646091, -0.019997 )
+ga_view_zoom_set( 539.732422 )
+ga_view_center_set( 16.354834, -0.127281 )
+ga_view_zoom_set( 479.762146 )
+ga_view_center_set( 9.488808, -0.298927 )
+ga_view_zoom_set( 383.809723 )
+ga_view_center_set( 3.706949, -0.443443 )
+ga_view_zoom_set( 303.007690 )
+ga_view_center_set( -0.857681, -0.101112 )
+ga_view_zoom_set( 239.216599 )
+ga_view_center_set( -4.461348, 0.529533 )
+ga_view_zoom_set( 188.855209 )
+ga_view_center_set( -7.306339, 1.169640 )
+ga_view_zoom_set( 149.096222 )
+ga_view_center_set( -8.373198, 1.317833 )
+ga_view_zoom_set( 132.529968 )
+ga_view_center_set( -10.080208, 1.554916 )
+ga_view_zoom_set( 106.023972 )
+ga_view_center_set( -11.517672, 1.754562 )
+ga_view_zoom_set( 83.703140 )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -41.594353, 4.874442, 79.386940 )
+ga_view_aa_set( -31.468521, -2.906172, 73.111549 )
+ga_view_aa_set( -36.199993, 17.214214, 86.362793 )
+ga_view_center_set( -8.260897, 0.163589 )
+ga_view_zoom_set( 94.166031 )
+ga_view_center_set( -10.020294, 1.305321 )
+ga_view_zoom_set( 83.703140 )
+ga_view_center_set( -12.535887, 3.132111 )
+ga_view_zoom_set( 66.962509 )
+ga_view_center_set( -14.603832, 4.821766 )
+ga_view_zoom_set( 52.865139 )
+ga_view_aa_set( -44.019745, -3.832769, 66.231697 )
+ga_view_center_set( -14.015390, 4.685150 )
+ga_view_zoom_set( 46.991234 )
+ga_view_center_set( -13.107506, 4.432945 )
+ga_view_zoom_set( 37.592987 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 4, ["H1", "H2",  @
+"R", "V"] )
+ga_view_center_set( -15.872250, 5.322140 )
+ga_view_zoom_set( 33.415989 )
+ga_view_center_set( -17.785164, 5.939842 )
+ga_view_zoom_set( 29.703102 )
+ga_view_center_set( -19.731636, 6.599842 )
+ga_view_zoom_set( 23.449818 )
+ga_view_center_set( -20.862076, 7.050249 )
+ga_view_zoom_set( 18.513014 )
+ga_view_center_set( -21.754526, 7.405834 )
+ga_view_zoom_set( 14.615538 )
+ga_view_center_set( -20.917868, 7.072475 )
+ga_view_zoom_set( 18.269423 )
+ga_view_center_set( -18.721621, 6.197405 )
+ga_view_zoom_set( 27.860870 )
+ga_view_center_set( -17.073572, 5.540756 )
+ga_view_zoom_set( 35.058262 )
+ga_view_center_set( -12.727358, 3.993240 )
+ga_view_zoom_set( 53.463852 )
+ga_view_center_set( -11.101454, 3.431343 )
+ga_view_zoom_set( 60.146835 )
+ga_view_center_set( -7.443163, 2.167076 )
+ga_view_zoom_set( 75.183548 )
+ga_view_center_set( 2.159872, -1.151627 )
+ga_view_zoom_set( 114.654915 )
+ga_view_center_set( 9.365965, -3.641975 )
+ga_view_zoom_set( 144.274094 )
+ga_view_center_set( 13.753546, -5.093758 )
+ga_view_zoom_set( 162.308350 )
+ga_view_center_set( 23.625612, -7.779564 )
+ga_view_zoom_set( 202.885437 )
+ga_view_center_set( 36.189507, -9.561035 )
+ga_view_zoom_set( 255.297501 )
+ga_view_aa_set( -57.917542, -1.650100, 68.317673 )
+uil_primary_file.db_save(  )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( 43.154236, -25.602806 )
+ga_view_zoom_set( 287.209686 )
+ga_view_center_set( 58.824860, -61.696701 )
+ga_view_zoom_set( 359.012115 )
+ga_view_center_set( 79.066231, -108.317879 )
+ga_view_zoom_set( 451.756897 )
+ga_view_center_set( 68.111282, -85.240646 )
+ga_view_zoom_set( 401.561676 )
+ga_view_center_set( 50.296036, -48.317116 )
+ga_view_zoom_set( 321.249329 )
+ga_view_center_set( 35.293655, -17.223602 )
+ga_view_zoom_set( 253.617889 )
+ga_view_center_set( 23.449696, 7.323906 )
+ga_view_zoom_set( 200.224655 )
+ga_view_center_set( 13.797646, 26.854340 )
+ga_view_zoom_set( 158.072098 )
+ga_view_center_set( 10.907040, 35.494728 )
+ga_view_zoom_set( 140.508530 )
+ga_view_center_set( 6.282074, 49.419876 )
+ga_view_zoom_set( 112.406822 )
+ga_view_center_set( 1.202036, 61.823669 )
+ga_view_zoom_set( 88.742226 )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["H1", "H2",  @
+"R"] )
+ga_group_current_set("R")
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["H1", "R"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R"] )
+mesh_seed_display_mgr.erase(  )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1000", "[0 0 280]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1000
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+STRING fem_create_nodes__nodes_created[VIRTUAL]
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "10000", "Point 1000",  @
+fem_create_nodes__nodes_created )
+$# === 1 node created.  ID = 10000.
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( 91.395325, 29.040592, 90.506927 )
+ga_view_aa_set( -64.938759, -23.205170, 98.371727 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -1.867147, 65.439667 )
+ga_view_zoom_set( 78.881981 )
+ga_view_center_set( -6.834303, 71.225296 )
+ga_view_zoom_set( 63.105583 )
+ga_view_center_set( -11.587580, 75.669601 )
+ga_view_zoom_set( 49.820198 )
+ga_view_center_set( -16.578508, 78.652908 )
+ga_view_zoom_set( 39.331738 )
+ga_view_center_set( -13.517820, 77.307251 )
+ga_view_zoom_set( 44.248203 )
+ga_view_center_set( -6.631247, 74.279541 )
+ga_view_zoom_set( 55.310253 )
+ga_view_center_set( 2.263906, 70.368736 )
+ga_view_zoom_set( 69.598732 )
+ga_view_center_set( 25.011122, 60.367805 )
+ga_view_zoom_set( 106.138069 )
+ga_view_center_set( 30.042723, 58.065636 )
+ga_view_zoom_set( 119.405327 )
+ga_view_center_set( 42.645416, 53.099319 )
+ga_view_zoom_set( 149.256653 )
+ga_view_center_set( 51.857132, 49.861877 )
+ga_view_zoom_set( 167.913727 )
+ga_view_center_set( 61.619537, 46.670319 )
+ga_view_zoom_set( 188.902939 )
+ga_view_center_set( 65.421265, 50.598770 )
+ga_view_zoom_set( 212.515808 )
+ga_view_center_set( 69.032867, 57.014175 )
+ga_view_zoom_set( 239.080292 )
+ga_view_center_set( 75.662109, 74.496124 )
+ga_view_zoom_set( 268.965332 )
+ga_view_center_set( 92.021362, 119.604347 )
+ga_view_zoom_set( 336.206665 )
+ga_view_center_set( 114.705811, 185.327026 )
+ga_view_zoom_set( 423.060059 )
+ga_view_center_set( 143.250366, 268.419128 )
+ga_view_zoom_set( 532.350586 )
+ga_view_center_set( 179.169006, 372.976654 )
+ga_view_zoom_set( 669.874512 )
+ga_view_center_set( 167.718140, 303.339539 )
+ga_view_zoom_set( 595.444031 )
+ga_view_center_set( 149.396790, 191.920135 )
+ga_view_zoom_set( 476.355225 )
+ga_view_center_set( 134.327148, 98.093262 )
+ga_view_zoom_set( 376.069916 )
+ga_view_center_set( 122.429993, 24.019440 )
+ga_view_zoom_set( 296.897308 )
+ga_view_center_set( 113.037506, -34.459915 )
+ga_view_zoom_set( 234.392609 )
+ga_view_center_set( 105.445831, -80.274734 )
+ga_view_zoom_set( 185.046799 )
+ga_view_center_set( 85.951744, -86.858582 )
+ga_view_zoom_set( 164.486038 )
+ga_view_center_set( 60.253845, -91.010780 )
+ga_view_zoom_set( 146.209808 )
+ga_view_center_set( 42.758659, -92.783531 )
+ga_view_zoom_set( 129.964279 )
+ga_view_center_set( 55.894585, -93.742546 )
+ga_view_zoom_set( 146.209808 )
+ga_view_center_set( 85.084236, -97.053429 )
+ga_view_zoom_set( 183.980667 )
+ga_view_center_set( 120.964302, -102.579964 )
+ga_view_zoom_set( 231.509003 )
+ga_view_center_set( 165.257446, -111.246040 )
+ga_view_zoom_set( 291.315491 )
+ga_view_center_set( 219.377533, -126.458900 )
+ga_view_zoom_set( 366.571991 )
+ga_view_center_set( 247.575378, -149.492584 )
+ga_view_zoom_set( 412.393494 )
+ga_view_center_set( 311.020508, -209.064728 )
+ga_view_zoom_set( 515.491882 )
+ga_view_center_set( 272.494415, -163.263702 )
+ga_view_zoom_set( 458.214996 )
+ga_view_center_set( 210.196808, -89.654205 )
+ga_view_zoom_set( 366.571991 )
+ga_view_center_set( 183.237671, -52.567108 )
+ga_view_zoom_set( 325.841766 )
+ga_view_center_set( 140.569260, 6.772217 )
+ga_view_zoom_set( 260.673401 )
+ga_view_center_set( 81.853394, 89.980072 )
+ga_view_zoom_set( 170.004395 )
+ga_view_center_set( 58.804123, 122.953323 )
+ga_view_zoom_set( 134.214005 )
+ga_view_center_set( 55.336075, 126.341385 )
+ga_view_zoom_set( 119.301338 )
+ga_view_center_set( 52.158508, 129.637527 )
+ga_view_zoom_set( 106.045631 )
+ga_view_center_set( 47.074387, 134.911346 )
+ga_view_zoom_set( 84.836502 )
+ga_view_center_set( 42.026215, 140.630478 )
+ga_view_zoom_set( 66.976189 )
+ga_view_center_set( 36.568012, 143.572586 )
+ga_view_zoom_set( 59.534389 )
+ga_view_center_set( 27.749683, 148.237350 )
+ga_view_zoom_set( 47.627510 )
+ga_view_center_set( 20.183805, 151.492050 )
+ga_view_zoom_set( 38.102009 )
+ga_view_center_set( 16.503107, 152.605347 )
+ga_view_zoom_set( 33.868454 )
+ga_view_center_set( 20.138361, 151.552628 )
+ga_view_zoom_set( 38.102013 )
+ga_view_center_set( 24.228027, 150.368332 )
+ga_view_zoom_set( 42.864765 )
+ga_view_center_set( 28.848068, 149.055176 )
+ga_view_zoom_set( 48.222862 )
+ga_view_center_set( 35.469002, 147.232803 )
+ga_view_zoom_set( 54.250721 )
+ga_view_center_set( 36.463768, 145.376724 )
+ga_view_zoom_set( 61.032063 )
+ga_view_center_set( 33.515884, 143.943710 )
+ga_view_zoom_set( 68.661072 )
+ga_view_center_set( 30.199516, 142.331589 )
+ga_view_zoom_set( 77.243706 )
+ga_view_center_set( 19.452030, 144.864944 )
+ga_view_zoom_set( 68.661072 )
+ga_view_center_set( 9.898712, 147.116791 )
+ga_view_zoom_set( 61.032063 )
+ga_view_center_set( -6.191093, 150.909393 )
+ga_view_zoom_set( 48.183208 )
+ga_view_center_set( -8.087387, 151.551056 )
+ga_view_zoom_set( 42.829517 )
+ga_view_center_set( -5.884624, 150.851898 )
+ga_view_zoom_set( 48.183208 )
+ga_view_center_set( -0.928387, 149.278839 )
+ga_view_zoom_set( 60.229012 )
+ga_view_center_set( 5.473415, 147.246948 )
+ga_view_zoom_set( 75.788170 )
+ga_view_center_set( 13.529011, 144.690186 )
+ga_view_zoom_set( 95.366783 )
+ga_view_center_set( 12.803959, 142.365738 )
+ga_view_zoom_set( 107.287628 )
+ga_view_center_set( 7.573933, 140.326508 )
+ga_view_zoom_set( 120.698578 )
+ga_view_center_set( -5.909000, 140.398468 )
+ga_view_zoom_set( 107.287628 )
+ga_view_center_set( -5.055973, 138.841736 )
+ga_view_zoom_set( 95.366783 )
+ga_view_center_set( -12.486652, 139.770569 )
+ga_view_zoom_set( 84.770477 )
+ga_view_center_set( -25.224972, 141.317352 )
+ga_view_zoom_set( 67.816383 )
+ga_view_center_set( -37.841969, 142.773163 )
+ga_view_zoom_set( 53.539249 )
+ga_view_center_set( -50.827297, 144.003128 )
+ga_view_zoom_set( 42.267830 )
+ga_view_center_set( -45.383144, 143.766830 )
+ga_view_zoom_set( 47.551308 )
+ga_view_center_set( -33.303928, 143.362762 )
+ga_view_zoom_set( 59.439133 )
+ga_view_center_set( -17.756519, 142.840851 )
+ga_view_zoom_set( 74.794243 )
+ga_view_center_set( 42.197063, 140.828293 )
+ga_view_zoom_set( 134.006363 )
+ga_view_center_set( 58.917896, 140.199020 )
+ga_view_zoom_set( 150.757156 )
+ga_view_center_set( 96.539749, 138.783142 )
+ga_view_zoom_set( 188.446442 )
+ga_view_center_set( 145.134644, 136.954300 )
+ga_view_zoom_set( 237.128433 )
+ga_view_center_set( 206.283234, 134.653015 )
+ga_view_zoom_set( 298.386597 )
+ga_view_center_set( 184.457306, 133.288879 )
+ga_view_zoom_set( 265.232544 )
+ga_view_center_set( 165.056488, 132.181793 )
+ga_view_zoom_set( 235.762268 )
+ga_view_center_set( 129.122803, 130.073029 )
+ga_view_zoom_set( 188.609818 )
+ga_view_center_set( 113.227219, 129.585678 )
+ga_view_zoom_set( 167.653168 )
+ga_view_center_set( 98.764587, 131.485153 )
+ga_view_zoom_set( 149.025040 )
+ga_view_center_set( 86.916046, 133.410553 )
+ga_view_zoom_set( 132.466705 )
+ga_view_center_set( 67.484444, 136.112030 )
+ga_view_zoom_set( 105.973366 )
+ga_view_center_set( 50.881516, 137.908020 )
+ga_view_zoom_set( 83.663185 )
+ga_view_center_set( 42.899345, 138.490051 )
+ga_view_zoom_set( 74.367279 )
+ga_view_center_set( 37.223129, 139.096115 )
+ga_view_zoom_set( 66.104248 )
+ga_view_center_set( 31.914818, 139.161804 )
+ga_view_zoom_set( 58.759331 )
+ga_view_aa_set( -63.003357, -0.384187, 2.107454 )
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 2527:2559 2592:2624", "Node 10000"], ["UZ", ""] )
+$# MPC 1 created.
+ga_view_aa_set( -65.889381, -6.218478, -95.982697 )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -75.697571, -3.892045, -82.171516 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( -83.000000, -0.000000, -1.000000 )
+ga_view_aa_set( -1.231206, -4.504141, -8.635419 )
+ga_view_center_set( 35.698967, 141.697693 )
+ga_view_zoom_set( 66.104248 )
+ga_view_center_set( 44.213276, 147.403458 )
+ga_view_zoom_set( 82.630310 )
+ga_view_center_set( 55.210949, 154.773422 )
+ga_view_zoom_set( 103.976471 )
+ga_view_center_set( 61.907101, 159.214264 )
+ga_view_zoom_set( 116.973526 )
+ga_view_center_set( 69.492584, 164.262543 )
+ga_view_zoom_set( 131.595215 )
+ga_view_center_set( 86.677658, 176.445114 )
+ga_view_zoom_set( 164.494019 )
+ga_view_center_set( 109.027054, 192.789078 )
+ga_view_zoom_set( 206.988312 )
+ga_view_center_set( 137.723984, 214.120483 )
+ga_view_zoom_set( 260.460297 )
+ga_view_center_set( 178.167526, 242.647644 )
+ga_view_zoom_set( 327.745880 )
+ga_view_center_set( 210.121323, 269.251343 )
+ga_view_zoom_set( 368.714111 )
+ga_view_center_set( 282.347046, 334.386414 )
+ga_view_zoom_set( 460.892639 )
+ga_view_center_set( 376.490631, 427.039001 )
+ga_view_zoom_set( 579.956543 )
+ga_view_center_set( 494.954651, 543.626831 )
+ga_view_zoom_set( 729.778625 )
+ga_view_center_set( 567.083984, 615.266541 )
+ga_view_zoom_set( 821.000977 )
+ga_view_center_set( 495.607483, 541.342163 )
+ga_view_zoom_set( 729.778625 )
+ga_view_center_set( 619.717712, 657.020996 )
+ga_view_zoom_set( 918.304749 )
+ga_view_center_set( 772.494568, 795.793457 )
+ga_view_zoom_set( 1155.533447 )
+ga_view_center_set( 786.447754, 805.353943 )
+ga_view_zoom_set( 1299.975098 )
+ga_view_center_set( 817.842590, 826.865295 )
+ga_view_zoom_set( 1624.968872 )
+ga_view_center_set( 858.393799, 854.650574 )
+ga_view_zoom_set( 2044.752441 )
+ga_view_center_set( 909.421570, 889.614014 )
+ga_view_zoom_set( 2572.980225 )
+ga_view_center_set( 804.067566, 763.291870 )
+ga_view_zoom_set( 2287.093506 )
+ga_view_center_set( 645.320984, 623.365967 )
+ga_view_zoom_set( 1829.674805 )
+ga_view_center_set( 511.639954, 506.911804 )
+ga_view_zoom_set( 1444.480103 )
+ga_view_center_set( 406.102112, 414.974243 )
+ga_view_zoom_set( 1140.379028 )
+ga_view_center_set( 319.346863, 338.097168 )
+ga_view_zoom_set( 900.299255 )
+ga_view_center_set( 172.292786, 175.058990 )
+ga_view_zoom_set( 542.894043 )
+ga_view_center_set( 125.266785, 122.921501 )
+ga_view_zoom_set( 428.600555 )
+ga_view_center_set( 88.141083, 81.760361 )
+ga_view_zoom_set( 338.368866 )
+ga_view_center_set( 72.806549, 67.434647 )
+ga_view_zoom_set( 300.772339 )
+ga_view_center_set( 49.132172, 47.096199 )
+ga_view_zoom_set( 240.617874 )
+ga_view_center_set( 29.377094, 31.056515 )
+ga_view_zoom_set( 189.961487 )
+ga_view_center_set( 4.082401, 12.262783 )
+ga_view_zoom_set( 123.887932 )
+ga_view_center_set( -5.715725, 5.404083 )
+ga_view_zoom_set( 97.806267 )
+ga_view_center_set( -8.787342, 3.596090 )
+ga_view_zoom_set( 86.938904 )
+ga_view_center_set( -13.698681, 0.682018 )
+ga_view_zoom_set( 68.635979 )
+ga_view_center_set( -19.421459, -2.777287 )
+ga_view_zoom_set( 44.762596 )
+ga_view_center_set( -21.478149, -4.007942 )
+ga_view_zoom_set( 35.338894 )
+ga_view_aa_set( -67.231194, -4.504143, -8.635419 )
+ga_view_center_set( -21.435997, -5.166937 )
+ga_view_zoom_set( 31.412350 )
+ga_view_center_set( -21.368565, -7.021334 )
+ga_view_zoom_set( 25.129879 )
+ga_view_center_set( -21.311781, -8.582931 )
+ga_view_zoom_set( 19.839378 )
+ga_view_center_set( -21.533606, -7.779952 )
+ga_view_zoom_set( 22.319302 )
+ga_view_center_set( -22.691488, -5.733682 )
+ga_view_zoom_set( 27.899128 )
+ga_view_center_set( -25.192772, -2.858508 )
+ga_view_zoom_set( 35.106403 )
+fem_modify_mpc_nodal2( 1, 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 2495:2526 2560:2591 10000", "Node 10000"], ["UZ", ""] )
+$# Critical Decision requested from application FEM
+$#     Node 10000 specified in more than one term which may not be valid for 
+$# this MPC type. Do you wish to continue?
+$? YES 2006030 
+$# MPC 1 modified.
+ga_view_center_set( -26.769806, -3.158566 )
+ga_view_zoom_set( 31.205692 )
+ga_view_center_set( -28.221233, -3.412862 )
+ga_view_zoom_set( 27.738394 )
+ga_view_center_set( -29.522415, -3.638915 )
+ga_view_zoom_set( 24.656349 )
+ga_view_center_set( -31.604313, -3.982961 )
+ga_view_zoom_set( 19.725079 )
+ga_view_center_set( -30.563370, -3.810941 )
+ga_view_zoom_set( 22.190714 )
+ga_view_center_set( -28.221249, -3.423894 )
+ga_view_zoom_set( 27.738392 )
+ga_view_center_set( -25.195995, -2.923963 )
+ga_view_zoom_set( 34.904144 )
+ga_view_center_set( -17.459641, -1.645490 )
+ga_view_zoom_set( 53.228825 )
+ga_view_center_set( -11.654293, -0.636941 )
+ga_view_zoom_set( 66.979607 )
+ga_view_center_set( -8.299328, 0.067008 )
+ga_view_zoom_set( 75.352058 )
+ga_view_center_set( 7.049656, 3.287559 )
+ga_view_zoom_set( 113.656029 )
+ga_view_center_set( 18.815121, 5.756217 )
+ga_view_zoom_set( 143.017166 )
+ga_view_center_set( 22.780678, 7.579108 )
+ga_view_zoom_set( 160.894318 )
+ga_view_center_set( 20.606026, 18.676399 )
+ga_view_zoom_set( 143.017166 )
+ga_view_center_set( 17.433525, 37.148384 )
+ga_view_zoom_set( 114.413734 )
+ga_view_center_set( 15.204823, 47.586853 )
+ga_view_zoom_set( 101.701096 )
+ga_view_center_set( 11.347834, 64.870598 )
+ga_view_zoom_set( 81.360878 )
+ga_view_center_set( 5.677812, 89.423775 )
+ga_view_zoom_set( 53.061443 )
+ga_view_center_set( 3.462955, 94.306999 )
+ga_view_zoom_set( 47.165726 )
+ga_view_center_set( -0.080800, 102.120125 )
+ga_view_zoom_set( 37.732582 )
+ga_view_center_set( -3.065016, 108.699608 )
+ga_view_zoom_set( 29.788881 )
+ga_view_center_set( -5.420970, 113.893959 )
+ga_view_zoom_set( 23.517538 )
+ga_view_aa_set( -79.160469, -4.148960, -7.697948 )
+ga_view_center_set( -5.888614, 112.374123 )
+ga_view_zoom_set( 14.181430 )
+ga_view_center_set( -6.038159, 111.888107 )
+ga_view_zoom_set( 11.195866 )
+ga_view_center_set( -6.156222, 111.504417 )
+ga_view_zoom_set( 8.838841 )
+ga_view_center_set( -6.100882, 111.684273 )
+ga_view_zoom_set( 9.943697 )
+ga_view_center_set( -5.976364, 112.088959 )
+ga_view_zoom_set( 12.429621 )
+ga_view_center_set( -5.815529, 112.611687 )
+ga_view_zoom_set( 15.640606 )
+ga_view_center_set( -5.404228, 113.948402 )
+ga_view_zoom_set( 23.851925 )
+ga_view_center_set( -5.095592, 114.951485 )
+ga_view_zoom_set( 30.013672 )
+ga_view_center_set( -4.907673, 115.562225 )
+ga_view_zoom_set( 33.765381 )
+ga_view_center_set( -4.484856, 116.936401 )
+ga_view_zoom_set( 42.206726 )
+ga_view_center_set( -3.938705, 118.711372 )
+ga_view_zoom_set( 53.110130 )
+ga_view_center_set( -3.251472, 120.944878 )
+ga_view_zoom_set( 66.830246 )
+ga_view_center_set( -2.386703, 123.755379 )
+ga_view_zoom_set( 84.094727 )
+ga_view_center_set( -1.298538, 127.291916 )
+ga_view_zoom_set( 105.819199 )
+ga_view_aa_set( -37.098873, -1.118924, 14.992401 )
+uil_primary_file.db_save(  )
+ga_view_center_set( 0.594469, 131.669464 )
+ga_view_zoom_set( 119.046600 )
+ga_view_center_set( 4.853748, 141.412537 )
+ga_view_zoom_set( 148.808258 )
+ga_view_center_set( 10.355307, 153.997314 )
+ga_view_zoom_set( 187.250397 )
+ga_view_center_set( 13.956289, 161.659821 )
+ga_view_zoom_set( 210.656693 )
+ga_view_center_set( 18.666832, 170.280121 )
+ga_view_zoom_set( 236.988785 )
+ga_view_center_set( 24.072197, 180.083969 )
+ga_view_zoom_set( 266.612396 )
+ga_view_center_set( 50.256554, 225.421585 )
+ga_view_zoom_set( 402.140381 )
+ga_view_aa_set( -68.058357, -7.734978, 3.865793 )
+ga_view_center_set( 63.745163, 243.496292 )
+ga_view_zoom_set( 452.407928 )
+ga_view_center_set( 38.187805, 209.249420 )
+ga_view_zoom_set( 357.164154 )
+ga_view_center_set( 50.167870, 225.302628 )
+ga_view_zoom_set( 401.809662 )
+ga_view_center_set( 78.021400, 262.626343 )
+ga_view_zoom_set( 505.610474 )
+ga_view_center_set( 92.267136, 289.195770 )
+ga_view_zoom_set( 568.811768 )
+ga_view_center_set( 124.320122, 350.503296 )
+ga_view_zoom_set( 711.014709 )
+ga_view_center_set( 101.707893, 313.334351 )
+ga_view_zoom_set( 632.013062 )
+ga_view_center_set( 60.000862, 281.300293 )
+ga_view_zoom_set( 561.789368 )
+ga_view_center_set( 21.587929, 254.165558 )
+ga_view_zoom_set( 499.368317 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"R", "V", "default_group"] )
+ga_view_aa_set( -30.857840, 7.429412, 18.308632 )
+ga_view_center_set( -1.314091, -9.325096 )
+ga_view_zoom_set( 271.073517 )
+ga_view_center_set( -8.830421, -21.569504 )
+ga_view_zoom_set( 338.841888 )
+ga_view_center_set( -18.539043, -37.385109 )
+ga_view_zoom_set( 426.376038 )
+ga_view_center_set( -43.366623, -77.829834 )
+ga_view_zoom_set( 650.223511 )
+ga_view_center_set( -31.993092, -77.183594 )
+ga_view_zoom_set( 577.976440 )
+ga_view_center_set( -13.795708, -76.149658 )
+ga_view_zoom_set( 462.381165 )
+ga_view_center_set( 1.528507, -75.278961 )
+ga_view_zoom_set( 365.037781 )
+ga_view_center_set( 14.176521, -74.866547 )
+ga_view_zoom_set( 288.187714 )
+ga_view_center_set( 24.378796, -74.323868 )
+ga_view_zoom_set( 227.516617 )
+ga_view_center_set( 21.394051, -61.435326 )
+ga_view_zoom_set( 202.237000 )
+ga_view_center_set( 20.210041, -38.050957 )
+ga_view_zoom_set( 147.081451 )
+ga_view_center_set( 19.766891, -25.033691 )
+ga_view_zoom_set( 116.116936 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+ga_view_aa_set( -48.402557, 9.795968, 16.752007 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["H1", "H2"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+fields_create_general_v1( "H1_Contact", 2, 5, 181, 2, "Real", "Coord 0", "",  @
+0, 0, 0, 0 )
+fields_create_general_term( "H1_Contact", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "H1_Contact", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "H1_Contact", "Contact[Deformable Body]", "Element Uniform", @
+ "2D", "Static", ["Element 1:520"], "FEM", "Coord 0", "1.", ["1.", "1.0", "",  @
+"", "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:H1_Contact"], ["", @
+ "", "", "", "", "", "", "", "", ""] )
+$# Load/BC set "H1_Contact" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+fields_create_general_v1( "H2_Contact", 2, 5, 181, 2, "Real", "Coord 0", "",  @
+0, 0, 0, 0 )
+fields_create_general_term( "H2_Contact", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "H2_Contact", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "H2_Contact", "Contact[Deformable Body]", "Element Uniform", @
+ "2D", "Static", ["Element 521:1040"], "FEM", "Coord 0", "1.", ["1.", "1.0",  @
+"", "", "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:H2_Contact"],  @
+["", "", "", "", "", "", "", "", "", ""] )
+$# Load/BC set "H2_Contact" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R"] )
+ga_view_aa_set( -65.199463, 3.948518, 6.244114 )
+ga_view_center_set( -15.336632, -18.003448 )
+ga_view_zoom_set( 181.785507 )
+ga_view_center_set( -17.432350, -10.451630 )
+ga_view_zoom_set( 161.587112 )
+ga_view_center_set( -15.336632, -17.858948 )
+ga_view_zoom_set( 181.785507 )
+ga_view_center_set( -10.621269, -34.525345 )
+ga_view_zoom_set( 227.231888 )
+ga_view_center_set( -7.674156, -44.840179 )
+ga_view_zoom_set( 255.635880 )
+fields_create_general_v1( "R_Contact", 2, 5, 181, 2, "Real", "Coord 0", "", 0, @
+ 0, 0, 0 )
+fields_create_general_term( "R_Contact", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "R_Contact", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "R_Contact", "Contact[Deformable Body]", "Element Uniform",  @
+"2D", "Static", ["Element 1041:1508"], "FEM", "Coord 0", "1.", ["1.", "1.0",  @
+"", "", "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:R_Contact"], [ @
+"", "", "", "", "", "", "", "", "", ""] )
+$# Load/BC set "R_Contact" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+fields_create_general_v1( "V_Contact", 2, 5, 181, 2, "Real", "Coord 0", "", 0, @
+ 0, 0, 0 )
+fields_create_general_term( "V_Contact", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "V_Contact", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "V_Contact", "Contact[Deformable Body]", "Element Uniform",  @
+"2D", "Static", ["Element 1509:1972"], "FEM", "Coord 0", "1.", ["1.", "1.0",  @
+"", "", "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:V_Contact"], [ @
+"", "", "", "", "", "", "", "", "", ""] )
+$# Load/BC set "V_Contact" created.
+ga_view_aa_set( -65.803360, -0.399385, -6.017179 )
+ga_view_aa_set( -59.800716, -0.036252, -5.081520 )
+ga_view_center_set( -2.197199, 3.191246 )
+ga_view_zoom_set( 263.197205 )
+ga_view_center_set( -2.197199, 10.606911 )
+ga_view_zoom_set( 328.996521 )
+ga_view_center_set( -0.676812, 20.185501 )
+ga_view_zoom_set( 413.987274 )
+ga_view_center_set( 2.384284, 32.238541 )
+ga_view_zoom_set( 520.933960 )
+ga_view_center_set( 6.236030, 47.405289 )
+ga_view_zoom_set( 655.508545 )
+ga_view_center_set( 5.193793, 39.717972 )
+ga_view_zoom_set( 582.674255 )
+ga_view_center_set( 5.632635, 26.770828 )
+ga_view_zoom_set( 460.006012 )
+ga_view_center_set( 10.784763, 8.738396 )
+ga_view_zoom_set( 300.003937 )
+ga_view_center_set( 16.758209, -3.768578 )
+ga_view_zoom_set( 195.654739 )
+ga_view_center_set( 19.116175, -8.705505 )
+ga_view_zoom_set( 154.464264 )
+ga_view_center_set( 19.668829, -10.639755 )
+ga_view_zoom_set( 137.301575 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadcase_create2( "LC", "Static", "", 1., [""], [0], [0.], "", 0., TRUE )
+$# Load Case "LC" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R"] )
+ga_view_aa_set( -75.455681, 1.343678, -10.145656 )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "1001", "[0 0 0]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 1001
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -18.046577, -24.950584 )
+ga_view_zoom_set( 182.236343 )
+ga_view_center_set( -34.057045, -28.681511 )
+ga_view_zoom_set( 161.987854 )
+ga_view_center_set( -21.741325, -23.284340 )
+ga_view_zoom_set( 182.236328 )
+ga_view_center_set( 4.501991, -10.651695 )
+ga_view_zoom_set( 227.795410 )
+ga_view_center_set( 37.767998, 5.665504 )
+ga_view_zoom_set( 286.642548 )
+ga_view_center_set( 79.627769, 26.197945 )
+ga_view_zoom_set( 360.691864 )
+ga_view_center_set( 80.756950, 45.797264 )
+ga_view_zoom_set( 405.778351 )
+ga_view_center_set( 89.306511, 25.552711 )
+ga_view_zoom_set( 360.691864 )
+ga_view_center_set( 97.909752, 6.410439 )
+ga_view_zoom_set( 320.614990 )
+ga_view_center_set( 111.445580, -25.823112 )
+ga_view_zoom_set( 256.492004 )
+ga_view_center_set( 122.650963, -53.160362 )
+ga_view_zoom_set( 202.493683 )
+ga_view_center_set( 130.124603, -74.894936 )
+ga_view_zoom_set( 159.863434 )
+ga_view_center_set( 147.068985, -67.781151 )
+ga_view_zoom_set( 179.846359 )
+ga_view_center_set( 163.074982, -60.662880 )
+ga_view_zoom_set( 202.327148 )
+ga_view_center_set( 173.390396, -53.650200 )
+ga_view_zoom_set( 227.618042 )
+ga_view_center_set( 173.186829, -45.251945 )
+ga_view_zoom_set( 256.070313 )
+ga_view_center_set( 172.041626, -37.407219 )
+ga_view_zoom_set( 288.079102 )
+ga_view_center_set( 166.450134, -23.694710 )
+ga_view_zoom_set( 362.499542 )
+ga_view_center_set( 150.742523, -35.583473 )
+ga_view_zoom_set( 322.221802 )
+ga_view_center_set( 136.011658, -47.304131 )
+ga_view_zoom_set( 286.419373 )
+ga_view_center_set( 121.778931, -58.747231 )
+ga_view_zoom_set( 254.595001 )
+ga_view_center_set( 106.091309, -67.704369 )
+ga_view_zoom_set( 226.306671 )
+ga_view_center_set( 93.496216, -76.026131 )
+ga_view_zoom_set( 201.161484 )
+ga_view_center_set( 82.140686, -83.423256 )
+ga_view_zoom_set( 178.810211 )
+ga_view_center_set( 72.402252, -89.998482 )
+ga_view_zoom_set( 158.942413 )
+ga_view_center_set( 65.830994, -95.843086 )
+ga_view_zoom_set( 141.282150 )
+ga_view_center_set( 59.989868, -101.038338 )
+ga_view_zoom_set( 125.584137 )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -107.967468, 0.967907, -3.892177 )
+STRING fem_create_nodes__nodes_created[VIRTUAL]
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "#", "Point 1001",  @
+fem_create_nodes__nodes_created )
+$# === 1 node created.  ID = 10001.
+ga_view_aa_set( -90., 0., 0. )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -119.999397, -0.069753, 0.997565 )
+ga_view_aa_set( -133.988266, 0.856715, 0.433415 )
+fem_create_mpc_nodal2( 2, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 2256:2335 2415:2494", "Node 10001"], ["UZ", ""] )
+$# MPC 2 created.
+ga_view_aa_set( -151.395386, 15.901413, -32.567974 )
+ga_view_aa_set( -62.113701, 2.160989, -142.270813 )
+ga_view_center_set( 47.458931, -104.857536 )
+ga_view_zoom_set( 111.630341 )
+ga_view_center_set( 35.077740, -107.719864 )
+ga_view_zoom_set( 99.226967 )
+ga_view_center_set( 28.243664, -102.461197 )
+ga_view_zoom_set( 111.630341 )
+ga_view_center_set( 15.313274, -96.245651 )
+ga_view_zoom_set( 125.584137 )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -72.017937, 0.070570, -147.878738 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
-$# Journal file stopped recording at 26-Nov-21 16:02:46
+$# Journal file stopped recording at 27-Nov-21 12:22:36
