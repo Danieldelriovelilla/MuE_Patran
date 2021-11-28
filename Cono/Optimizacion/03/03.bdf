@@ -1,4 +1,4 @@
-$ MSC.Nastran input file created on November  28, 2021 at 20:42:15 by
+$ MSC.Nastran input file created on November  28, 2021 at 21:21:12 by
 $ Patran 2021.1  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
@@ -3508,13 +3508,13 @@ $ Referenced Material Records
 $ Material Record : Plie_Tension
 $ Description of Material : Date: 24-Nov-21           Time: 12:36:33
 MAT8*    1               158.48907       8.9490538       .3156111
-*        4.6487918       4.6487918       4.6487918       1.58
+*        4.6487918       4.6487918       4.6487918       .00158
 *                                                        2.2330778
 *        1.4179074       .0463331        .2547264        .0879359
 $ Material Record : Plie_Compression
 $ Description of Material : Date: 24-Nov-21           Time: 12:36:33
 MAT8*    2               140.93211       9.712304        .3563333
-*        4.6487918       4.6487918       4.6487918       1.58
+*        4.6487918       4.6487918       4.6487918       .00158
 *                                                        2.2330778
 *        1.4179074       .0463331        .2547264        .0879359
 $ Multipoint Constraints of the Entire Model
@@ -3524,10 +3524,7 @@ RBE2     7872    10000   3       205     206     207     208     209
          218     219     220     221     222     223     224     225
          248     249     250     251     252     253     254     255
          256     257     258     259     260     261     262     263
-         264     265     266     1097    1195    1293    1391    1489
-         1587    1685    1783    1881    1979    2077    2175    2273
-         2371    2469    2567    2665    2763    2861    2959    3057
-         3155    3253    3351
+         264     265     266
 $ Nodes of the Entire Model
 GRID*    1                              -108.60488128662 -59.33113861084
 *       4.84268188476563
@@ -15803,11 +15800,13 @@ GRID*    11783                          34.801506042480536.9693069458008
 GRID*    11784                          34.278770446777336.4000816345215
 *        280.
 $ Loads for Load Case : Default
-SPCADD   2       1
+SPCADD   2       1       3
 LOAD     2       1.      1.      1       1.      3
 $ Displacement Constraints of Load Set : DV
-SPC1     1       123456  52      THRU    102
-SPC1     1       123456  155     THRU    203
+SPC1     1       3       52      THRU    102
+SPC1     1       3       155     THRU    203
+$ Displacement Constraints of Load Set : D_12456
+SPC1     3       12456   187
 $ Deform Body Contact LBC set: H1C
 BCBODY1  1               3D      DEFORM  5
 BSURF    5       3000    3001    3002    3003    3004    3005    3006
@@ -16254,4 +16253,4 @@ FORCE    1       10000   0       15.     0.      0.      -1.
 $ Nodal Forces of Load Set : L
 MOMENT   3       10000   0       0.      .57735  .57735  .57735
 $ Referenced Coordinate Frames
-ENDDATA 54722243
+ENDDATA cb6dea30
