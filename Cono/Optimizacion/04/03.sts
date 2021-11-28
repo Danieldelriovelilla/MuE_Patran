@@ -1,0 +1,25 @@
+information summary of job:  ./03
+version: MSC Nastran 2021.1.0, Built on Mar 10, 2021
+date:     Nov 29, 2021; Day Time: 00:18:16
+
+  subcase      inc  cycl  sepa cut     cycl   split   separ   cut  rmesh time step   total time  wall time   cpu time    max resp. type
+  /step #       #     #    #    #        #        #      #      #     #      of          of
+        1          |--of the inc--|-----------of the analysis-----------|  the inc      the job
+        0        0     0    0    0        0       0       0     0     0  0.0000E+00  0.0000E+00       1.00       1.17   0.0000E+00 disp
+        0        1     2    0    0        2       0       0     0     0  1.0000E-01  1.0000E-01       4.00       4.00   4.3580E-01 disp
+        0        2     2    0    0        4       0       0     0     0  1.0000E-01  2.0000E-01       6.00       6.69   8.7164E-01 disp
+        0        3     2    0    0        6       0       0     0     0  1.0000E-01  3.0000E-01       9.00       9.44   1.3099E+00 disp
+        0        4     2    0    0        8       0       0     0     0  1.0000E-01  4.0000E-01      12.00      12.19   1.7666E+00 disp
+        0        5     2    0    0       10       0       0     0     0  1.0000E-01  5.0000E-01      15.00      14.89   2.3546E+00 disp
+        0        6     2    0    0       12       0       0     0     0  1.0000E-01  6.0000E-01      18.00      17.75  -3.7660E+00 disp
+        0        7     2    0    0       14       0       0     0     0  1.0000E-01  7.0000E-01      20.00      20.53  -5.6403E+00 disp
+        0        8     2    0    0       16       0       0     0     0  1.0000E-01  8.0000E-01      23.00      23.33  -3.6985E+00 disp
+        0        9     2    0    0       18       0       0     0     0  1.0000E-01  9.0000E-01      26.00      26.12   4.7837E+00 disp
+        0       10     2    0    0       20       0       0     0     0  1.0000E-01  1.0000E+00      29.00      28.91  -4.3703E+00 disp
+ Job ends with exit number :       0
+            total wall time:         30.00
+            total cpu  time:         29.97
+
+            exit DEFINITION -----
+            = 0  job terminates normally
+            = 1  job terminates abnormally (check Fatal Error Message in F06)
