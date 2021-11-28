@@ -1,0 +1,3721 @@
+$# Creating journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\Fixed
+$# _Config_08.db.jou at 28-Nov-21 17:18:04
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixe" // @
+"d_Config_08\Fixed_Config_08.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fi" // @
+"xed_Config_08" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+sys_poll_option( 2 )
+ga_group_create( "H1" )
+ga_group_current_set( "H1" )
+$# Group "H1" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "H2" )
+ga_group_current_set( "H2" )
+$# Group "H2" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "V" )
+ga_group_current_set( "V" )
+$# Group "V" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "RF" )
+ga_group_current_set( "RF" )
+$# Group "RF" created.
+sys_poll_option( 0 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+$# Checking for Patran 2021.1  (Student Edition) module license...
+$# Warning reported from application FILE
+$#     Import/Export of STEP using non-Parasolid method is a deprecated 
+$# feature and may be removed in future release.  The preferred method is to 
+$# use the "Import to Parasolid" method.
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\H1.stp" )
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\callap203import.dll
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+INTEGER uil_file_import_s_express_count(64,2)
+p3_express_import( "express.opt", "H1.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\H1.stp" )
+uil_toolbar.model_center(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\H2.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "H2.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\H2.stp" )
+uil_toolbar.model_center(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\RF.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "RF.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\RF.stp" )
+uil_toolbar.model_center(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+uil_file_import_step203.p3_step203_import(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\V.stp" )
+p3_express_options_file( "express.opt", FALSE, 1, 1, 52054, TRUE, [1., 0., 0., @
+ 0., 0., 1., 0., 0., 0., 0., 1., 0.], 0, ["0"], [[-1]], [[-1]], [[-1]], FALSE, @
+ [0], TRUE, [0], TRUE, [0], 3, 1, 3 )
+p3_express_import( "express.opt", "V.exp", FALSE, TRUE, FALSE, TRUE,  @
+uil_file_import_s_express_count )
+p3_express_import_exit( TRUE, TRUE )
+uil_file_import_step203.import_cc1_data(  @
+"C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\CAD" // @
+"\V.stp" )
+uil_toolbar.model_center(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -72.913620, 3.008060, 145.265213 )
+ga_view_center_set( -10.708374, -1.370270 )
+ga_view_zoom_set( 137.230026 )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Surface 1.2 1.3 1.4 1.1 2.2 2.3 2.4 3.3 3.4 3.2 4.1 4.2" // @
+" 4.3 4.4 5.3 5.4 5.2 6.3 6.4 6.2 7.1 7.2 7.3 7.4 8.3 8.4 8.2 9.3 9.4 9.2 " // @
+"10.1 10.2 10.3 10.4 11.3 11.4 11.2 12.3 12.4 12.2 13.1 13.2 13.3 13.4 14." // @
+"3 14.4 14.2 15.3 15.4 15.2 16.1 16.2 16.3 16.4 17.3 17.4 17.2 18.3 18.4 1" // @
+"8.2 19.1 19.2 19.3 19.4 20.3 20.4 20.2 21.3 21.4 21.2 22.1 22.2 22.3 22.4" // @
+" 23.3 23.4 23.2 24.3 24.4 24.2", 2, 0, 0., 5., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:24", 1, ["1.24563"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 44 nodes and 21 elements created for Surface 1.
+$# 6 nodes and 2 elements created for Surface 2.
+$# 86 nodes and 42 elements created for Surface 3.
+$# 44 nodes and 21 elements created for Surface 4.
+$# 6 nodes and 2 elements created for Surface 5.
+$# 86 nodes and 42 elements created for Surface 6.
+$# 44 nodes and 21 elements created for Surface 7.
+$# 6 nodes and 2 elements created for Surface 8.
+$# 86 nodes and 42 elements created for Surface 9.
+$# 44 nodes and 21 elements created for Surface 10.
+$# 6 nodes and 2 elements created for Surface 11.
+$# 86 nodes and 42 elements created for Surface 12.
+$# 44 nodes and 21 elements created for Surface 13.
+$# 6 nodes and 2 elements created for Surface 14.
+$# 86 nodes and 42 elements created for Surface 15.
+$# 44 nodes and 21 elements created for Surface 16.
+$# 6 nodes and 2 elements created for Surface 17.
+$# 86 nodes and 42 elements created for Surface 18.
+$# 44 nodes and 21 elements created for Surface 19.
+$# 6 nodes and 2 elements created for Surface 20.
+$# 86 nodes and 42 elements created for Surface 21.
+$# 44 nodes and 21 elements created for Surface 22.
+$# 6 nodes and 2 elements created for Surface 23.
+$# 86 nodes and 42 elements created for Surface 24.
+$# === 1088 nodes created.  IDs  = 1:1088.
+$# === 520 elements created.  IDs  = 1:520.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 32 nodes deleted.
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Geometric equivalencing completed. 0 nodes deleted.
+ga_view_aa_set( -63.734833, 0.645260, 139.747833 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+$# UNDO: FEM Create Mesh Surface for Surface 25:48
+mesh_seed_create( "Surface 25.2 25.3 25.4 25.1 26.2 26.3 26.4 27.3 27.4 27" // @
+".2 28.1 28.2 28.3 28.4 29.3 29.4 29.2 30.3 30.4 30.2 31.1 31.2 31.3 31.4 " // @
+"32.3 32.4 32.2 33.3 33.4 33.2 34.1 34.2 34.3 34.4 35.3 35.4 35.2 36.3 36." // @
+"4 36.2 37.1 37.2 37.3 37.4 38.3 38.4 38.2 39.3 39.4 39.2 40.1 40.2 40.3 4" // @
+"0.4 41.3 41.4 41.2 42.3 42.4 42.2 43.1 43.2 43.3 43.4 44.3 44.4 44.2 45.3" // @
+" 45.4 45.2 46.1 46.2 46.3 46.4 47.3 47.4 47.2 48.3 48.4 48.2", 2, 0, 0., 5.,  @
+0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 25:48", 1, ["1.24563"],  @
+"Quad4", "2000", "2000", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# 44 nodes and 21 elements created for Surface 25.
+$# 6 nodes and 2 elements created for Surface 26.
+$# 86 nodes and 42 elements created for Surface 27.
+$# 44 nodes and 21 elements created for Surface 28.
+$# 6 nodes and 2 elements created for Surface 29.
+$# 86 nodes and 42 elements created for Surface 30.
+$# 44 nodes and 21 elements created for Surface 31.
+$# 6 nodes and 2 elements created for Surface 32.
+$# 86 nodes and 42 elements created for Surface 33.
+$# 44 nodes and 21 elements created for Surface 34.
+$# 6 nodes and 2 elements created for Surface 35.
+$# 86 nodes and 42 elements created for Surface 36.
+$# 44 nodes and 21 elements created for Surface 37.
+$# 6 nodes and 2 elements created for Surface 38.
+$# 86 nodes and 42 elements created for Surface 39.
+$# 44 nodes and 21 elements created for Surface 40.
+$# 6 nodes and 2 elements created for Surface 41.
+$# 86 nodes and 42 elements created for Surface 42.
+$# 44 nodes and 21 elements created for Surface 43.
+$# 6 nodes and 2 elements created for Surface 44.
+$# 86 nodes and 42 elements created for Surface 45.
+$# 44 nodes and 21 elements created for Surface 46.
+$# 6 nodes and 2 elements created for Surface 47.
+$# 86 nodes and 42 elements created for Surface 48.
+$# === 1088 nodes created.  IDs  = 2000:3087.
+$# === 520 elements created.  IDs  = 2000:2519.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 64 nodes deleted.
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Geometric equivalencing completed. 0 nodes deleted.
+ga_view_aa_set( -55.729252, 0.111371, 138.902252 )
+ga_view_center_set( 4.700836, -9.350632 )
+ga_view_zoom_set( 200.106262 )
+ga_view_center_set( 9.042393, -12.968597 )
+ga_view_zoom_set( 177.872238 )
+ga_view_center_set( 12.901588, -16.243042 )
+ga_view_zoom_set( 158.108658 )
+ga_view_center_set( 9.042404, -12.968628 )
+ga_view_zoom_set( 177.872238 )
+mesh_seed_display_mgr.erase(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+mesh_seed_create( "Surface 49.2 49.3 49.4 49.1 50.4 50.2 51.1 51.2 51.3 51" // @
+".4 52.2 52.4 52.1 53.3 53.4 53.2 54.4 54.2", 2, 0, 0., 5., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 49:54", 1, ["1.97003"],  @
+"Quad4", "5000", "5000", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# Warning reported from application FEM
+$#     Triangle elements were produced on 6 surface(s).  This can be avoided 
+$# by making the total number of elements around each surface perimeter an 
+$# even number.
+$# 65 nodes and 32 elements created for Surface 49.
+$# 65 nodes and 32 elements created for Surface 50.
+$# 27 nodes and 13 elements created for Surface 51.
+$# 133 nodes and 66 elements created for Surface 52.
+$# 133 nodes and 66 elements created for Surface 53.
+$# 27 nodes and 13 elements created for Surface 54.
+$# === 450 nodes created.  IDs  = 5000:5449.
+$# === 222 elements created.  IDs  = 5000:5221.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 12 nodes deleted.
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Geometric equivalencing completed. 0 nodes deleted.
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+ga_view_center_set( 8.429863, -24.003601 )
+ga_view_zoom_set( 229.234207 )
+ga_view_center_set( 15.965523, -34.704231 )
+ga_view_zoom_set( 203.763733 )
+ga_view_center_set( 22.663895, -44.215889 )
+ga_view_zoom_set( 181.123322 )
+ga_view_center_set( 28.618004, -52.670692 )
+ga_view_zoom_set( 160.998505 )
+ga_view_center_set( 33.910530, -60.186066 )
+ga_view_zoom_set( 143.109787 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+mesh_seed_create( "Surface 55.2 55.3 55.4 55.1 56.2 56.3 56.4 56.1 57.1 57" // @
+".2 57.3 57.4 58.2 58.3 58.4 58.1 59.1 59.2 59.3 59.4 60.2 60.3 60.4 60.1 " // @
+"61.1 61.2 61.3 61.4 62.2 62.3 62.4 62.1", 2, 0, 0., 5., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 55:62", 1, ["1.96644"],  @
+"Quad4", "7000", "7000", "Coord 0", "Coord 0",  @
+fem_create_mesh_surfa_num_nodes, fem_create_mesh_surfa_num_elems,  @
+fem_create_mesh_s_nodes_created, fem_create_mesh_s_elems_created )
+$# 118 nodes and 58 elements created for Surface 55.
+$# 118 nodes and 58 elements created for Surface 56.
+$# 118 nodes and 58 elements created for Surface 57.
+$# 118 nodes and 58 elements created for Surface 58.
+$# 118 nodes and 58 elements created for Surface 59.
+$# 118 nodes and 58 elements created for Surface 60.
+$# 118 nodes and 58 elements created for Surface 61.
+$# 118 nodes and 58 elements created for Surface 62.
+$# === 944 nodes created.  IDs  = 7000:7943.
+$# === 464 elements created.  IDs  = 7000:7463.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Geometric equivalencing completed. 0 nodes deleted.
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.0049999999, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Geometric equivalencing completed. 0 nodes deleted.
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+fields_create_general_v1( "H1C", 2, 5, 181, 2, "Real", "Coord 0", "", 0, 0, 0, @
+ 0 )
+fields_create_general_term( "H1C", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "H1C", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "H1C", "Contact[Deformable Body]", "Element Uniform", "2D",  @
+"Static", ["Element 1:520"], "FEM", "Coord 0", "1.", ["1.", "1.0", "", "",  @
+"<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:H1C"], ["", "", "", "" @
+, "", "", "", "", "", ""] )
+$# Load/BC set "H1C" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H2"] )
+fields_create_general_v1( "H2C", 2, 5, 181, 2, "Real", "Coord 0", "", 0, 0, 0, @
+ 0 )
+fields_create_general_term( "H2C", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "H2C", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "H2C", "Contact[Deformable Body]", "Element Uniform", "2D",  @
+"Static", ["Element 2000:2519"], "FEM", "Coord 0", "1.", ["1.", "1.0", "", "", @
+ "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:H2C"], ["", "", "",  @
+"", "", "", "", "", "", ""] )
+$# Load/BC set "H2C" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+fields_create_general_v1( "RFC", 2, 5, 181, 2, "Real", "Coord 0", "", 0, 0, 0, @
+ 0 )
+fields_create_general_term( "RFC", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "RFC", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "RFC", "Contact[Deformable Body]", "Element Uniform", "2D",  @
+"Static", ["Element 5000:5221"], "FEM", "Coord 0", "1.", ["1.", "1.0", "", "", @
+ "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:RFC"], ["", "", "",  @
+"", "", "", "", "", "", ""] )
+$# Load/BC set "RFC" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+fields_create_general_v1( "VC", 2, 5, 181, 2, "Real", "Coord 0", "", 0, 0, 0,  @
+0 )
+fields_create_general_term( "VC", 0, 0, 0, 17, "[1_contact_lbc()]" )
+fields_create_general_term( "VC", 0, 1, 1, 334,  @
+"contact_lbc(53|22|43|44|45|57|58|59|61|62|63|64|65|66|67|69|76|77|78|79|9" // @
+"2|93|94|95|96|97|98|99|100|101|103|104|102|105|109|606|607|608|609|610|61" // @
+"1|612|613|614|615|110|111|112|113|114|115|422|622|623|||0|0||||-1.|Veloci" // @
+"ty||<0., 0., 0.,>||||0|-1.|Discrete||||||||-1.|<0., 0., 0.,>||-1.|60.0|||" // @
+"|0|-1.|||||||||||1.0|1.0|1.0||||1/1/1/||)" )
+loadsbcs_create2( "VC", "Contact[Deformable Body]", "Element Uniform", "2D",  @
+"Static", ["Element 7000:7463"], "FEM", "Coord 0", "1.", ["1.", "1.0", "", "", @
+ "<1.,1.,0.>", "<0.,0.,0.>", "<0., 0., 0.,>", "", "", "f:VC"], ["", "", "", "" @
+, "", "", "", "", "", ""] )
+$# Load/BC set "VC" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_primary_file.db_save(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+STRING asm_create_grid_xyz_created_ids[VIRTUAL]
+asm_const_grid_xyz( "10000", "[0 0 -50]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 10000
+asm_const_grid_xyz( "10001", "[0 0 330]", "Coord 0",  @
+asm_create_grid_xyz_created_ids )
+$# 1 Point created: Point 10001
+mesh_seed_display_mgr.erase(  )
+STRING fem_create_nodes__nodes_created[VIRTUAL]
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "10000", "Point 10000",  @
+fem_create_nodes__nodes_created )
+$# === 1 node created.  ID = 10000.
+fem_create_nodes_1( "Coord 0", "Coord 0", 3, "#", "Point 10001",  @
+fem_create_nodes__nodes_created )
+$# === 1 node created.  ID = 10001.
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -6.253987, 9.968447, -155.180878 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -6.499557, -21.353523 )
+ga_view_zoom_set( 238.983185 )
+ga_view_center_set( -16.319687, -33.216263 )
+ga_view_zoom_set( 212.429504 )
+ga_view_center_set( -29.517960, -43.202263 )
+ga_view_zoom_set( 188.826233 )
+ga_view_center_set( -41.684265, -52.078728 )
+ga_view_zoom_set( 167.845535 )
+ga_view_center_set( -52.774658, -59.968910 )
+ga_view_zoom_set( 149.196030 )
+ga_view_center_set( -69.636459, -74.800224 )
+ga_view_zoom_set( 119.356827 )
+ga_view_center_set( -76.188950, -82.176643 )
+ga_view_zoom_set( 106.094955 )
+ga_view_center_set( -81.664581, -88.942726 )
+ga_view_zoom_set( 94.306625 )
+ga_view_center_set( -86.531830, -94.957008 )
+ga_view_zoom_set( 83.828110 )
+ga_view_center_set( -90.858231, -100.303062 )
+ga_view_zoom_set( 74.513878 )
+ga_view_center_set( -94.703957, -105.055092 )
+ga_view_zoom_set( 66.234558 )
+ga_view_center_set( -97.512718, -109.279121 )
+ga_view_zoom_set( 58.875164 )
+ga_view_center_set( -99.738426, -113.033806 )
+ga_view_zoom_set( 52.333481 )
+ga_view_center_set( -101.458786, -116.371300 )
+ga_view_zoom_set( 46.518650 )
+ga_view_center_set( -102.926826, -119.322685 )
+ga_view_zoom_set( 41.349911 )
+ga_view_center_set( -101.535248, -116.386589 )
+ga_view_zoom_set( 46.518650 )
+ga_view_center_set( -99.969734, -113.083504 )
+ga_view_zoom_set( 52.333481 )
+ga_view_center_set( -98.208511, -109.367516 )
+ga_view_zoom_set( 58.875168 )
+ga_view_center_set( -96.227135, -105.187019 )
+ga_view_zoom_set( 66.234566 )
+ga_view_center_set( -93.998070, -100.483971 )
+ga_view_zoom_set( 74.513885 )
+ga_view_center_set( -92.151787, -94.972588 )
+ga_view_zoom_set( 83.828125 )
+ga_view_center_set( -90.074684, -88.772285 )
+ga_view_zoom_set( 94.306641 )
+ga_view_center_set( -96.771034, -99.095787 )
+ga_view_zoom_set( 75.445313 )
+ga_view_center_set( -99.697571, -103.684013 )
+ga_view_zoom_set( 67.062500 )
+ga_view_center_set( -105.920418, -113.640587 )
+ga_view_zoom_set( 48.772728 )
+ga_view_center_set( -107.764236, -116.542580 )
+ga_view_zoom_set( 43.353535 )
+ga_view_center_set( -110.714340, -121.185783 )
+ga_view_zoom_set( 34.682827 )
+ga_view_center_set( -112.025475, -123.249413 )
+ga_view_zoom_set( 30.829180 )
+ga_view_center_set( -116.059784, -129.599060 )
+ga_view_zoom_set( 18.971804 )
+ga_view_center_set( -116.776978, -130.727875 )
+ga_view_zoom_set( 16.863825 )
+ga_view_center_set( -117.414505, -131.731293 )
+ga_view_zoom_set( 14.990067 )
+ga_view_center_set( -117.981201, -132.623199 )
+ga_view_zoom_set( 13.324504 )
+ga_view_center_set( -118.484932, -133.416016 )
+ga_view_zoom_set( 11.844004 )
+ga_view_center_set( -119.290886, -134.684509 )
+ga_view_zoom_set( 9.475203 )
+ga_view_center_set( -119.649094, -135.248291 )
+ga_view_zoom_set( 8.422402 )
+ga_view_center_set( -119.290886, -134.687622 )
+ga_view_zoom_set( 9.475203 )
+ga_view_center_set( -119.958084, -135.679993 )
+ga_view_zoom_set( 7.580162 )
+ga_view_center_set( -120.254616, -136.121063 )
+ga_view_zoom_set( 6.737922 )
+ga_view_center_set( -120.729065, -136.826736 )
+ga_view_zoom_set( 5.390337 )
+ga_view_center_set( -120.939934, -137.140381 )
+ga_view_zoom_set( 4.791411 )
+ga_view_center_set( -121.127357, -137.419174 )
+ga_view_zoom_set( 4.259032 )
+ga_view_center_set( -121.536316, -138.027435 )
+ga_view_zoom_set( 3.097478 )
+ga_view_center_set( -121.657486, -138.207657 )
+ga_view_zoom_set( 2.753314 )
+ga_view_aa_set( -68.083313, 1.734972, 8.761789 )
+ga_view_center_set( -121.334724, -138.174057 )
+ga_view_zoom_set( 3.097478 )
+ga_view_center_set( -120.971626, -138.136246 )
+ga_view_zoom_set( 3.484662 )
+ga_view_center_set( -120.563118, -138.093735 )
+ga_view_zoom_set( 3.920245 )
+ga_view_center_set( -119.184387, -137.950195 )
+ga_view_zoom_set( 5.390337 )
+ga_view_center_set( -118.552475, -137.884399 )
+ga_view_zoom_set( 6.064129 )
+ga_view_center_set( -117.841583, -137.810410 )
+ga_view_zoom_set( 6.822145 )
+ga_view_center_set( -116.242035, -137.643890 )
+ga_view_zoom_set( 8.527681 )
+ga_view_center_set( -114.242599, -137.435730 )
+ga_view_zoom_set( 10.659601 )
+ga_view_center_set( -111.743309, -137.175568 )
+ga_view_zoom_set( 13.324501 )
+ga_view_center_set( -110.181252, -137.012939 )
+ga_view_zoom_set( 14.990064 )
+ga_view_center_set( -104.909248, -136.464111 )
+ga_view_zoom_set( 20.611338 )
+ga_view_center_set( -107.666946, -136.104996 )
+ga_view_zoom_set( 18.321190 )
+ga_view_center_set( -110.118240, -135.785782 )
+ga_view_zoom_set( 16.285501 )
+ga_view_center_set( -112.297150, -135.502060 )
+ga_view_zoom_set( 14.476002 )
+ga_view_center_set( -114.186378, -135.145157 )
+ga_view_zoom_set( 12.867558 )
+ga_view_center_set( -115.865685, -134.827911 )
+ga_view_zoom_set( 11.437829 )
+ga_view_center_set( -117.358406, -134.545914 )
+ga_view_zoom_set( 10.166959 )
+ga_view_center_set( -118.685272, -134.295258 )
+ga_view_zoom_set( 9.037296 )
+ga_view_center_set( -120.808258, -133.894180 )
+ga_view_zoom_set( 7.229837 )
+ga_view_center_set( -121.751816, -133.715927 )
+ga_view_zoom_set( 6.426522 )
+ga_view_center_set( -122.590530, -133.557495 )
+ga_view_zoom_set( 5.712464 )
+ga_view_center_set( -124.838364, -133.140610 )
+ga_view_zoom_set( 3.808309 )
+ga_view_center_set( -125.739777, -132.973862 )
+ga_view_zoom_set( 3.046648 )
+ga_view_center_set( -126.460907, -132.840454 )
+ga_view_zoom_set( 2.437318 )
+ga_view_center_set( -126.783829, -132.781967 )
+ga_view_zoom_set( 2.166505 )
+ga_view_center_set( -126.938416, -132.786240 )
+ga_view_zoom_set( 1.925782 )
+ga_view_center_set( -126.816666, -132.680115 )
+ga_view_zoom_set( 2.166505 )
+ga_view_center_set( -126.785431, -132.628036 )
+ga_view_zoom_set( 2.437318 )
+ga_view_center_set( -126.750320, -132.569443 )
+ga_view_zoom_set( 2.741982 )
+ga_view_center_set( -126.710793, -132.503540 )
+ga_view_zoom_set( 3.084730 )
+ga_view_center_set( -126.666328, -132.429382 )
+ga_view_zoom_set( 3.470321 )
+ga_view_center_set( -126.577782, -132.319000 )
+ga_view_zoom_set( 3.904112 )
+ga_view_center_set( -126.478172, -132.194839 )
+ga_view_zoom_set( 4.392126 )
+ga_view_center_set( -126.366112, -132.055145 )
+ga_view_zoom_set( 4.941141 )
+ga_view_center_set( -126.240044, -131.898010 )
+ga_view_zoom_set( 5.558784 )
+ga_view_center_set( -126.098206, -131.721207 )
+ga_view_zoom_set( 6.253632 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+ga_view_center_set( -13.520409, -29.581497 )
+ga_view_zoom_set( 177.234344 )
+ga_view_center_set( -23.658112, -42.632278 )
+ga_view_zoom_set( 157.541641 )
+ga_view_center_set( -34.481995, -54.077606 )
+ga_view_zoom_set( 140.037018 )
+ga_view_center_set( -51.883064, -72.390137 )
+ga_view_zoom_set( 112.029617 )
+ga_view_center_set( -59.616882, -80.529037 )
+ga_view_zoom_set( 99.581879 )
+ga_view_center_set( -66.491364, -87.763611 )
+ga_view_zoom_set( 88.517227 )
+ga_view_center_set( -72.543846, -94.223450 )
+ga_view_zoom_set( 78.681976 )
+ga_view_center_set( -77.923828, -99.965515 )
+ga_view_zoom_set( 69.939537 )
+ga_view_center_set( -84.499390, -104.632767 )
+ga_view_zoom_set( 62.168476 )
+ga_view_center_set( -90.344330, -108.781418 )
+ga_view_zoom_set( 55.260868 )
+ga_view_center_set( -95.539841, -112.469116 )
+ga_view_zoom_set( 49.120773 )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -96.448128, -112.741608 )
+ga_view_zoom_set( 55.260872 )
+ga_view_center_set( -97.469963, -113.048149 )
+ga_view_zoom_set( 62.168480 )
+ga_view_center_set( -98.619530, -113.393021 )
+ga_view_zoom_set( 69.939537 )
+ga_view_center_set( -99.912788, -113.780991 )
+ga_view_zoom_set( 78.681976 )
+ga_view_center_set( -102.822639, -114.653946 )
+ga_view_zoom_set( 98.352470 )
+ga_view_center_set( -104.641304, -115.199539 )
+ga_view_zoom_set( 110.646530 )
+ga_view_center_set( -122.482216, -127.393570 )
+ga_view_zoom_set( 138.308167 )
+ga_view_center_set( -133.990814, -135.219437 )
+ga_view_zoom_set( 155.596680 )
+ga_view_center_set( -147.110657, -144.138626 )
+ga_view_zoom_set( 175.046265 )
+ga_view_center_set( -161.870483, -154.172699 )
+ga_view_zoom_set( 196.927048 )
+ga_view_center_set( -181.097046, -168.082825 )
+ga_view_zoom_set( 221.542923 )
+ga_view_center_set( -224.193054, -192.662292 )
+ga_view_zoom_set( 276.928650 )
+ga_view_center_set( -251.128174, -208.024475 )
+ga_view_zoom_set( 311.544739 )
+ga_view_center_set( -281.429932, -225.306854 )
+ga_view_zoom_set( 350.487823 )
+ga_view_center_set( -321.093201, -238.398315 )
+ga_view_zoom_set( 394.298798 )
+ga_view_center_set( -365.714172, -252.688721 )
+ga_view_zoom_set( 443.586151 )
+ga_view_center_set( -415.912903, -267.781189 )
+ga_view_zoom_set( 499.034424 )
+ga_view_center_set( -468.141785, -276.270691 )
+ga_view_zoom_set( 561.413696 )
+ga_view_center_set( -351.540466, -238.400146 )
+ga_view_zoom_set( 449.130951 )
+ga_view_center_set( -258.525085, -207.306458 )
+ga_view_zoom_set( 359.304749 )
+ga_view_center_set( -217.303101, -193.368927 )
+ga_view_zoom_set( 319.381989 )
+ga_view_center_set( -181.081238, -180.665009 )
+ga_view_zoom_set( 283.895111 )
+ga_view_center_set( -149.817261, -168.626038 )
+ga_view_zoom_set( 252.351212 )
+ga_view_center_set( -122.856628, -157.427032 )
+ga_view_zoom_set( 224.312195 )
+ga_view_center_set( -98.891663, -147.472321 )
+ga_view_zoom_set( 199.388611 )
+ga_view_center_set( -60.547668, -131.544846 )
+ga_view_zoom_set( 159.510895 )
+ga_view_center_set( -43.505951, -124.465958 )
+ga_view_zoom_set( 141.787460 )
+ga_view_center_set( -28.450928, -118.173584 )
+ga_view_zoom_set( 126.033295 )
+ga_view_center_set( -4.884964, -108.105850 )
+ga_view_zoom_set( 100.826637 )
+ga_view_center_set( 5.290497, -103.664452 )
+ga_view_zoom_set( 89.623680 )
+ga_view_center_set( -4.553513, -108.006424 )
+ga_view_zoom_set( 100.826637 )
+ga_view_center_set( -15.628036, -112.891144 )
+ga_view_zoom_set( 113.429970 )
+ga_view_aa_set( -90., 0., 0. )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+ga_view_center_set( -6.745575, -17.913223 )
+ga_view_zoom_set( 202.666687 )
+ga_view_center_set( -11.342499, -33.836090 )
+ga_view_zoom_set( 180.148163 )
+ga_view_center_set( -14.125885, -47.989746 )
+ga_view_zoom_set( 160.131699 )
+ga_view_center_set( -16.231476, -60.412842 )
+ga_view_zoom_set( 142.339294 )
+ga_view_center_set( -12.628540, -67.899460 )
+ga_view_zoom_set( 126.523819 )
+ga_view_center_set( -6.190033, -81.974289 )
+ga_view_zoom_set( 101.219055 )
+ga_view_center_set( -3.295212, -88.562531 )
+ga_view_zoom_set( 89.972496 )
+ga_view_center_set( -0.722046, -94.418732 )
+ga_view_zoom_set( 79.975555 )
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 10000", "Node 1 23 137 159 273 295 409 431 545 567 681 703 817 839 9" // @
+"53 975 5143:5156 5223:5288 5357:5422 5437:5448 7000:7885:59"], ["UZ", ""] )
+$# Error reported from application FEM
+$#     The number of nodes per independent term 190 is invalid. Exactly 1 
+$# nodes must be specified in each independent term for this MPC type.
+$? NO 2006020 
+ga_view_center_set( -0.840347, -86.403412 )
+ga_view_zoom_set( 89.972504 )
+ga_view_center_set( -0.973450, -77.386200 )
+ga_view_zoom_set( 101.219070 )
+ga_view_center_set( -1.123169, -67.241821 )
+ga_view_zoom_set( 113.871452 )
+ga_view_center_set( -1.291626, -55.829437 )
+ga_view_zoom_set( 128.105377 )
+ga_view_center_set( -1.123169, -67.241837 )
+ga_view_zoom_set( 113.871445 )
+ga_view_center_set( -1.291626, -55.829437 )
+ga_view_zoom_set( 128.105377 )
+ga_view_center_set( -1.481110, -43.558990 )
+ga_view_zoom_set( 144.118546 )
+ga_view_center_set( -1.694305, -29.754745 )
+ga_view_zoom_set( 162.133362 )
+ga_view_center_set( -1.934174, -14.224976 )
+ga_view_zoom_set( 182.400024 )
+ga_view_center_set( -2.204010, 3.246033 )
+ga_view_zoom_set( 205.200027 )
+ga_view_center_set( -7.667908, -29.173157 )
+ga_view_zoom_set( 164.160019 )
+ga_view_center_set( -8.963074, -43.797531 )
+ga_view_zoom_set( 145.920013 )
+ga_view_center_set( -8.051697, -56.844955 )
+ga_view_zoom_set( 129.706680 )
+ga_view_center_set( 6.104309, -66.694473 )
+ga_view_zoom_set( 115.294830 )
+ga_view_center_set( 18.763229, -75.449600 )
+ga_view_zoom_set( 102.484291 )
+ga_view_center_set( 17.314560, -84.107880 )
+ga_view_zoom_set( 91.097145 )
+ga_view_center_set( 16.026871, -91.804092 )
+ga_view_zoom_set( 80.975243 )
+ga_view_center_set( 14.403107, -97.899857 )
+ga_view_zoom_set( 71.977997 )
+ga_view_center_set( 11.293999, -107.056824 )
+ga_view_zoom_set( 57.582397 )
+ga_view_center_set( 9.779671, -111.013000 )
+ga_view_zoom_set( 51.184353 )
+ga_view_center_set( 8.298996, -114.479141 )
+ga_view_zoom_set( 45.497204 )
+ga_view_center_set( 6.982834, -117.560150 )
+ga_view_zoom_set( 40.441959 )
+ga_view_center_set( 5.812920, -120.298813 )
+ga_view_zoom_set( 35.948410 )
+ga_view_center_set( 4.772991, -122.721359 )
+ga_view_zoom_set( 31.954142 )
+ga_view_center_set( 3.785583, -124.717178 )
+ga_view_zoom_set( 28.403681 )
+ga_view_center_set( 2.870544, -126.360535 )
+ga_view_zoom_set( 25.247717 )
+ga_view_center_set( 2.048870, -127.746582 )
+ga_view_zoom_set( 22.442415 )
+ga_view_center_set( 1.318501, -128.978622 )
+ga_view_zoom_set( 19.948814 )
+ga_view_center_set( 0.669277, -130.073761 )
+ga_view_zoom_set( 17.732279 )
+ga_view_center_set( 0.092194, -131.047226 )
+ga_view_zoom_set( 15.762026 )
+ga_view_center_set( 0.692593, -129.817261 )
+ga_view_zoom_set( 17.732279 )
+ga_view_center_set( 1.368048, -128.374557 )
+ga_view_zoom_set( 19.948814 )
+ga_view_center_set( 2.061537, -126.389999 )
+ga_view_zoom_set( 22.442417 )
+ga_view_center_set( 2.841711, -124.157364 )
+ga_view_zoom_set( 25.247719 )
+ga_view_center_set( 3.719397, -121.645676 )
+ga_view_zoom_set( 28.403683 )
+ga_view_center_set( 5.694208, -115.994354 )
+ga_view_zoom_set( 35.504604 )
+ga_view_center_set( 9.396990, -105.398117 )
+ga_view_zoom_set( 48.818832 )
+ga_view_center_set( 11.094088, -100.541504 )
+ga_view_zoom_set( 54.921188 )
+ga_view_center_set( 13.003328, -95.057495 )
+ga_view_zoom_set( 61.786339 )
+ga_view_center_set( 15.265467, -88.659515 )
+ga_view_zoom_set( 69.509628 )
+ga_view_center_set( 17.836100, -81.358948 )
+ga_view_zoom_set( 78.198334 )
+ga_view_center_set( 20.756968, -73.116882 )
+ga_view_zoom_set( 87.973129 )
+ga_view_center_set( 24.042948, -63.649353 )
+ga_view_zoom_set( 98.969772 )
+ga_view_center_set( 27.703074, -52.851974 )
+ga_view_zoom_set( 111.340996 )
+ga_view_center_set( 31.820704, -40.622574 )
+ga_view_zoom_set( 125.258621 )
+ga_view_center_set( 36.453056, -26.864502 )
+ga_view_zoom_set( 140.915955 )
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 10000", "Node 1 23 137 159 273 295 409 431 681 703 817 839 953 975 5" // @
+"143:5156 5227:5288 5357:5422 5437:5445 7000:7413:59 7590:7885:59"], ["UZ", "" @
+] )
+$# Error reported from application FEM
+$#     The number of nodes per independent term 179 is invalid. Exactly 1 
+$# nodes must be specified in each independent term for this MPC type.
+$? NO 2006020 
+ga_view_center_set( 69.805946, -32.597046 )
+ga_view_zoom_set( 176.144943 )
+ga_view_center_set( 89.934898, -36.570724 )
+ga_view_zoom_set( 198.163055 )
+ga_view_center_set( 111.480751, -41.554138 )
+ga_view_zoom_set( 222.933441 )
+ga_view_center_set( 135.472473, -47.242920 )
+ga_view_zoom_set( 250.800125 )
+ga_view_aa_set( -105.994522, 0.364066, -1.964662 )
+ga_view_center_set( 117.251953, -19.953308 )
+ga_view_zoom_set( 222.933441 )
+ga_view_center_set( 101.055908, 4.304108 )
+ga_view_zoom_set( 198.163055 )
+ga_view_center_set( 86.659470, 25.866226 )
+ga_view_zoom_set( 176.144943 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( 72.936188, 40.342300 )
+ga_view_zoom_set( 156.573288 )
+ga_view_center_set( 50.978851, 63.504044 )
+ga_view_zoom_set( 125.258629 )
+ga_view_center_set( 33.561234, 82.033401 )
+ga_view_zoom_set( 100.206902 )
+ga_view_center_set( 25.820061, 90.268692 )
+ga_view_zoom_set( 89.072800 )
+ga_view_center_set( 18.939034, 97.588943 )
+ga_view_zoom_set( 79.175819 )
+ga_view_center_set( 12.822548, 104.095825 )
+ga_view_zoom_set( 70.378510 )
+ga_view_center_set( 7.385696, 109.879730 )
+ga_view_zoom_set( 62.558674 )
+ga_view_center_set( 4.362648, 113.026154 )
+ga_view_zoom_set( 55.607712 )
+fem_create_mpc_nodal2( 2, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 10001", "Node 93 136 229 272 365 408 501 544 637 680 773 816 909 952" // @
+" 1045 1088 5000:5031 5066:5095 7058:7943:59"], ["UZ", ""] )
+$# Error reported from application FEM
+$#     The number of nodes per independent term 94 is invalid. Exactly 1 
+$# nodes must be specified in each independent term for this MPC type.
+$? NO 2006020 
+ga_view_aa_set( -67.004059, -0.260919, -1.982222 )
+ga_view_center_set( 4.917900, 108.707520 )
+ga_view_zoom_set( 62.558678 )
+ga_view_center_set( 5.380615, 104.288635 )
+ga_view_zoom_set( 70.378510 )
+ga_view_center_set( 5.849105, 99.655746 )
+ga_view_zoom_set( 79.175827 )
+ga_view_center_set( 6.903228, 89.290298 )
+ga_view_zoom_set( 98.969788 )
+ga_view_center_set( 7.562042, 82.811905 )
+ga_view_zoom_set( 111.341011 )
+fem_create_mpc_nodal2( 2, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 10001", "Node 637"], ["UZ", ""] )
+$# MPC 2 created.
+ga_view_aa_set( -56.011883, -0.820006, -2.811371 )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -90., 0., 0. )
+fem_modify_mpc_nodal2( 2, 0., 2, [TRUE, FALSE], ["0", "0"], ["Node 10001",  @
+"Node 93 136 229 272 365 408 501 544 637 680 773 816 909 952 1045 1088 500" // @
+"0:5031 5066:5095 7058:7943:59"], ["UZ", ""] )
+$# Error reported from application FEM
+$#     The number of nodes per independent term 94 is invalid. Exactly 1 
+$# nodes must be specified in each independent term for this MPC type.
+$? NO 2006020 
+ga_view_aa_set( 119.164764, 6.923232, -6.465390 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( -5.943825, 84.458954 )
+ga_view_zoom_set( 98.969788 )
+ga_view_center_set( 1.973761, 82.479576 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+ga_view_center_set( 1.172424, 11.789230 )
+ga_view_zoom_set( 176.121887 )
+ga_view_center_set( 2.735626, 30.964645 )
+ga_view_zoom_set( 140.897507 )
+ga_view_center_set( 3.152451, 39.764931 )
+ga_view_zoom_set( 125.242226 )
+ga_view_center_set( 2.864273, 48.122658 )
+ga_view_zoom_set( 111.326424 )
+ga_view_center_set( 2.608093, 55.551743 )
+ga_view_zoom_set( 98.956818 )
+ga_view_center_set( 2.380386, 62.155373 )
+ga_view_zoom_set( 87.961617 )
+ga_view_center_set( 2.177979, 68.025269 )
+ga_view_zoom_set( 78.188103 )
+ga_view_center_set( 2.280792, 73.371452 )
+ga_view_zoom_set( 69.500534 )
+ga_view_center_set( 2.372177, 78.123619 )
+ga_view_zoom_set( 61.778252 )
+ga_view_center_set( 2.280792, 73.371452 )
+ga_view_zoom_set( 69.500534 )
+ga_view_center_set( 2.177979, 68.025253 )
+ga_view_zoom_set( 78.188103 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+ga_view_center_set( 3.597626, 20.386597 )
+ga_view_zoom_set( 202.666687 )
+ga_view_center_set( 6.928802, 38.641266 )
+ga_view_zoom_set( 180.148163 )
+ga_view_center_set( 9.889801, 54.867630 )
+ga_view_zoom_set( 160.131699 )
+ga_view_center_set( 12.521820, 69.291046 )
+ga_view_zoom_set( 142.339294 )
+ga_view_center_set( 14.861389, 82.111877 )
+ga_view_zoom_set( 126.523819 )
+ga_view_center_set( 18.604706, 102.625214 )
+ga_view_zoom_set( 101.219055 )
+ga_view_center_set( 20.268387, 111.742249 )
+ga_view_zoom_set( 89.972496 )
+ga_view_center_set( 21.747223, 119.846268 )
+ga_view_zoom_set( 79.975555 )
+ga_view_center_set( 23.061768, 127.049850 )
+ga_view_zoom_set( 71.089386 )
+ga_view_center_set( 24.230217, 133.453049 )
+ga_view_zoom_set( 63.190567 )
+ga_view_center_set( 25.144211, 138.999344 )
+ga_view_zoom_set( 56.169392 )
+ga_view_center_set( 19.346321, 138.020706 )
+ga_view_zoom_set( 49.928349 )
+ga_view_center_set( 14.291119, 137.413422 )
+ga_view_zoom_set( 44.380753 )
+ga_view_center_set( 9.797611, 136.888184 )
+ga_view_zoom_set( 39.449558 )
+ga_view_aa_set( 122.782204, 34.221325, -24.733454 )
+ga_view_center_set( 13.620029, 136.786072 )
+ga_view_zoom_set( 44.380753 )
+ga_view_center_set( 17.920235, 136.671188 )
+ga_view_zoom_set( 49.928345 )
+ga_view_center_set( 22.757980, 136.541946 )
+ga_view_zoom_set( 56.169388 )
+ga_view_center_set( 28.117340, 136.521179 )
+ga_view_zoom_set( 63.190559 )
+ga_view_aa_set( -90., 0., 0. )
+fem_modify_mpc_nodal2( 2, 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 93 136 229 272 365 408 501 544 637 680 773 816 909 952 1045 1088 500" // @
+"0:5031 5066:5095 7058:7943:59", "Node 10001"], ["UZ", ""] )
+$# MPC 2 modified.
+ga_view_center_set( 32.160225, 137.572784 )
+ga_view_zoom_set( 71.089378 )
+ga_view_center_set( 41.256706, 139.938919 )
+ga_view_zoom_set( 88.861725 )
+ga_view_center_set( 46.942024, 141.417755 )
+ga_view_zoom_set( 99.969437 )
+ga_view_center_set( 53.337990, 143.081451 )
+ga_view_zoom_set( 112.465614 )
+ga_view_center_set( 60.533470, 144.953094 )
+ga_view_zoom_set( 126.523819 )
+ga_view_center_set( 54.778160, 140.695099 )
+ga_view_zoom_set( 142.339294 )
+ga_view_center_set( 42.776176, 126.376938 )
+ga_view_zoom_set( 177.924118 )
+ga_view_center_set( 35.274956, 117.428116 )
+ga_view_zoom_set( 200.164627 )
+ga_view_center_set( 26.836052, 107.360657 )
+ga_view_zoom_set( 225.185211 )
+ga_view_center_set( 17.425560, 96.034775 )
+ga_view_zoom_set( 253.333359 )
+ga_view_center_set( 13.397087, 104.185669 )
+ga_view_zoom_set( 285.000031 )
+ga_view_center_set( 9.286491, 115.568787 )
+ga_view_zoom_set( 320.625031 )
+ga_view_center_set( 5.492119, 142.248016 )
+ga_view_zoom_set( 360.703156 )
+ga_view_center_set( -2.511604, 186.402130 )
+ga_view_zoom_set( 405.791046 )
+ga_view_center_set( -4.912788, 145.983093 )
+ga_view_zoom_set( 360.703156 )
+ga_view_center_set( -7.047127, 110.292221 )
+ga_view_zoom_set( 320.625031 )
+ga_view_center_set( -8.944283, 78.567001 )
+ga_view_zoom_set( 285.000031 )
+ga_view_center_set( -10.255989, 50.179428 )
+ga_view_zoom_set( 253.333359 )
+ga_view_center_set( -11.088753, 24.862747 )
+ga_view_zoom_set( 225.185211 )
+ga_view_center_set( -11.680946, 2.285004 )
+ga_view_zoom_set( 200.164627 )
+ga_view_center_set( -12.510048, -33.839386 )
+ga_view_zoom_set( 160.131699 )
+ga_view_center_set( -12.878517, -49.894669 )
+ga_view_zoom_set( 142.339294 )
+ga_view_center_set( -13.206078, -64.166031 )
+ga_view_zoom_set( 126.523819 )
+ga_view_center_set( -13.372459, -76.851685 )
+ga_view_zoom_set( 112.465614 )
+ga_view_center_set( -12.965767, -85.983490 )
+ga_view_zoom_set( 99.969437 )
+ga_view_center_set( -12.538551, -88.185318 )
+ga_view_zoom_set( 88.861725 )
+ga_view_center_set( -12.158791, -82.255348 )
+ga_view_zoom_set( 78.988197 )
+ga_view_center_set( -12.080925, -74.491570 )
+ga_view_zoom_set( 70.211731 )
+ga_view_center_set( -12.158821, -82.021660 )
+ga_view_zoom_set( 78.988197 )
+ga_view_center_set( -12.217247, -90.230125 )
+ga_view_zoom_set( 88.861725 )
+ga_view_center_set( -12.282967, -98.150139 )
+ga_view_zoom_set( 99.969437 )
+ga_view_center_set( -12.356926, -106.912254 )
+ga_view_zoom_set( 112.465614 )
+ga_view_center_set( -12.440102, -116.769646 )
+ga_view_zoom_set( 126.523819 )
+ga_view_center_set( -12.533669, -127.859169 )
+ga_view_zoom_set( 142.339294 )
+ga_view_center_set( -12.112556, -138.071381 )
+ga_view_zoom_set( 160.131714 )
+ga_view_center_set( -9.585823, -149.968079 )
+ga_view_zoom_set( 142.339294 )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( 14.081261, -146.346420 )
+ga_view_zoom_set( 113.871437 )
+ga_view_center_set( 33.823448, -143.381744 )
+ga_view_zoom_set( 91.097153 )
+ga_view_center_set( 24.689781, -142.692993 )
+ga_view_zoom_set( 80.975250 )
+ga_view_center_set( 16.757309, -142.080750 )
+ga_view_zoom_set( 71.977997 )
+ga_view_center_set( 10.321411, -141.560181 )
+ga_view_zoom_set( 63.980442 )
+ga_view_center_set( 1.765442, -140.651566 )
+ga_view_zoom_set( 51.184353 )
+ga_view_center_set( -1.347343, -140.129974 )
+ga_view_zoom_set( 45.497204 )
+ga_view_center_set( -3.800186, -139.621475 )
+ga_view_zoom_set( 40.441959 )
+ga_view_center_set( -5.422119, -139.089706 )
+ga_view_zoom_set( 35.948410 )
+ga_view_center_set( -6.473862, -138.487015 )
+ga_view_zoom_set( 31.954142 )
+ga_view_center_set( -7.051601, -137.846252 )
+ga_view_zoom_set( 28.403681 )
+ga_view_center_set( -7.791103, -136.770615 )
+ga_view_zoom_set( 22.722944 )
+ga_view_center_set( -8.530609, -135.694962 )
+ga_view_zoom_set( 28.403681 )
+ga_view_center_set( -8.992794, -135.022690 )
+ga_view_zoom_set( 31.954142 )
+ga_view_center_set( -10.032719, -133.510071 )
+ga_view_zoom_set( 39.942677 )
+ga_view_center_set( -10.682674, -132.564682 )
+ga_view_zoom_set( 44.935513 )
+ga_view_center_set( -11.413868, -131.501129 )
+ga_view_zoom_set( 50.552452 )
+ga_view_center_set( -12.236469, -130.304626 )
+ga_view_zoom_set( 56.871510 )
+ga_view_center_set( -13.161900, -128.958557 )
+ga_view_zoom_set( 63.980450 )
+ga_view_center_set( -14.203007, -127.444229 )
+ga_view_zoom_set( 71.978004 )
+ga_view_center_set( -15.374226, -125.740616 )
+ga_view_zoom_set( 80.975258 )
+ga_view_center_set( -16.691883, -123.824051 )
+ga_view_zoom_set( 91.097168 )
+ga_view_center_set( -18.174229, -121.667892 )
+ga_view_zoom_set( 102.484314 )
+ga_view_center_set( -19.841877, -119.242233 )
+ga_view_zoom_set( 115.294853 )
+ga_view_center_set( -21.248920, -116.470718 )
+ga_view_zoom_set( 129.706711 )
+ga_view_center_set( -3.980289, -121.374176 )
+ga_view_zoom_set( 115.294853 )
+ga_view_center_set( 12.999355, -125.732788 )
+ga_view_zoom_set( 102.484314 )
+fem_create_mpc_nodal2( 1, "RBE2", 0., 2, [TRUE, FALSE], ["0", "0"], [ @
+"Node 1 23 137 159 273 295 409 431 545 567 681 703 817 839 953 975 5143:51" // @
+"56 5223:5288 5357:5422 5437:5448 7000:7885:59", "Node 10000"], ["UZ", ""] )
+$# MPC 1 created.
+ga_view_aa_set( -77.068169, -1.212612, -8.898346 )
+ga_view_aa_set( -88.017265, 0.191755, 5.991882 )
+uil_primary_file.db_save(  )
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+ga_view_aa_set( -61.412033, 4.460243, 18.174784 )
+ga_view_center_set( -4.519291, -126.541336 )
+ga_view_zoom_set( 91.097168 )
+ga_view_center_set( -20.091434, -127.200150 )
+ga_view_zoom_set( 80.975258 )
+ga_view_center_set( -34.039814, -127.626068 )
+ga_view_zoom_set( 71.978004 )
+ga_view_center_set( -46.745975, -127.673386 )
+ga_view_zoom_set( 63.980450 )
+ga_view_center_set( -59.449497, -126.958298 )
+ga_view_zoom_set( 56.871510 )
+ga_view_center_set( -71.021927, -126.247864 )
+ga_view_zoom_set( 50.552452 )
+ga_view_center_set( -81.574432, -125.516678 )
+ga_view_zoom_set( 44.935513 )
+ga_view_center_set( -90.954468, -124.866730 )
+ga_view_zoom_set( 39.942677 )
+ga_view_center_set( -99.292236, -124.288979 )
+ga_view_zoom_set( 35.504601 )
+ga_view_center_set( -106.563522, -123.985512 )
+ga_view_zoom_set( 31.559645 )
+ga_view_center_set( -112.228058, -124.317497 )
+ga_view_zoom_set( 28.053017 )
+ga_view_center_set( -117.115631, -124.538811 )
+ga_view_zoom_set( 24.936014 )
+ga_view_center_set( -121.460114, -124.735535 )
+ga_view_zoom_set( 22.165346 )
+ga_view_center_set( -125.321899, -124.910408 )
+ga_view_zoom_set( 19.702530 )
+ga_view_center_set( -128.754593, -125.065849 )
+ga_view_zoom_set( 17.513359 )
+ga_view_center_set( -131.805878, -125.204010 )
+ga_view_zoom_set( 15.567430 )
+ga_view_center_set( -134.518143, -125.326813 )
+ga_view_zoom_set( 13.837716 )
+ga_view_center_set( -136.929031, -125.435989 )
+ga_view_zoom_set( 12.300192 )
+ga_view_center_set( -139.043732, -125.533020 )
+ga_view_zoom_set( 10.933504 )
+ga_view_center_set( -140.808472, -125.655205 )
+ga_view_zoom_set( 9.718670 )
+ga_view_center_set( -141.856339, -125.878838 )
+ga_view_zoom_set( 8.638818 )
+ga_view_center_set( -142.111923, -126.267906 )
+ga_view_zoom_set( 7.678949 )
+ga_view_center_set( -142.339066, -126.613731 )
+ga_view_zoom_set( 6.825733 )
+ga_view_center_set( -142.549973, -126.921135 )
+ga_view_zoom_set( 6.067318 )
+ga_view_center_set( -142.589844, -127.122581 )
+ga_view_zoom_set( 5.393171 )
+ga_view_center_set( -141.752121, -127.433723 )
+ga_view_zoom_set( 6.067318 )
+ga_view_center_set( -139.867294, -128.133804 )
+ga_view_zoom_set( 7.584147 )
+ga_view_center_set( -138.689255, -128.571350 )
+ga_view_zoom_set( 8.532166 )
+ga_view_center_set( -137.363968, -129.063568 )
+ga_view_zoom_set( 9.598686 )
+ga_view_center_set( -135.873032, -129.617340 )
+ga_view_zoom_set( 10.798522 )
+ga_view_center_set( -135.109802, -129.982971 )
+ga_view_zoom_set( 9.598686 )
+ga_view_center_set( -134.431381, -130.307983 )
+ga_view_zoom_set( 8.532166 )
+ga_view_center_set( -133.828339, -130.596863 )
+ga_view_zoom_set( 7.584147 )
+ga_view_center_set( -133.354614, -130.906006 )
+ga_view_zoom_set( 6.741464 )
+ga_view_center_set( -132.933517, -131.180801 )
+ga_view_zoom_set( 5.992413 )
+ga_view_center_set( -132.559219, -131.425079 )
+ga_view_zoom_set( 5.326589 )
+ga_view_center_set( -132.226517, -131.642212 )
+ga_view_zoom_set( 4.734746 )
+ga_view_center_set( -131.930771, -131.835205 )
+ga_view_zoom_set( 4.208663 )
+ga_view_center_set( -131.667892, -132.006760 )
+ga_view_zoom_set( 3.741034 )
+ga_view_center_set( -131.434219, -132.159256 )
+ga_view_zoom_set( 3.325363 )
+ga_view_center_set( -131.226501, -132.294815 )
+ga_view_zoom_set( 2.955878 )
+ga_view_center_set( -131.041870, -132.415298 )
+ga_view_zoom_set( 2.627448 )
+ga_view_center_set( -130.877731, -132.522400 )
+ga_view_zoom_set( 2.335509 )
+ga_view_center_set( -130.731842, -132.617599 )
+ga_view_zoom_set( 2.076008 )
+ga_view_center_set( -130.602173, -132.702225 )
+ga_view_zoom_set( 1.845340 )
+ga_view_center_set( -130.486893, -132.777435 )
+ga_view_zoom_set( 1.640303 )
+ga_view_center_set( -130.362839, -132.811401 )
+ga_view_zoom_set( 1.458047 )
+ga_view_center_set( -130.252594, -132.840637 )
+ga_view_zoom_set( 1.296042 )
+ga_view_center_set( -130.154572, -132.866196 )
+ga_view_zoom_set( 1.152037 )
+ga_view_center_set( -130.068222, -132.887772 )
+ga_view_zoom_set( 1.024033 )
+ga_view_center_set( -130.129913, -132.863159 )
+ga_view_zoom_set( 1.152037 )
+ga_view_center_set( -130.199341, -132.835464 )
+ga_view_zoom_set( 1.296042 )
+ga_view_center_set( -130.277451, -132.804306 )
+ga_view_zoom_set( 1.458047 )
+ga_view_center_set( -130.365326, -132.769257 )
+ga_view_zoom_set( 1.640303 )
+ga_view_aa_set( -61.134445, 1.574409, 12.906502 )
+ga_view_center_set( -130.265579, -132.782196 )
+ga_view_zoom_set( 1.458047 )
+ga_view_center_set( -130.176941, -132.793701 )
+ga_view_zoom_set( 1.296042 )
+ga_view_center_set( -129.983475, -132.818787 )
+ga_view_zoom_set( 0.942576 )
+ga_view_center_set( -129.926132, -132.826233 )
+ga_view_zoom_set( 0.837845 )
+ga_view_center_set( -129.875198, -132.832840 )
+ga_view_zoom_set( 0.744751 )
+ga_view_center_set( -129.829895, -132.838715 )
+ga_view_zoom_set( 0.662001 )
+ga_view_center_set( -129.789642, -132.843948 )
+ga_view_zoom_set( 0.588445 )
+ga_view_center_set( -129.753860, -132.848587 )
+ga_view_zoom_set( 0.523063 )
+ga_view_center_set( -129.722046, -132.852707 )
+ga_view_zoom_set( 0.464945 )
+ga_view_center_set( -129.693771, -132.856384 )
+ga_view_zoom_set( 0.413284 )
+ga_view_center_set( -129.668625, -132.859634 )
+ga_view_zoom_set( 0.367364 )
+ga_view_center_set( -129.646301, -132.862549 )
+ga_view_zoom_set( 0.326545 )
+ga_view_center_set( -129.626419, -132.865112 )
+ga_view_zoom_set( 0.290263 )
+ga_view_center_set( -129.608780, -132.867401 )
+ga_view_zoom_set( 0.258011 )
+ga_view_center_set( -129.626419, -132.865112 )
+ga_view_zoom_set( 0.290263 )
+ga_view_center_set( -129.646301, -132.862549 )
+ga_view_zoom_set( 0.326545 )
+ga_view_center_set( -129.668625, -132.859634 )
+ga_view_zoom_set( 0.367364 )
+ga_view_center_set( -129.693771, -132.856384 )
+ga_view_zoom_set( 0.413284 )
+ga_view_center_set( -129.722046, -132.852707 )
+ga_view_zoom_set( 0.464945 )
+ga_view_center_set( -129.753860, -132.848587 )
+ga_view_zoom_set( 0.523063 )
+ga_view_center_set( -129.789642, -132.843948 )
+ga_view_zoom_set( 0.588445 )
+ga_view_center_set( -129.870163, -132.833511 )
+ga_view_zoom_set( 0.735557 )
+ga_view_center_set( -129.920486, -132.826965 )
+ga_view_zoom_set( 0.827501 )
+ga_view_center_set( -129.977097, -132.819626 )
+ga_view_zoom_set( 0.930939 )
+ga_view_center_set( -130.040787, -132.811371 )
+ga_view_zoom_set( 1.047306 )
+gu_fit_view(  )
+ga_view_center_set( -1.514800, -59.631531 )
+ga_view_zoom_set( 189.160934 )
+ga_view_center_set( -1.203887, -74.058014 )
+ga_view_zoom_set( 168.143051 )
+ga_view_aa_set( -99.087212, 0.143089, 11.151291 )
+ga_view_center_set( -0.661192, -106.755005 )
+ga_view_zoom_set( 122.285858 )
+ga_view_center_set( -0.500411, -116.442993 )
+ga_view_zoom_set( 108.698540 )
+ga_view_center_set( -0.357466, -125.054550 )
+ga_view_zoom_set( 96.620926 )
+ga_view_center_set( -0.230422, -132.709274 )
+ga_view_zoom_set( 85.885269 )
+ga_view_center_set( -0.117491, -139.513474 )
+ga_view_zoom_set( 76.342461 )
+ga_view_center_set( -0.017119, -145.486328 )
+ga_view_zoom_set( 67.859962 )
+ga_view_center_set( 0.072129, -150.795563 )
+ga_view_zoom_set( 60.319965 )
+ga_view_center_set( 0.151437, -155.514862 )
+ga_view_zoom_set( 53.617748 )
+ga_view_center_set( 0.221948, -159.709824 )
+ga_view_zoom_set( 47.660221 )
+loadsbcs_create2( "MPC_3", "Displacement", "Nodal", "", "Static", [ @
+"Node 10000"], "FEM", "Coord 0", "1.", ["<  ,,0   >", "<     >", "<     >",  @
+"<     >"], ["", "", "", ""] )
+$# Load/BC set "MPC_3" created.
+ga_view_aa_set( -89.086853, 0.024434, 9.142136 )
+ga_view_center_set( 5.121919, -156.660553 )
+ga_view_zoom_set( 53.617748 )
+ga_view_center_set( 10.634398, -153.230133 )
+ga_view_zoom_set( 60.319965 )
+ga_view_center_set( 16.835917, -149.370911 )
+ga_view_zoom_set( 67.859962 )
+ga_view_center_set( 23.812643, -145.029251 )
+ga_view_zoom_set( 76.342461 )
+ga_view_center_set( 31.661455, -140.144913 )
+ga_view_zoom_set( 85.885269 )
+ga_view_center_set( 40.491379, -134.650040 )
+ga_view_zoom_set( 96.620926 )
+ga_view_aa_set( -75.086853, 0.024434, 9.142136 )
+ga_view_aa_set( -81.086853, 0.024434, 9.142137 )
+ga_view_center_set( 54.466827, -139.414383 )
+ga_view_zoom_set( 85.885269 )
+ga_view_center_set( 66.889435, -142.915314 )
+ga_view_zoom_set( 76.342461 )
+ga_view_aa_set( -43.728863, 3.523271, 55.318562 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 1.000000, 0.000000, 0.000000 )
+ga_view_center_set( -103.372856, -6.935870 )
+ga_view_zoom_set( 67.859962 )
+ga_view_center_set( -105.425148, -6.177394 )
+ga_view_zoom_set( 60.319965 )
+ga_view_center_set( -107.249443, -5.503211 )
+ga_view_zoom_set( 53.617748 )
+ga_view_center_set( -110.168282, -4.424510 )
+ga_view_zoom_set( 42.894199 )
+ga_view_center_set( -111.465546, -3.945090 )
+ga_view_zoom_set( 38.128178 )
+ga_view_center_set( -112.618645, -3.518935 )
+ga_view_zoom_set( 33.891712 )
+ga_view_center_set( -113.643639, -3.140136 )
+ga_view_zoom_set( 30.125967 )
+ga_view_center_set( -114.554756, -2.803418 )
+ga_view_zoom_set( 26.778637 )
+ga_view_center_set( -115.364639, -2.495313 )
+ga_view_zoom_set( 23.803232 )
+ga_view_center_set( -116.100174, -2.182319 )
+ga_view_zoom_set( 21.158428 )
+ga_view_center_set( -116.900040, -1.674573 )
+ga_view_zoom_set( 18.807491 )
+ga_view_center_set( -117.672874, -1.179963 )
+ga_view_zoom_set( 16.717770 )
+ga_view_center_set( -118.442253, -0.674363 )
+ga_view_zoom_set( 14.860240 )
+ga_view_center_set( -119.243393, -0.171205 )
+ga_view_zoom_set( 13.209103 )
+ga_view_center_set( -119.964203, 0.276045 )
+ga_view_zoom_set( 11.741425 )
+ga_view_center_set( -120.604927, 0.673602 )
+ga_view_zoom_set( 10.436822 )
+ga_view_center_set( -121.174461, 1.009831 )
+ga_view_zoom_set( 9.277175 )
+ga_view_center_set( -122.085716, 1.547798 )
+ga_view_zoom_set( 7.421740 )
+ga_view_center_set( -122.490715, 1.786894 )
+ga_view_zoom_set( 6.597102 )
+ga_view_center_set( -122.850708, 1.999424 )
+ga_view_zoom_set( 5.864091 )
+ga_view_center_set( -123.426712, 2.339471 )
+ga_view_zoom_set( 4.691273 )
+ga_view_center_set( -123.682709, 2.490603 )
+ga_view_zoom_set( 4.170020 )
+ga_view_center_set( -124.092308, 2.732415 )
+ga_view_zoom_set( 3.336016 )
+ga_view_center_set( -124.274345, 2.839887 )
+ga_view_zoom_set( 2.965348 )
+ga_view_center_set( -124.436165, 2.935418 )
+ga_view_zoom_set( 2.635865 )
+ga_view_center_set( -124.580002, 3.020334 )
+ga_view_zoom_set( 2.342991 )
+ga_view_center_set( -124.707855, 3.095815 )
+ga_view_zoom_set( 2.082659 )
+ga_view_center_set( -124.821510, 3.162909 )
+ga_view_zoom_set( 1.851252 )
+ga_view_center_set( -124.922531, 3.222548 )
+ga_view_zoom_set( 1.645557 )
+ga_view_center_set( -125.012329, 3.275561 )
+ga_view_zoom_set( 1.462718 )
+ga_view_center_set( -125.092155, 3.322684 )
+ga_view_zoom_set( 1.300193 )
+ga_view_center_set( -125.163101, 3.364570 )
+ga_view_zoom_set( 1.155728 )
+ga_view_center_set( -125.226166, 3.401803 )
+ga_view_zoom_set( 1.027313 )
+ga_view_center_set( -125.162720, 3.373309 )
+ga_view_zoom_set( 1.155728 )
+ga_view_center_set( -125.091339, 3.341253 )
+ga_view_zoom_set( 1.300193 )
+ga_view_center_set( -125.011040, 3.305189 )
+ga_view_zoom_set( 1.462718 )
+loadsbcs_create2( "Point_12456", "Displacement", "Nodal", "", "Static", [ @
+"Node 5223"], "FEM", "Coord 0", "1.", ["<  0,0,   >", "<  0,0,0   >",  @
+"<     >", "<     >"], ["", "", "", ""] )
+$# Load/BC set "Point_12456" created.
+ga_view_aa_set( -46.081863, -3.563320, -5.635067 )
+ga_view_center_set( -125.136543, 3.301400 )
+ga_view_zoom_set( 1.645557 )
+ga_view_center_set( -125.277733, 3.297140 )
+ga_view_zoom_set( 1.851252 )
+ga_view_center_set( -125.595398, 3.287555 )
+ga_view_zoom_set( 2.314065 )
+ga_view_center_set( -125.793938, 3.281565 )
+ga_view_zoom_set( 2.603323 )
+ga_view_center_set( -126.017288, 3.274825 )
+ga_view_zoom_set( 2.928738 )
+ga_view_center_set( -126.771126, 3.252080 )
+ga_view_zoom_set( 4.027015 )
+ga_view_center_set( -127.116638, 3.241655 )
+ga_view_zoom_set( 4.530392 )
+ga_view_center_set( -128.282745, 3.206471 )
+ga_view_zoom_set( 6.229289 )
+ga_view_center_set( -129.351669, 3.174218 )
+ga_view_zoom_set( 7.786612 )
+ga_view_center_set( -130.687836, 3.133904 )
+ga_view_zoom_set( 9.733265 )
+ga_view_center_set( -131.522949, 3.108706 )
+ga_view_zoom_set( 10.949923 )
+ga_view_center_set( -134.341400, 3.023665 )
+ga_view_zoom_set( 15.056144 )
+ga_view_center_set( -136.924988, 2.945704 )
+ga_view_zoom_set( 18.820179 )
+ga_view_center_set( -138.539734, 2.896976 )
+ga_view_zoom_set( 21.172701 )
+ga_view_center_set( -140.356323, 2.842167 )
+ga_view_zoom_set( 23.819288 )
+ga_view_center_set( -142.399994, 2.780504 )
+ga_view_zoom_set( 26.796700 )
+ga_view_center_set( -144.699112, 2.711134 )
+ga_view_zoom_set( 30.146286 )
+ga_view_center_set( -147.285629, 2.633091 )
+ga_view_zoom_set( 33.914574 )
+ga_view_center_set( -150.195465, 2.545296 )
+ga_view_zoom_set( 38.153896 )
+ga_view_center_set( -153.469009, 2.446526 )
+ga_view_zoom_set( 42.923134 )
+ga_view_center_set( -157.151764, 2.335407 )
+ga_view_zoom_set( 48.288525 )
+ga_view_center_set( -161.294830, 2.210400 )
+ga_view_zoom_set( 54.324589 )
+ga_view_center_set( -165.955841, 2.069763 )
+ga_view_zoom_set( 61.115162 )
+ga_view_center_set( -171.199402, 1.911552 )
+ga_view_zoom_set( 68.754555 )
+ga_view_center_set( -182.997528, 1.555573 )
+ga_view_zoom_set( 85.943192 )
+ga_view_center_set( -205.118988, 0.888115 )
+ga_view_zoom_set( 118.171890 )
+ga_view_center_set( -225.396973, 0.276268 )
+ga_view_zoom_set( 147.714859 )
+ga_view_center_set( -250.744476, -0.488525 )
+ga_view_zoom_set( 184.643570 )
+ga_view_center_set( -266.586700, -0.966530 )
+ga_view_zoom_set( 207.724014 )
+ga_view_center_set( -302.231720, -2.042053 )
+ga_view_zoom_set( 259.655029 )
+ga_view_center_set( -346.787872, -3.386421 )
+ga_view_zoom_set( 324.568787 )
+ga_view_center_set( -374.635529, -4.226669 )
+ga_view_zoom_set( 365.139893 )
+ga_view_center_set( -405.964081, -5.171951 )
+ga_view_zoom_set( 410.782379 )
+ga_view_center_set( -441.208832, -6.235443 )
+ga_view_zoom_set( 462.130188 )
+ga_view_center_set( -520.509216, -8.628082 )
+ga_view_zoom_set( 577.662720 )
+ga_view_center_set( -570.071838, -10.123444 )
+ga_view_zoom_set( 649.870544 )
+ga_view_center_set( -625.829895, -11.805824 )
+ga_view_zoom_set( 731.104370 )
+ga_view_center_set( -688.557800, -13.698532 )
+ga_view_zoom_set( 822.492432 )
+ga_view_center_set( -759.126404, -15.827744 )
+ga_view_zoom_set( 925.303955 )
+ga_view_center_set( -838.516541, -18.223129 )
+ga_view_zoom_set( 1040.966919 )
+ga_view_center_set( -927.830017, -20.917953 )
+ga_view_zoom_set( 1171.087769 )
+ga_view_center_set( -1028.308228, -23.949692 )
+ga_view_zoom_set( 1317.473755 )
+ga_view_center_set( -1141.346069, -27.360214 )
+ga_view_zoom_set( 1482.157959 )
+ga_view_center_set( -1395.681030, -35.034180 )
+ga_view_zoom_set( 1852.697510 )
+ga_view_center_set( -1554.640015, -39.830215 )
+ga_view_zoom_set( 2084.284668 )
+ga_view_center_set( -1733.469604, -45.226212 )
+ga_view_zoom_set( 2344.820313 )
+ga_view_center_set( -2135.834961, -57.366348 )
+ga_view_zoom_set( 2931.025391 )
+ga_view_center_set( -2638.791992, -72.541885 )
+ga_view_zoom_set( 3663.781738 )
+ga_view_center_set( -3267.489258, -91.511368 )
+ga_view_zoom_set( 4579.727051 )
+ga_view_center_set( -3658.730469, -101.672989 )
+ga_view_zoom_set( 5152.192871 )
+ga_view_center_set( -4973.454102, -135.969864 )
+ga_view_zoom_set( 7084.265137 )
+ga_view_center_set( -3879.376953, -383.290649 )
+ga_view_zoom_set( 5667.412109 )
+ga_view_center_set( -3074.537109, -483.895142 )
+ga_view_zoom_set( 4533.929688 )
+ga_view_center_set( -2737.697266, -501.780518 )
+ga_view_zoom_set( 4030.159668 )
+ga_view_center_set( -2205.906250, -511.319824 )
+ga_view_zoom_set( 3224.127686 )
+ga_view_center_set( -1969.555176, -515.559082 )
+ga_view_zoom_set( 2865.891357 )
+ga_view_center_set( -1759.465332, -519.327637 )
+ga_view_zoom_set( 2547.458984 )
+ga_view_center_set( -1572.718750, -522.677246 )
+ga_view_zoom_set( 2264.407959 )
+ga_view_center_set( -1406.721680, -525.654907 )
+ga_view_zoom_set( 2012.807129 )
+ga_view_center_set( -1254.537109, -528.301392 )
+ga_view_zoom_set( 1789.161865 )
+ga_view_center_set( -1114.556152, -527.125122 )
+ga_view_zoom_set( 1590.366089 )
+ga_view_center_set( -888.705078, -522.419922 )
+ga_view_zoom_set( 1272.292847 )
+ga_view_center_set( -788.326904, -519.073975 )
+ga_view_zoom_set( 1130.927002 )
+ga_view_center_set( -699.845459, -512.382202 )
+ga_view_zoom_set( 1005.268433 )
+ga_view_center_set( -621.525879, -499.494354 )
+ga_view_zoom_set( 893.571960 )
+ga_view_center_set( -551.907959, -478.344666 )
+ga_view_zoom_set( 794.286194 )
+ga_view_center_set( -490.025757, -455.889526 )
+ga_view_zoom_set( 706.032166 )
+ga_view_center_set( -391.013916, -403.668152 )
+ga_view_zoom_set( 564.825745 )
+ga_view_center_set( -311.804810, -352.198853 )
+ga_view_zoom_set( 451.860596 )
+ga_view_center_set( -245.228943, -295.783142 )
+ga_view_zoom_set( 361.488464 )
+ga_view_center_set( -169.392212, -224.613251 )
+ga_view_zoom_set( 262.900696 )
+ga_view_center_set( -147.699829, -200.673920 )
+ga_view_zoom_set( 233.689514 )
+ga_view_center_set( -128.417786, -179.394501 )
+ga_view_zoom_set( 207.724014 )
+ga_view_center_set( -111.483032, -160.479462 )
+ga_view_zoom_set( 184.643570 )
+ga_view_aa_set( -85.802383, 0.101652, 5.728230 )
+uil_primary_file.db_save(  )
+ga_view_center_set( -113.326714, -167.922577 )
+ga_view_zoom_set( 207.724014 )
+ga_view_center_set( -115.324074, -176.296082 )
+ga_view_zoom_set( 233.689514 )
+ga_view_center_set( -115.842552, -186.494049 )
+ga_view_zoom_set( 262.900696 )
+ga_view_center_set( -110.786751, -199.133545 )
+ga_view_zoom_set( 295.763275 )
+ga_view_center_set( -103.130241, -213.790466 )
+ga_view_zoom_set( 332.733673 )
+ga_view_center_set( -171.301300, -208.868408 )
+ga_view_zoom_set( 374.325378 )
+ga_view_center_set( -247.855347, -202.638824 )
+ga_view_zoom_set( 421.116058 )
+ga_view_center_set( -333.667175, -195.163361 )
+ga_view_zoom_set( 473.755554 )
+ga_view_center_set( -430.029999, -186.578339 )
+ga_view_zoom_set( 532.974976 )
+ga_view_center_set( -362.926270, -147.332336 )
+ga_view_zoom_set( 473.755524 )
+ga_view_center_set( -303.590088, -112.135559 )
+ga_view_zoom_set( 421.116028 )
+ga_view_center_set( -253.338531, -79.603607 )
+ga_view_zoom_set( 374.325348 )
+ga_view_center_set( -211.623749, -49.086609 )
+ga_view_zoom_set( 332.733643 )
+ga_view_center_set( -175.090866, -21.522888 )
+ga_view_zoom_set( 295.763245 )
+ga_view_center_set( -142.811646, 3.075500 )
+ga_view_zoom_set( 262.900665 )
+ga_view_center_set( -114.119034, 24.940704 )
+ga_view_zoom_set( 233.689484 )
+ga_view_center_set( -88.614471, 44.376450 )
+ga_view_zoom_set( 207.723984 )
+ga_view_center_set( -65.943802, 61.652664 )
+ga_view_zoom_set( 184.643539 )
+ga_view_center_set( -45.913498, 77.009277 )
+ga_view_zoom_set( 164.127594 )
+ga_view_center_set( -39.007374, 92.655899 )
+ga_view_zoom_set( 145.891190 )
+ga_view_center_set( -33.156364, 106.564041 )
+ga_view_zoom_set( 129.681061 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -134.589462, -4.324696, 16.430475 )
+ga_view_center_set( -25.141930, 97.526398 )
+ga_view_zoom_set( 115.272057 )
+ga_view_center_set( -17.525326, 89.379257 )
+ga_view_zoom_set( 102.464050 )
+ga_view_center_set( -10.721325, 82.137329 )
+ga_view_zoom_set( 91.079155 )
+ga_view_center_set( -4.673347, 75.700073 )
+ga_view_zoom_set( 80.959251 )
+ga_view_center_set( 0.702656, 69.978050 )
+ga_view_zoom_set( 71.963776 )
+ga_view_center_set( -2.624081, 76.099174 )
+ga_view_zoom_set( 80.959244 )
+ga_view_center_set( -10.109219, 89.871780 )
+ga_view_zoom_set( 101.199051 )
+ga_view_center_set( -14.749996, 98.479645 )
+ga_view_zoom_set( 113.848930 )
+ga_view_center_set( -19.802471, 107.995087 )
+ga_view_zoom_set( 128.080048 )
+ga_view_center_set( -25.439127, 118.699959 )
+ga_view_zoom_set( 144.090057 )
+ga_view_center_set( -26.291723, 126.852921 )
+ga_view_zoom_set( 162.101318 )
+ga_view_center_set( -27.250914, 136.025024 )
+ga_view_zoom_set( 182.363983 )
+ga_view_center_set( -28.329950, 146.343643 )
+ga_view_zoom_set( 205.159485 )
+ga_view_center_set( -29.543901, 157.952103 )
+ga_view_zoom_set( 230.804413 )
+ga_view_center_set( -30.909708, 171.011627 )
+ga_view_zoom_set( 259.654968 )
+ga_view_center_set( -29.543951, 157.952042 )
+ga_view_zoom_set( 230.804413 )
+ga_view_center_set( -25.361528, 162.731964 )
+ga_view_zoom_set( 259.654968 )
+ga_view_center_set( -17.295259, 165.708710 )
+ga_view_zoom_set( 292.111847 )
+ga_view_center_set( -1.522982, 164.520294 )
+ga_view_zoom_set( 328.625824 )
+ga_view_center_set( 20.717710, 159.780457 )
+ga_view_zoom_set( 369.704041 )
+ga_view_center_set( 47.105560, 154.448120 )
+ga_view_zoom_set( 415.917053 )
+ga_view_center_set( 20.444275, 121.907555 )
+ga_view_zoom_set( 369.704041 )
+ga_view_center_set( -3.254700, 92.982613 )
+ga_view_zoom_set( 328.625824 )
+ga_view_center_set( -24.320389, 67.271576 )
+ga_view_zoom_set( 292.111847 )
+ga_view_center_set( -43.045563, 44.417297 )
+ga_view_zoom_set( 259.654968 )
+ga_view_center_set( -59.690002, 24.102402 )
+ga_view_zoom_set( 230.804413 )
+loadsbcs_create2( "L", "Force", "Nodal", "", "Static", ["Node 10001"], "FEM",  @
+"Coord 0", "-15.", ["<   0,0,1  >", "<  0,0,0   >", "<     >", "<     >"], ["" @
+, "", "", ""] )
+$# Load/BC set "L" created.
+ga_view_aa_set( -79.101898, -4.937720, 12.105377 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, [ @
+"default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 5, ["H1", "H2",  @
+"RF", "V", "default_group"] )
+uil_primary_file.db_save(  )
+$# UNDO:
+ga_view_aa_set( -59.157307, -0.363778, 27.407928 )
+uil_primary_file.db_save(  )
+db_import_database_v3( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiale" // @
+"s\Materiales.db", ["Point", "Curve", "Surface", "Solid", "Coordinate Frame",  @
+"Plane", "Vector", "Node", "Element", "MPC", "User Data", "Connector", "Job",  @
+"Material", "Element Property", "Load/BC, Load Case", "Field", "DOF List",  @
+"Super Element", "Group", ""], ["All", "All", "All", "All", "All", "All",  @
+"All", "All", "All", "All", "All", "All", "All", "All", "All", "All", "All",  @
+"All", "All", "All"], [-2000000000, -2000000000, -2000000000, -2000000000,  @
+-2000000000, -2000000000, -2000000000, -2000000000, -2000000000, -2000000000,  @
+-2000000000, -2000000000, -2000000000, 0, 0, 0, 0, 0, 0, 0], ["", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "SM_001_", "SM_001_", "SM_001_", "SM_001_" @
+, "SM_001_", "SM_001_", "SM_001_"], ["DATA_AND_NAME", "DATA_AND_NAME",  @
+"DATA_AND_NAME", "DATA_AND_NAME", "DATA_AND_NAME", "DATA_AND_NAME",  @
+"DATA_AND_NAME"], 3, TRUE, TRUE, "cube", 0.0049999999, TRUE, ["useprim",  @
+"useprim", "useprim"] )
+$# Loading 1 "User Data" entities.
+$# Loading 1 "Job" entities.
+$# Loading 4 "Material" entities.
+$# Loading 2 "Element Property" entities.
+$# Loading 1 "Load/BC, Load Case" entities.
+$# Loading 5 "Group" entities.
+$# Loading all referenced entities.
+$# Saving 14 entities.
+$# Posting all entities.
+ga_view_aa_set( -75.168282, 0.701248, 30.205730 )
+uil_primary_file.db_save(  )
+ga_view_center_set( -12.728369, -49.045677 )
+ga_view_zoom_set( 149.720062 )
+ga_view_center_set( -14.254091, -60.661034 )
+ga_view_zoom_set( 133.084503 )
+ga_view_center_set( -15.129078, -74.441978 )
+ga_view_zoom_set( 118.297333 )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["H1", "H2"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["H1", "H2",  @
+"V"] )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["R", "RF"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+uil_primary_file.db_save(  )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+$# Call traceback...
+$#   Function UI_CLEAR_FOCUS
+$#   Function SELECT_FOCUS.EXIT0, Line Number 90
+$#   Function SELECT_FOCUS.EXIT, Line Number 106
+$#   Function NAST_ELEMENTPROPS_INPUTPROP.CHECK_CORRECT_DBOX, Line Number 421
+$#   Function ELEMENTPROPS_INPUTPROP_UTIL.OPTIONMENU_CALLBACK, Line Number 826
+$#   Function NAST_ELEMENTPROPS_INPUTPROP.BUILD_FORM, Line Number 885
+$#   Function NAST_ELEMENTPROPS_INPUTPROP.NASTRAN_BUILD_FORM, Line Number 2206
+$#   Function NAST_ELEMENTPROPS_INPUTPROP.RESET, Line Number 272
+$#   Function NAST_ELEMENTPROPS_INPUTPROP.DISPLAY, Line Number 301
+$#   Function UI_EXEC_FUNCTION
+$#   Function ELEMENTPROPS_MAIN.TRIGGER_INPUTDATA_FORM, Line Number 3606
+$#   Function ELEMENTPROPS_MAIN.INPUT_DATA, Line Number 5906
+uil_viewport_post_groups.posted_groups( "default_viewport", 6, ["H2", "R",  @
+"RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+ga_view_aa_set( -90., 0., 0. )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+elementprops_modify( "SHell_Ten10", "SHell_Ten10", 51, 25, 35, 1, 3, 20, [13,  @
+20, 4037, 4111, 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Laminate_Tension_10", "", "", "", "", "", "", "", ""], "Surface 49:54" )
+$# Property Set "SHell_Ten10" modified.
+elementprops_modify( "SHell_Ten10", "Shell_Ten10", 51, 25, 35, 1, 3, 20, [13,  @
+20, 4037, 4111, 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Laminate_Tension_10", "", "", "", "", "", "", "", ""], "Element 5000:5221" )
+$# Property Set "SHell_Ten10" modified.
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 6, ["H1", "H2",  @
+"R", "SM_001", "V", "default_group"] )
+ga_group_current_set("H1")
+elementprops_modify( "SHell_Com10", "SHell_Com10", 51, 25, 35, 1, 3, 20, [13,  @
+20, 4037, 4111, 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Laminate_Compresson_10", "", "", "", "", "", "", "", ""],  @
+"Element 1:520 2000:2519 7000:7463" )
+$# Property Set "SHell_Com10" modified.
+ga_view_center_set( -0.897583, 8.122986 )
+ga_view_zoom_set( 240.907715 )
+ga_view_center_set( -1.695404, 15.343445 )
+ga_view_zoom_set( 214.140198 )
+ga_view_center_set( -2.404594, 21.761642 )
+ga_view_zoom_set( 190.346848 )
+ga_view_center_set( 2.205154, 17.400116 )
+ga_view_zoom_set( 214.140198 )
+ga_view_center_set( 5.476280, 11.535980 )
+ga_view_zoom_set( 240.907715 )
+ga_view_center_set( 2.466881, 6.863541 )
+ga_view_zoom_set( 214.140198 )
+ga_view_center_set( -0.208107, 2.710266 )
+ga_view_zoom_set( 190.346848 )
+ga_view_center_set( -2.585854, -0.981537 )
+ga_view_zoom_set( 169.197205 )
+ga_view_center_set( -4.699440, -4.263145 )
+ga_view_zoom_set( 150.397522 )
+ga_view_center_set( -6.578163, -7.180130 )
+ga_view_zoom_set( 133.686691 )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( -8.160255, -0.258484 )
+ga_view_zoom_set( 150.397522 )
+ga_view_center_set( -9.940102, 7.528374 )
+ga_view_zoom_set( 169.197205 )
+ga_view_center_set( -11.942451, 16.288582 )
+ga_view_zoom_set( 190.346863 )
+ga_view_center_set( -12.630745, 13.285088 )
+ga_view_zoom_set( 169.197205 )
+ga_view_center_set( -11.329231, 9.280418 )
+ga_view_zoom_set( 135.357758 )
+ga_view_center_set( -10.038841, 7.856537 )
+ga_view_zoom_set( 120.318008 )
+ga_view_center_set( -6.692711, 6.646240 )
+ga_view_zoom_set( 96.254410 )
+ga_view_center_set( -5.205559, 6.108330 )
+ga_view_zoom_set( 85.559479 )
+ga_view_center_set( -3.883629, 5.630188 )
+ga_view_zoom_set( 76.052872 )
+ga_view_center_set( -2.708595, 5.205170 )
+ga_view_zoom_set( 67.602554 )
+ga_view_center_set( -1.664116, 4.827374 )
+ga_view_zoom_set( 60.091160 )
+ga_view_center_set( -1.664116, 5.617527 )
+ga_view_zoom_set( 53.414364 )
+ga_view_center_set( -1.664116, 6.881771 )
+ga_view_zoom_set( 42.731491 )
+ga_view_center_set( -1.664108, 7.443661 )
+ga_view_zoom_set( 37.983547 )
+ga_view_center_set( -1.664116, 7.943111 )
+ga_view_zoom_set( 33.763153 )
+ga_view_center_set( -1.664112, 8.387074 )
+ga_view_zoom_set( 30.011692 )
+ga_view_center_set( -1.664112, 8.781702 )
+ga_view_zoom_set( 26.677059 )
+ga_view_center_set( -1.664112, 9.132486 )
+ga_view_zoom_set( 23.712942 )
+ga_view_center_set( -1.664108, 9.444294 )
+ga_view_zoom_set( 21.078171 )
+ga_view_center_set( -1.757656, 9.880829 )
+ga_view_zoom_set( 23.712942 )
+ga_view_center_set( -1.862892, 10.371923 )
+ga_view_zoom_set( 26.677059 )
+ga_view_center_set( -2.099670, 11.476891 )
+ga_view_zoom_set( 33.346325 )
+ga_view_center_set( -2.247658, 12.167496 )
+ga_view_zoom_set( 37.514614 )
+ga_view_center_set( -2.414139, 12.944427 )
+ga_view_zoom_set( 42.203941 )
+ga_view_center_set( -2.788727, 14.692520 )
+ga_view_zoom_set( 52.754929 )
+ga_view_center_set( -3.256973, 16.877632 )
+ga_view_zoom_set( 65.943665 )
+ga_view_center_set( -3.525238, 18.365273 )
+ga_view_zoom_set( 74.186623 )
+ga_view_center_set( -3.744720, 20.285782 )
+ga_view_zoom_set( 83.459953 )
+ga_view_center_set( -3.991653, 22.631546 )
+ga_view_zoom_set( 93.892448 )
+ga_view_center_set( -4.547241, 27.909523 )
+ga_view_zoom_set( 117.365562 )
+ga_view_center_set( -11.491928, 25.826111 )
+ga_view_zoom_set( 104.324944 )
+ga_view_center_set( -17.767914, 23.974190 )
+ga_view_zoom_set( 92.733284 )
+ga_view_center_set( -23.407501, 22.328033 )
+ga_view_zoom_set( 82.429588 )
+ga_view_center_set( -28.447578, 20.891880 )
+ga_view_zoom_set( 73.270744 )
+ga_view_center_set( -32.927628, 19.639389 )
+ga_view_zoom_set( 65.129547 )
+ga_view_center_set( -36.909904, 18.526066 )
+ga_view_zoom_set( 57.892929 )
+ga_view_center_set( -40.449715, 17.536442 )
+ga_view_zoom_set( 51.460381 )
+ga_view_center_set( -43.596214, 16.656780 )
+ga_view_zoom_set( 45.742561 )
+ga_view_center_set( -46.393105, 15.874855 )
+ga_view_zoom_set( 40.660053 )
+ga_view_center_set( -48.879219, 15.179810 )
+ga_view_zoom_set( 36.142269 )
+ga_view_center_set( -51.089096, 14.561995 )
+ga_view_zoom_set( 32.126461 )
+ga_view_center_set( -53.053429, 14.012823 )
+ga_view_zoom_set( 28.556854 )
+ga_view_center_set( -54.553085, 14.678164 )
+ga_view_zoom_set( 32.126461 )
+ga_view_center_set( -57.927307, 16.175179 )
+ga_view_zoom_set( 40.158077 )
+ga_view_center_set( -60.036209, 17.110817 )
+ga_view_zoom_set( 45.177837 )
+ga_view_center_set( -62.358597, 18.180107 )
+ga_view_zoom_set( 50.825066 )
+ga_view_center_set( -64.463760, 19.589832 )
+ga_view_zoom_set( 57.178200 )
+ga_view_center_set( -66.789825, 21.196899 )
+ga_view_zoom_set( 64.325478 )
+ga_view_center_set( -71.880661, 24.860416 )
+ga_view_zoom_set( 80.406845 )
+ga_view_center_set( -75.002960, 27.269062 )
+ga_view_zoom_set( 90.457703 )
+ga_view_center_set( -61.532471, 23.076256 )
+ga_view_zoom_set( 80.406845 )
+ga_view_center_set( -49.558655, 19.349308 )
+ga_view_zoom_set( 71.472748 )
+ga_view_center_set( -38.821304, 16.036465 )
+ga_view_zoom_set( 63.531330 )
+ga_view_center_set( -28.775757, 12.987289 )
+ga_view_zoom_set( 56.472294 )
+ga_view_center_set( -35.250015, 15.702309 )
+ga_view_zoom_set( 63.531330 )
+ga_view_center_set( -49.817093, 21.811089 )
+ga_view_zoom_set( 79.414162 )
+ga_view_center_set( -58.921555, 25.629078 )
+ga_view_zoom_set( 89.340935 )
+ga_view_center_set( -69.164017, 29.924313 )
+ga_view_zoom_set( 100.508553 )
+ga_view_center_set( -80.686813, 34.756458 )
+ga_view_zoom_set( 113.072121 )
+ga_view_center_set( -106.613174, 45.628780 )
+ga_view_zoom_set( 141.340149 )
+ga_view_center_set( -122.817093, 52.423969 )
+ga_view_zoom_set( 159.007660 )
+ga_view_center_set( -141.046555, 60.068584 )
+ga_view_zoom_set( 178.883621 )
+ga_view_center_set( -161.554672, 68.668747 )
+ga_view_zoom_set( 201.244080 )
+ga_view_center_set( -184.626328, 78.343948 )
+ga_view_zoom_set( 226.399597 )
+ga_view_center_set( -208.153732, 86.549271 )
+ga_view_zoom_set( 254.699554 )
+ga_view_center_set( -235.187363, 98.511841 )
+ga_view_zoom_set( 286.536987 )
+ga_view_center_set( -265.812073, 112.923477 )
+ga_view_zoom_set( 322.354126 )
+ga_view_center_set( -300.264771, 129.136551 )
+ga_view_zoom_set( 362.648376 )
+ga_view_center_set( -266.646423, 100.763680 )
+ga_view_zoom_set( 322.354126 )
+ga_view_center_set( -236.657532, 75.543320 )
+ga_view_zoom_set( 286.536987 )
+ga_view_center_set( -210.000732, 53.125237 )
+ga_view_zoom_set( 254.699539 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["RF"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+ga_view_aa_set( -81.026497, 0.504518, 9.980834 )
+ga_view_center_set( 2.248503, -14.840225 )
+ga_view_zoom_set( 202.666687 )
+ga_view_center_set( 5.726192, -38.824463 )
+ga_view_zoom_set( 162.133347 )
+ga_view_center_set( 7.218561, -49.644012 )
+ga_view_zoom_set( 144.118530 )
+ga_view_center_set( 9.428017, -77.785500 )
+ga_view_zoom_set( 104.813477 )
+ga_view_center_set( 10.599493, -86.847267 )
+ga_view_zoom_set( 93.167534 )
+ga_view_center_set( 11.977730, -95.085960 )
+ga_view_zoom_set( 82.815582 )
+ga_view_center_set( 13.556736, -102.409233 )
+ga_view_zoom_set( 73.613853 )
+ga_view_center_set( 15.492674, -108.773613 )
+ga_view_zoom_set( 65.434540 )
+ga_view_center_set( 17.880323, -114.237251 )
+ga_view_zoom_set( 58.164036 )
+ga_view_center_set( 20.327726, -118.902626 )
+ga_view_zoom_set( 51.701366 )
+ga_view_center_set( 22.588179, -122.998619 )
+ga_view_zoom_set( 45.956772 )
+ga_view_center_set( 26.259275, -129.552216 )
+ga_view_zoom_set( 36.765419 )
+ga_view_center_set( 27.999647, -132.525345 )
+ga_view_zoom_set( 32.680374 )
+ga_view_center_set( 30.201971, -135.286316 )
+ga_view_zoom_set( 29.049221 )
+ga_view_center_set( 33.897575, -139.686676 )
+ga_view_zoom_set( 23.239376 )
+ga_view_center_set( 35.547710, -141.634750 )
+ga_view_zoom_set( 20.657223 )
+ga_view_center_set( 37.014488, -143.366364 )
+ga_view_zoom_set( 18.361977 )
+ga_view_center_set( 38.318295, -144.905579 )
+ga_view_zoom_set( 16.321756 )
+ga_view_center_set( 39.477238, -146.273773 )
+ga_view_zoom_set( 14.508228 )
+ga_view_center_set( 40.507412, -147.489944 )
+ga_view_zoom_set( 12.896203 )
+ga_view_center_set( 41.452789, -148.558289 )
+ga_view_zoom_set( 11.463291 )
+ga_view_center_set( 43.107838, -150.240463 )
+ga_view_zoom_set( 9.170633 )
+ga_view_center_set( 43.843414, -150.988113 )
+ga_view_zoom_set( 8.151674 )
+ga_view_center_set( 44.732742, -150.716782 )
+ga_view_zoom_set( 9.170633 )
+ga_view_center_set( 46.733723, -150.106323 )
+ga_view_zoom_set( 11.463291 )
+ga_view_center_set( 47.632469, -149.792587 )
+ga_view_zoom_set( 12.896202 )
+ga_view_center_set( 48.643555, -149.439651 )
+ga_view_zoom_set( 14.508227 )
+ga_view_center_set( 50.918514, -148.645569 )
+ga_view_zoom_set( 18.135284 )
+ga_view_center_set( 52.340359, -148.149261 )
+ga_view_zoom_set( 20.402195 )
+ga_view_center_set( 51.638653, -147.115570 )
+ga_view_zoom_set( 22.952469 )
+ga_view_center_set( 50.849232, -145.952667 )
+ga_view_zoom_set( 25.821527 )
+ga_view_center_set( 49.961140, -144.644394 )
+ga_view_zoom_set( 29.049219 )
+ga_view_center_set( 48.962032, -143.172607 )
+ga_view_zoom_set( 32.680370 )
+ga_view_center_set( 47.838036, -141.516846 )
+ga_view_zoom_set( 36.765415 )
+ga_view_center_set( 46.573536, -139.654099 )
+ga_view_zoom_set( 41.361092 )
+ga_view_center_set( 45.150978, -137.558517 )
+ga_view_zoom_set( 46.531227 )
+ga_view_center_set( 43.550602, -135.200989 )
+ga_view_zoom_set( 52.347630 )
+ga_view_center_set( 41.750187, -132.548752 )
+ga_view_zoom_set( 58.891083 )
+ga_view_center_set( 50.558666, -132.026062 )
+ga_view_zoom_set( 52.347630 )
+ga_view_center_set( 58.354023, -131.527039 )
+ga_view_zoom_set( 46.531227 )
+ga_view_center_set( 65.206757, -131.052856 )
+ga_view_zoom_set( 41.361092 )
+ga_view_center_set( 70.930939, -130.508972 )
+ga_view_zoom_set( 36.765415 )
+ga_view_center_set( 76.019112, -130.025528 )
+ga_view_zoom_set( 32.680370 )
+ga_view_center_set( 80.541939, -129.595825 )
+ga_view_zoom_set( 29.049217 )
+ga_view_center_set( 84.438080, -129.194763 )
+ga_view_zoom_set( 25.821526 )
+ga_view_center_set( 87.901314, -128.838257 )
+ga_view_zoom_set( 22.952467 )
+ga_view_center_set( 90.979744, -128.521362 )
+ga_view_zoom_set( 20.402193 )
+ga_view_center_set( 93.716125, -128.239670 )
+ga_view_zoom_set( 18.135283 )
+ga_view_center_set( 96.148476, -127.989281 )
+ga_view_zoom_set( 16.120251 )
+ga_view_center_set( 98.310562, -127.766708 )
+ga_view_zoom_set( 14.329112 )
+ga_view_center_set( 100.232414, -127.568878 )
+ga_view_zoom_set( 12.736988 )
+ga_view_center_set( 101.886292, -127.393028 )
+ga_view_zoom_set( 11.321767 )
+ga_view_center_set( 103.222420, -127.314873 )
+ga_view_zoom_set( 10.063793 )
+ga_view_center_set( 104.380318, -127.268555 )
+ga_view_zoom_set( 8.945594 )
+ga_view_center_set( 104.095810, -127.043579 )
+ga_view_zoom_set( 10.063793 )
+ga_view_center_set( 103.775726, -126.790512 )
+ga_view_zoom_set( 11.321768 )
+ga_view_center_set( 103.415642, -126.505783 )
+ga_view_zoom_set( 12.736989 )
+ga_view_center_set( 103.010551, -126.185471 )
+ga_view_zoom_set( 14.329113 )
+ga_view_center_set( 102.554817, -125.825119 )
+ga_view_zoom_set( 16.120253 )
+ga_view_center_set( 102.077888, -125.372040 )
+ga_view_zoom_set( 18.135284 )
+ga_view_center_set( 101.541328, -124.862320 )
+ga_view_zoom_set( 20.402195 )
+ga_view_center_set( 100.937706, -124.288895 )
+ga_view_zoom_set( 22.952469 )
+ga_view_center_set( 100.258629, -123.643768 )
+ga_view_zoom_set( 25.821527 )
+ga_view_center_set( 101.438507, -124.526566 )
+ga_view_zoom_set( 22.952469 )
+ga_view_center_set( 102.487289, -125.311279 )
+ga_view_zoom_set( 20.402195 )
+ga_view_center_set( 103.419533, -126.008774 )
+ga_view_zoom_set( 18.135284 )
+ga_view_center_set( 104.260109, -126.628784 )
+ga_view_zoom_set( 16.120253 )
+ga_view_center_set( 105.012596, -127.174606 )
+ga_view_zoom_set( 14.329113 )
+ga_view_center_set( 105.902863, -127.386581 )
+ga_view_zoom_set( 12.736989 )
+ga_view_center_set( 106.694206, -127.575012 )
+ga_view_zoom_set( 11.321768 )
+ga_view_center_set( 107.397629, -127.742477 )
+ga_view_zoom_set( 10.063793 )
+ga_view_center_set( 107.893875, -127.957520 )
+ga_view_zoom_set( 8.945594 )
+ga_view_center_set( 108.334976, -128.148651 )
+ga_view_zoom_set( 7.951639 )
+ga_view_center_set( 108.727066, -128.318558 )
+ga_view_zoom_set( 7.068124 )
+ga_view_center_set( 109.075592, -128.469604 )
+ga_view_zoom_set( 6.282777 )
+fem_orientation_display_mgr.initialize(  )
+uil_primary_file.db_save(  )
+$# UNDO: FEM modify elem shell orient guide elem system
+fem_orientation_display_mgr.erase( FALSE, TRUE )
+fem_orientation_display_mgr.initialize(  )
+ga_view_center_set( 107.114746, -155.637390 )
+ga_view_zoom_set( 9.860810 )
+ga_view_center_set( 108.009407, -155.027969 )
+ga_view_zoom_set( 8.765164 )
+ga_view_center_set( 108.804665, -154.486282 )
+ga_view_zoom_set( 7.791257 )
+ga_view_center_set( 109.511551, -154.004761 )
+ga_view_zoom_set( 6.925562 )
+ga_view_center_set( 110.139893, -153.576767 )
+ga_view_zoom_set( 6.156055 )
+ga_view_center_set( 110.698425, -153.196304 )
+ga_view_zoom_set( 5.472049 )
+ga_view_center_set( 111.592072, -152.587585 )
+ga_view_zoom_set( 4.377639 )
+ga_view_center_set( 111.982056, -152.317032 )
+ga_view_zoom_set( 3.891234 )
+ga_view_center_set( 112.327415, -152.076553 )
+ga_view_zoom_set( 3.458875 )
+ga_view_center_set( 112.633255, -151.862793 )
+ga_view_zoom_set( 3.074555 )
+ga_view_center_set( 112.901100, -151.673782 )
+ga_view_zoom_set( 2.732938 )
+ga_view_center_set( 113.122086, -151.513870 )
+ga_view_zoom_set( 2.429278 )
+ga_view_center_set( 113.315331, -151.372513 )
+ga_view_zoom_set( 2.159359 )
+ga_view_center_set( 113.481430, -151.248291 )
+ga_view_zoom_set( 1.919430 )
+ga_view_center_set( 113.624016, -151.139771 )
+ga_view_zoom_set( 1.706160 )
+ga_view_center_set( 113.496552, -151.221161 )
+ga_view_zoom_set( 1.919430 )
+ga_view_center_set( 113.354584, -151.311310 )
+ga_view_zoom_set( 2.159359 )
+ga_view_center_set( 113.194862, -151.412735 )
+ga_view_zoom_set( 2.429278 )
+ga_view_center_set( 113.015190, -151.526825 )
+ga_view_zoom_set( 2.732938 )
+ga_view_center_set( 112.823143, -151.629913 )
+ga_view_zoom_set( 3.074556 )
+ga_view_center_set( 112.607109, -151.745880 )
+ga_view_zoom_set( 3.458875 )
+ga_view_center_set( 112.364059, -151.876358 )
+ga_view_zoom_set( 3.891235 )
+ga_view_center_set( 111.785538, -151.948318 )
+ga_view_zoom_set( 4.864043 )
+ga_view_center_set( 111.438354, -151.951920 )
+ga_view_zoom_set( 5.472049 )
+ga_view_center_set( 111.047775, -151.955963 )
+ga_view_zoom_set( 6.156055 )
+ga_view_center_set( 110.608376, -151.960510 )
+ga_view_zoom_set( 6.925562 )
+ga_view_center_set( 110.114059, -151.965637 )
+ga_view_zoom_set( 7.791257 )
+ga_view_center_set( 109.557945, -151.971405 )
+ga_view_zoom_set( 8.765164 )
+ga_view_center_set( 110.114052, -151.965637 )
+ga_view_zoom_set( 7.791257 )
+ga_view_center_set( 110.608353, -151.960510 )
+ga_view_zoom_set( 6.925562 )
+ga_view_center_set( 111.047737, -151.955963 )
+ga_view_zoom_set( 6.156055 )
+fem_orientation_display_mgr.erase( FALSE, TRUE )
+ga_view_center_set( 110.936157, -151.766983 )
+ga_view_aa_set( -99.680336, 13.422833, -70.161674 )
+ga_view_center_set( 110.810631, -151.554413 )
+ga_view_zoom_set( 7.791257 )
+ga_view_center_set( 110.669426, -151.315262 )
+ga_view_zoom_set( 8.765164 )
+ga_view_center_set( 110.510574, -151.046204 )
+ga_view_zoom_set( 9.860810 )
+ga_view_center_set( 110.331871, -150.743530 )
+ga_view_zoom_set( 11.093411 )
+ga_view_center_set( 110.130829, -150.403015 )
+ga_view_zoom_set( 12.480088 )
+ga_view_center_set( 109.904655, -150.019928 )
+ga_view_zoom_set( 14.040099 )
+ga_view_center_set( 109.650215, -149.588974 )
+ga_view_zoom_set( 15.795112 )
+ga_view_center_set( 109.363968, -149.104141 )
+ga_view_zoom_set( 17.769501 )
+ga_view_center_set( 109.041939, -148.558685 )
+ga_view_zoom_set( 19.990688 )
+ga_view_center_set( 108.679680, -147.945068 )
+ga_view_zoom_set( 22.489525 )
+ga_view_center_set( 108.272125, -147.254745 )
+ga_view_zoom_set( 25.300716 )
+ga_view_center_set( 107.813606, -146.478149 )
+ga_view_zoom_set( 28.463306 )
+ga_view_center_set( 107.297791, -145.604446 )
+ga_view_zoom_set( 32.021221 )
+ga_view_center_set( 106.717484, -144.621552 )
+ga_view_zoom_set( 36.023872 )
+ga_view_center_set( 106.064659, -143.515778 )
+ga_view_zoom_set( 40.526855 )
+ga_view_center_set( 105.330223, -142.271790 )
+ga_view_zoom_set( 45.592712 )
+ga_view_center_set( 104.503998, -140.872299 )
+ga_view_zoom_set( 51.291801 )
+ga_view_center_set( 103.574493, -139.297882 )
+ga_view_zoom_set( 57.703278 )
+ga_view_center_set( 102.528801, -137.526672 )
+ga_view_zoom_set( 64.916183 )
+ga_view_center_set( 101.352409, -135.534058 )
+ga_view_zoom_set( 73.030708 )
+ga_view_center_set( 100.028984, -133.292343 )
+ga_view_zoom_set( 82.159546 )
+ga_view_center_set( 88.496391, -134.912842 )
+ga_view_zoom_set( 73.030708 )
+ga_view_center_set( 70.044243, -137.505646 )
+ga_view_zoom_set( 58.424568 )
+ga_view_center_set( 61.843300, -138.657990 )
+ga_view_zoom_set( 51.932949 )
+ga_view_center_set( 54.570621, -139.682312 )
+ga_view_zoom_set( 46.162621 )
+ga_view_center_set( 48.106033, -140.592804 )
+ga_view_zoom_set( 41.033440 )
+ga_view_center_set( 42.359722, -141.402161 )
+ga_view_zoom_set( 36.474167 )
+ga_view_center_set( 37.263885, -142.121582 )
+ga_view_zoom_set( 32.421482 )
+ga_view_center_set( 32.787537, -142.729095 )
+ga_view_zoom_set( 28.819096 )
+ga_view_center_set( 29.016987, -143.136459 )
+ga_view_zoom_set( 25.616974 )
+ga_view_center_set( 25.884329, -143.422775 )
+ga_view_zoom_set( 22.770643 )
+ga_view_center_set( 24.267473, -144.148865 )
+ga_view_zoom_set( 20.240572 )
+ga_view_center_set( 22.015852, -145.370468 )
+ga_view_zoom_set( 16.192457 )
+ga_view_center_set( 21.132231, -145.918732 )
+ga_view_zoom_set( 14.393295 )
+ga_view_center_set( 20.413029, -146.406082 )
+ga_view_zoom_set( 12.794041 )
+ga_view_center_set( 19.845242, -146.839279 )
+ga_view_zoom_set( 11.372480 )
+ga_view_center_set( 19.422781, -147.231812 )
+ga_view_zoom_set( 10.108871 )
+ga_view_center_set( 19.230032, -147.587387 )
+ga_view_zoom_set( 8.985663 )
+ga_view_center_set( 19.336361, -147.912292 )
+ga_view_zoom_set( 7.987257 )
+ga_view_center_set( 19.430878, -147.599197 )
+ga_view_zoom_set( 8.985663 )
+ga_view_center_set( 19.537207, -147.246933 )
+ga_view_zoom_set( 10.108871 )
+ga_view_center_set( 19.656828, -146.850662 )
+ga_view_zoom_set( 11.372480 )
+ga_view_center_set( 19.791397, -146.404846 )
+ga_view_zoom_set( 12.794041 )
+ga_view_center_set( 19.938063, -145.737701 )
+ga_view_zoom_set( 14.393295 )
+ga_view_center_set( 20.103064, -144.987167 )
+ga_view_zoom_set( 16.192457 )
+ga_view_center_set( 20.288692, -144.142822 )
+ga_view_zoom_set( 18.216515 )
+ga_view_center_set( 20.497520, -143.192932 )
+ga_view_zoom_set( 20.493580 )
+ga_view_center_set( 20.732464, -142.124283 )
+ga_view_zoom_set( 23.055277 )
+uil_primary_file.db_save(  )
+ga_view_center_set( 21.823822, -143.162613 )
+ga_view_zoom_set( 20.493580 )
+ga_view_center_set( 22.820862, -144.085571 )
+ga_view_zoom_set( 18.216515 )
+ga_view_center_set( 24.470037, -145.551514 )
+ga_view_zoom_set( 14.573212 )
+ga_view_center_set( 25.202993, -146.203049 )
+ga_view_zoom_set( 12.953966 )
+ga_view_center_set( 25.854509, -146.782196 )
+ga_view_zoom_set( 11.514637 )
+ga_view_center_set( 26.433632, -147.296982 )
+ga_view_zoom_set( 10.235233 )
+fem_orientation_display_mgr.erase( FALSE, TRUE )
+$# UNDO: FEM modify elem shell orient guide elem system
+fem_orientation_display_mgr.erase( FALSE, TRUE )
+fem_orientation_display_mgr.initialize(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -51.760139, -0.222194, -117.012604 )
+ga_view_center_set( 26.691032, -147.278061 )
+ga_view_zoom_set( 11.514637 )
+ga_view_center_set( 26.980608, -147.256790 )
+ga_view_zoom_set( 12.953966 )
+ga_view_center_set( 27.306377, -147.232849 )
+ga_view_zoom_set( 14.573212 )
+ga_view_center_set( 27.672865, -147.205902 )
+ga_view_zoom_set( 16.394863 )
+ga_view_center_set( 28.085171, -147.175583 )
+ga_view_zoom_set( 18.444221 )
+ga_view_center_set( 28.549011, -147.141510 )
+ga_view_zoom_set( 20.749748 )
+ga_view_center_set( 29.070827, -147.103165 )
+ga_view_zoom_set( 23.343468 )
+ga_view_center_set( 29.657867, -147.060013 )
+ga_view_zoom_set( 26.261402 )
+ga_view_center_set( 30.318291, -147.011444 )
+ga_view_zoom_set( 29.544077 )
+ga_view_center_set( 31.072199, -146.924042 )
+ga_view_zoom_set( 33.237087 )
+ga_view_center_set( 31.944918, -146.678207 )
+ga_view_zoom_set( 37.391724 )
+ga_view_center_set( 32.968216, -146.304855 )
+ga_view_zoom_set( 42.065689 )
+ga_view_center_set( 34.150536, -145.807053 )
+ga_view_zoom_set( 47.323898 )
+ga_view_center_set( 35.480648, -145.247009 )
+ga_view_zoom_set( 53.239388 )
+ga_view_center_set( 36.977036, -144.616959 )
+ga_view_zoom_set( 59.894310 )
+ga_view_center_set( 38.660469, -143.908157 )
+ga_view_zoom_set( 67.381096 )
+ga_view_center_set( 40.554314, -143.110764 )
+ga_view_zoom_set( 75.803734 )
+ga_view_center_set( 42.684895, -142.213684 )
+ga_view_zoom_set( 85.279198 )
+ga_view_center_set( 45.113338, -141.172943 )
+ga_view_zoom_set( 95.939095 )
+ga_view_center_set( 47.880814, -139.931137 )
+ga_view_zoom_set( 107.931480 )
+ga_view_center_set( 51.113991, -138.294586 )
+ga_view_zoom_set( 121.422913 )
+ga_view_center_set( 54.751289, -136.408600 )
+ga_view_zoom_set( 136.600769 )
+ga_view_center_set( 58.843216, -134.286865 )
+ga_view_zoom_set( 153.675873 )
+ga_view_center_set( 63.446724, -131.899887 )
+ga_view_zoom_set( 172.885361 )
+ga_view_aa_set( -132.834518, 0.508355, -108.174553 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 7, ["H1", "H2",  @
+"R", "RF", "SM_001", "V", "default_group"] )
+uil_primary_file.db_save(  )
+ga_view_center_set( -2.234819, -19.516235 )
+ga_view_zoom_set( 229.105469 )
+ga_view_center_set( -3.967026, -33.599945 )
+ga_view_zoom_set( 203.649307 )
+ga_view_center_set( -5.506762, -46.118820 )
+ga_view_zoom_set( 181.021606 )
+ga_view_center_set( -6.875416, -57.246704 )
+ga_view_zoom_set( 160.908096 )
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",  @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",  @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",  @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",  @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",  @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",  @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "OFF" )
+mscnastran_subcase.create_char_param( "CONTACT-TABLE-IS-DEFAULT", "NO" )
+mscnastran_subcase.create_char_param( "CONTACT DETECTION",  @
+"Default(by body #)" )
+mscnastran_subcase.create_int_param( "CONTACT-SETS-COUNT", 4 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-PROPS-COUNT", 20 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-SETTINGS-COUNT", 6 )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS", "1 2 3 4 " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SET-NAMES",  @
+"H1C H2C RFC VC " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS", "" )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA", "" )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT-GLUE",  @
+"4 4 4 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS-GLUE", "1 2 3 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS-GLUE",  @
+"1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 " )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA-GLUE",  @
+"10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0." // @
+" 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. " // @
+"0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. " // @
+"1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. " // @
+"0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0" // @
+" 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0." // @
+" 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. " // @
+"0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 " // @
+"0. 1.0e20 0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 " // @
+"0. 0. 0. 0. 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0" // @
+". 0 0 10 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 " )
+INTEGER nastran_analyze_contac_field_id
+nastran_analyze_contact_table.create_general_field(  @
+"CONTACT_TABLE_DATA2_GLUE_FLD_26", 96, ["TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE"], nastran_analyze_contac_field_id )
+mscnastran_subcase.create_int_param( "CONTACT-TABLE-DATA2-GLUE-FLD",  @
+nastran_analyze_contac_field_id )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE", "N N N N " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE-VALUES",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+$#  Beginning analysis of  Fixed_Config_08
+jobfile.open( "Fixed_Config_08", "ANALYZE NO JOBFILE" )
+msc_delete_old_files( "Fixed_Config_08", ".bdf", ".h5" )
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["28-Nov-21" @
+, "18:46:50"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Opti" // @
+"mizacion\Fixed_Config_08\Fixed_Config_08.db" )
+jobfile.writec( "JOBNAME", "Fixed_Config_08" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 28-Nov-21 at" // @
+" 17:19:30" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\Usuario" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2021." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-DERIVATION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\Usuario" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "ON" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "Fixed_Config_08", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Fixed_Config_08" )
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 28-Nov-21 
+$# 18:46:50.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\Fixed
+$# _Config_08.db.
+$# Messages output from the Patran 2021.1  (Student Edition) input deck 
+$# translator on November  28, 2021 at 18:46:50.
+$# 
+$# The NASTRAN input file, Fixed_Config_08.bdf, has been successfully opened.
+$# 
+$# Translating 222 elements from the element property region Shell_Ten10.
+$# 
+$# Translating 1504 elements from the element property region SHell_Com10.
+$# 
+$# 2 property regions translated.
+$# 
+$# Translating 2 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 3464 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : MPC_3.
+$# 
+$# Translating nodal constraints in load set : Point_12456.
+$# Writing interface element lbcs.
+$# 
+$# Translating nodal forces in load set : L.
+$# 
+$# Translating nodal forces in load set : L.
+$# Total execution time in real seconds: 1
+$# Total execution time in CPU seconds: 0.171997
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2021.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 28-Nov-21 18:46:51.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\MscN
+$# astranExecute.exe -j Fixed_Config_08 -m bdf -x 2021 -c 
+$# %%prog=edu%auth=edu%arch=
+$# 64% -v
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\O" // @
+"ptimizacion\Fixed_Config_08\Fixed_Config_08.db" )
+msc_dra_add_param( "JOBNAME", "Fixed_Config_08" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Usuario\Desktop\MuE_Patran\Co" // @
+"no\Optimizacion\Fixed_Config_08\fixed_config_08.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Fixed_Config_08",  @
+"Attach Results File No Job", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Op" // @
+"timizacion\Fixed_Config_08\fixed_config_08.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\fixe
+$# d_config_08.xdb"
+$# XDB file created by "MSC.NASTRAN V2021" on 11/28/2021 using "VENDOR:INTEL  
+$#               MODEL:XEON/3320 (DESKTOP-E OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+fem_orientation_display_mgr.initialize(  )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\O" // @
+"ptimizacion\Fixed_Config_08\Fixed_Config_08.db" )
+msc_dra_add_param( "JOBNAME", "Fixed_Config_08" )
+msc_dra_add_param( "RESULTS FILE", "./Fixed_Config_08.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Fixed_Config_08",  @
+"Attach Results File No Job", "./Fixed_Config_08.xdb", TRUE )
+$# Attaching Direct Results Access file: "./Fixed_Config_08.xdb"
+$# XDB file created by "MSC.NASTRAN V2021" on 11/28/2021 using "VENDOR:INTEL  
+$#               MODEL:XEON/3320 (DESKTOP-E OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\O" // @
+"ptimizacion\Fixed_Config_08\Fixed_Config_08.db" )
+msc_dra_add_param( "JOBNAME", "Fixed_Config_08" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Usuario\Desktop\MuE_Patran\Co" // @
+"no\Optimizacion\Fixed_Config_08\fixed_config_08.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Fixed_Config_08",  @
+"Attach Results File No Job", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Op" // @
+"timizacion\Fixed_Config_08\fixed_config_08.xdb", TRUE )
+$# Error reported from application Results
+$#     Direct Results Access file is already attached. To re-attach with 
+$# different Translation Parameters, please detach the file using the 
+$# Analysis form option Delete "Attachment" then re-attach. File: 
+$# "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\fixe
+$# d_config_08.xdb"
+$? NO 4012005 
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+$# Question from application APP INTERFACES
+$#     Subcase "Default" already exists.  Do you wish to delete the existing 
+$# subcase and create a new one?
+$? YES 6022070 
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",  @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",  @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",  @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "CONTACT RESULTS", "1" )
+mscnastran_subcase.create_char_param( "CONTACT RESULTS 1",  @
+"BOUTPUT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",  @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",  @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",  @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "OFF" )
+mscnastran_subcase.create_char_param( "CONTACT-TABLE-IS-DEFAULT", "YES" )
+mscnastran_subcase.create_char_param( "CONTACT DETECTION",  @
+"Default(by body #)" )
+mscnastran_subcase.create_int_param( "CONTACT-SETS-COUNT", 4 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-PROPS-COUNT", 20 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-SETTINGS-COUNT", 6 )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT",  @
+"4 4 4 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS", "1 2 3 4 " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SET-NAMES",  @
+"H1C H2C RFC VC " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS",  @
+"1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 " )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA",  @
+"0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0." // @
+" 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. " // @
+"0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. " // @
+"1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. " // @
+"0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0" // @
+" 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0." // @
+" 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. " // @
+"0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 " // @
+"0. 1.0e20 0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 " // @
+"0. 0. 0. 0. 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0" // @
+". 0 0 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 " )
+INTEGER nastran_analyze_contac_field_id
+nastran_analyze_contact_table.create_general_field(  @
+"CONTACT_TABLE_DATA2_FLD_26", 96, ["FALSE", "FALSE", "FALSE", "FALSE", "DFLT", @
+ "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE", "FALSE",  @
+"FALSE", "FALSE", "FALSE", "DFLT", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE" @
+, "DFLT", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE",  @
+"FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE", "FALSE", "FALSE", "FALSE" @
+, "FALSE", "DFLT", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "DFLT",  @
+"FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE", "FALSE", "FALSE" @
+, "FALSE", "FALSE", "DFLT", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE",  @
+"DFLT", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE", "FALSE", @
+ "FALSE", "FALSE", "FALSE", "DFLT", "FALSE", "FALSE", "FALSE", "FALSE",  @
+"FALSE", "DFLT", "FALSE", "FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE", @
+ "FALSE", "FALSE", "FALSE", "FALSE", "DFLT", "FALSE"],  @
+nastran_analyze_contac_field_id )
+mscnastran_subcase.create_int_param( "CONTACT-TABLE-DATA2-FLD",  @
+nastran_analyze_contac_field_id )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT-GLUE",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS-GLUE", "1 2 3 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS-GLUE", "" )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA-GLUE", "" )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE", "N N N N " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE-VALUES",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+$#  Beginning analysis of  Fixed_Config_08
+jobfile.open( "Fixed_Config_08", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (Fixed_Config_08) is already defined in the database. Do 
+$# you wish to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "Fixed_Config_08", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "Fixed_Config_08".  These files are Fixed_Config_08.xdb, 
+$# Fixed_Config_08.f04, Fixed_Config_08.f06, Fixed_Config_08.log, 
+$# Fixed_Config_08.bdf.  Will you permit deletion of these files?
+$? YES 6022037 
+$# Warning reported from application APP INTERFACES
+$#     The attachment to the file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\fixed
+$# _config_08.xdb has been deleted because that file is being deleted.
+$# Warning reported from application APP INTERFACES
+$#     The attachment to the file ./Fixed_Config_08.xdb has been deleted 
+$# because that file is being deleted.
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["28-Nov-21" @
+, "18:48:26"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Opti" // @
+"mizacion\Fixed_Config_08\Fixed_Config_08.db" )
+jobfile.writec( "JOBNAME", "Fixed_Config_08" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 28-Nov-21 at" // @
+" 17:19:30" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Users\Usuario" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2021." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-DERIVATION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\Usuario" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "ON" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "Fixed_Config_08", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Fixed_Config_08" )
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 28-Nov-21 
+$# 18:48:27.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\Fixed
+$# _Config_08.db.
+$# Messages output from the Patran 2021.1  (Student Edition) input deck 
+$# translator on November  28, 2021 at 18:48:27.
+$# 
+$# The NASTRAN input file, Fixed_Config_08.bdf, has been successfully opened.
+$# 
+$# Translating 222 elements from the element property region Shell_Ten10.
+$# 
+$# Translating 1504 elements from the element property region SHell_Com10.
+$# 
+$# 2 property regions translated.
+$# 
+$# Translating 2 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 3464 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : MPC_3.
+$# 
+$# Translating nodal constraints in load set : Point_12456.
+$# Writing interface element lbcs.
+$# 
+$# Translating nodal forces in load set : L.
+$# 
+$# Translating nodal forces in load set : L.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.187012
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2021.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 28-Nov-21 18:48:27.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\MscN
+$# astranExecute.exe -j Fixed_Config_08 -m bdf -x 2021 -c 
+$# %%prog=edu%auth=edu%arch=
+$# 64% -v
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\O" // @
+"ptimizacion\Fixed_Config_08\Fixed_Config_08.db" )
+msc_dra_add_param( "JOBNAME", "Fixed_Config_08" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Usuario\Desktop\MuE_Patran\Co" // @
+"no\Optimizacion\Fixed_Config_08\fixed_config_08.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Fixed_Config_08",  @
+"Attach Results File No Job", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Op" // @
+"timizacion\Fixed_Config_08\fixed_config_08.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\fixe
+$# d_config_08.xdb"
+$# XDB file created by "MSC.NASTRAN V2021" on 11/28/2021 using "VENDOR:INTEL  
+$#               MODEL:XEON/3310 (DESKTOP-E OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:DEFAULT
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.032
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "Default", "A1:Static Subcase",  @
+"Displacements", "Translational", "(NON-LAYERED)", "MAG", "Default",  @
+"DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "Default", "A1:Static Subcase",  @
+"Displacements", "Translational", "(NON-LAYERED)", "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -142.719406, -3.730670, -103.928406 )
+ga_view_center_set( -9.013092, -4.773529 )
+ga_view_zoom_set( 229.105469 )
+ga_view_center_set( -22.976303, -6.535873 )
+ga_view_zoom_set( 183.284378 )
+ga_view_center_set( -29.182220, -7.319153 )
+ga_view_zoom_set( 162.919449 )
+ga_view_center_set( -34.698547, -8.015396 )
+ga_view_zoom_set( 144.817291 )
+ga_view_center_set( -39.601990, -8.634270 )
+ga_view_zoom_set( 128.726486 )
+ga_view_center_set( -43.960571, -9.184372 )
+ga_view_zoom_set( 114.423546 )
+ga_view_center_set( -47.834885, -9.673370 )
+ga_view_zoom_set( 101.709816 )
+ga_view_center_set( -51.278717, -10.108032 )
+ga_view_zoom_set( 90.408722 )
+ga_view_center_set( -54.072441, -10.732162 )
+ga_view_zoom_set( 80.363312 )
+ga_view_center_set( -52.276020, -5.976921 )
+ga_view_zoom_set( 71.434052 )
+ga_view_center_set( -50.679199, -1.750053 )
+ga_view_zoom_set( 63.496933 )
+ga_view_center_set( -49.259834, 2.007164 )
+ga_view_zoom_set( 56.441719 )
+ga_view_aa_set( -21.500309, -13.302201, 46.984501 )
+ga_view_aa_set( -29.971140, -6.990207, 50.043587 )
+ga_view_aa_set( -42.756306, -3.755255, 52.391865 )
+ga_view_center_set( -50.136501, 2.654243 )
+ga_view_zoom_set( 63.496933 )
+ga_view_center_set( -51.122784, 3.382202 )
+ga_view_zoom_set( 71.434052 )
+ga_view_center_set( -52.232327, 4.201157 )
+ga_view_zoom_set( 80.363312 )
+ga_view_center_set( -53.480572, 5.122482 )
+ga_view_zoom_set( 90.408722 )
+ga_view_center_set( -56.222275, 7.228889 )
+ga_view_zoom_set( 101.709808 )
+ga_view_center_set( -59.306660, 9.636230 )
+ga_view_zoom_set( 114.423538 )
+ga_view_center_set( -62.776634, 12.344475 )
+ga_view_zoom_set( 128.726486 )
+ga_view_center_set( -66.775528, 16.533783 )
+ga_view_zoom_set( 144.817291 )
+ga_view_aa_set( -20.524323, 0.224827, 55.219177 )
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+$# Question from application APP INTERFACES
+$#     Subcase "Default" already exists.  Do you wish to delete the existing 
+$# subcase and create a new one?
+$? YES 6022070 
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",  @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",  @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",  @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "CONTACT RESULTS", "1" )
+mscnastran_subcase.create_char_param( "CONTACT RESULTS 1",  @
+"BOUTPUT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",  @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",  @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",  @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "OFF" )
+mscnastran_subcase.create_char_param( "CONTACT-TABLE-IS-DEFAULT", "NO" )
+mscnastran_subcase.create_char_param( "CONTACT DETECTION",  @
+"Default(by body #)" )
+mscnastran_subcase.create_int_param( "CONTACT-SETS-COUNT", 4 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-PROPS-COUNT", 20 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-SETTINGS-COUNT", 6 )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS", "1 2 3 4 " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SET-NAMES",  @
+"H1C H2C RFC VC " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS", "" )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA", "" )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT-GLUE",  @
+"4 4 4 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS-GLUE", "1 2 3 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS-GLUE",  @
+"1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 " )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA-GLUE",  @
+"10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0." // @
+" 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0." // @
+" 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0." // @
+" 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." // @
+"9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e" // @
+"20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. " // @
+"0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0" // @
+" 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0" // @
+". 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0" // @
+". 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0" // @
+".9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0" // @
+"e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0." // @
+" 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 " )
+INTEGER nastran_analyze_contac_field_id
+nastran_analyze_contact_table.create_general_field(  @
+"CONTACT_TABLE_DATA2_GLUE_FLD_26", 96, ["TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE"], nastran_analyze_contac_field_id )
+mscnastran_subcase.create_int_param( "CONTACT-TABLE-DATA2-GLUE-FLD",  @
+nastran_analyze_contac_field_id )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE", "N N N N " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE-VALUES",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+$# Question from application APP INTERFACES
+$#     Subcase "Default" already exists.  Do you wish to delete the existing 
+$# subcase and create a new one?
+$? YES 6022070 
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",  @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",  @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",  @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "CONTACT RESULTS", "1" )
+mscnastran_subcase.create_char_param( "CONTACT RESULTS 1",  @
+"BOUTPUT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",  @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",  @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",  @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "OFF" )
+mscnastran_subcase.create_char_param( "CONTACT-TABLE-IS-DEFAULT", "NO" )
+mscnastran_subcase.create_char_param( "CONTACT DETECTION",  @
+"Default(by body #)" )
+mscnastran_subcase.create_int_param( "CONTACT-SETS-COUNT", 4 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-PROPS-COUNT", 20 )
+mscnastran_subcase.create_int_param( "CONTACT-PAIR-NUM-SETTINGS-COUNT", 6 )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS", "1 2 3 4 " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SET-NAMES",  @
+"H1C H2C RFC VC " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS", "" )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA", "" )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-SETS-COUNT-GLUE",  @
+"4 4 4 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-LBC-SETS-GLUE", "1 2 3 4 " )
+mscnastran_subcase.create_int_list_param( "CONTACT-TABLE-LBC-SETS-GLUE",  @
+"1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 " )
+mscnastran_subcase.create_real_list_param( "CONTACT-TABLE-DATA-GLUE",  @
+"10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0." // @
+" 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0." // @
+" 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0." // @
+" 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0." // @
+"9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e" // @
+"20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. " // @
+"0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0" // @
+" 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0" // @
+". 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0" // @
+". 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0" // @
+". 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0" // @
+".9 0. 1.0e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0" // @
+"e20 0. 0. 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0." // @
+" 0. 0. 0 0 10. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.9 0. 1.0e20 0. 0. 0. 0. 0 0 " )
+nastran_analyze_contact_table.create_general_field(  @
+"CONTACT_TABLE_DATA2_GLUE_FLD_26", 96, ["TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE",  @
+"FALSE", "FALSE", "FALSE", "AUTO", "TRUE", "TRUE", "FALSE", "FALSE", "FALSE",  @
+"AUTO", "TRUE"], nastran_analyze_contac_field_id )
+mscnastran_subcase.create_int_param( "CONTACT-TABLE-DATA2-GLUE-FLD",  @
+nastran_analyze_contac_field_id )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE", "N N N N " )
+mscnastran_subcase.create_char_param( "CONTACT-LBC-SETS-RELEASE-VALUES",  @
+"0 0 0 0 " )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+$#  Beginning analysis of  Fixed_Config_08
+jobfile.open( "Fixed_Config_08", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (Fixed_Config_08) is already defined in the database. Do 
+$# you wish to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "Fixed_Config_08", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "Fixed_Config_08".  These files are Fixed_Config_08.xdb, 
+$# Fixed_Config_08.f04, Fixed_Config_08.f06, Fixed_Config_08.log, 
+$# Fixed_Config_08.sts, Fixed_Config_08.bdf.  Will you permit deletion of 
+$# these files?
+$? YES 6022037 
+$# Warning reported from application APP INTERFACES
+$#     The attachment to the file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\fixed
+$# _config_08.xdb has been deleted because that file is being deleted.
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["28-Nov-21" @
+, "18:53:07"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Opti" // @
+"mizacion\Fixed_Config_08\Fixed_Config_08.db" )
+jobfile.writec( "JOBNAME", "Fixed_Config_08" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 28-Nov-21 at" // @
+" 17:19:30" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Users\Usuario" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscexplore_files\" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "XDB+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2021." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-DERIVATION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\Usuario" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "ON" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "Fixed_Config_08", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Fixed_Config_08" )
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 28-Nov-21 
+$# 18:53:07.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\Fixed
+$# _Config_08.db.
+$# Messages output from the Patran 2021.1  (Student Edition) input deck 
+$# translator on November  28, 2021 at 18:53:07.
+$# 
+$# The NASTRAN input file, Fixed_Config_08.bdf, has been successfully opened.
+$# 
+$# Translating 222 elements from the element property region Shell_Ten10.
+$# 
+$# Translating 1504 elements from the element property region SHell_Com10.
+$# 
+$# 2 property regions translated.
+$# 
+$# Translating 2 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 3464 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : MPC_3.
+$# 
+$# Translating nodal constraints in load set : Point_12456.
+$# Writing interface element lbcs.
+$# 
+$# Translating nodal forces in load set : L.
+$# 
+$# Translating nodal forces in load set : L.
+$# Total execution time in real seconds: 1
+$# Total execution time in CPU seconds: 0.203003
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2021.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 28-Nov-21 18:53:08.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\MscN
+$# astranExecute.exe -j Fixed_Config_08 -m bdf -x 2021 -c 
+$# %%prog=edu%auth=edu%arch=
+$# 64% -v
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\O" // @
+"ptimizacion\Fixed_Config_08\Fixed_Config_08.db" )
+msc_dra_add_param( "JOBNAME", "Fixed_Config_08" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Usuario\Desktop\MuE_Patran\Co" // @
+"no\Optimizacion\Fixed_Config_08\fixed_config_08.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Fixed_Config_08",  @
+"Attach Results File No Job", "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Op" // @
+"timizacion\Fixed_Config_08\fixed_config_08.xdb", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\Fixed_Config_08\fixe
+$# d_config_08.xdb"
+$# XDB file created by "MSC.NASTRAN V2021" on 11/28/2021 using "VENDOR:INTEL  
+$#               MODEL:XEON/3317 (DESKTOP-E OPSYS:WINDOWS 10 ENTERPRI"
+$# *** Begin: Attach Result File ***
+ga_view_aa_set( 13.716502, 25.765020, 133.786804 )
+ga_view_aa_set( 8.628221, 21.837112, 122.113159 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+ga_view_aa_set( -70.520218, -7.065397, 106.957924 )
+ga_view_center_set( -93.125359, 29.922966 )
+ga_view_zoom_set( 181.021606 )
+ga_view_center_set( -109.594086, 38.291206 )
+ga_view_zoom_set( 203.649307 )
+ga_view_center_set( -128.121368, 47.705482 )
+ga_view_zoom_set( 229.105469 )
+ga_view_center_set( -148.964508, 58.296532 )
+ga_view_zoom_set( 257.743652 )
+ga_view_center_set( -172.413055, 70.211464 )
+ga_view_zoom_set( 289.961609 )
+ga_view_center_set( -209.087219, 101.952858 )
+ga_view_zoom_set( 326.206818 )
+ga_view_center_set( -293.534302, 173.612213 )
+ga_view_zoom_set( 407.758514 )
+ga_view_center_set( -346.313629, 218.399323 )
+ga_view_zoom_set( 458.728333 )
+ga_view_center_set( -321.035919, 216.193832 )
+ga_view_zoom_set( 516.069397 )
+ga_view_center_set( -293.170990, 213.521851 )
+ga_view_zoom_set( 580.578064 )
+ga_view_center_set( -229.273163, 131.416458 )
+ga_view_zoom_set( 464.462463 )
+ga_view_center_set( -200.568817, 94.925186 )
+ga_view_zoom_set( 412.855530 )
+ga_view_center_set( -174.782440, 62.624176 )
+ga_view_zoom_set( 366.982697 )
+ga_view_center_set( -151.860992, 33.912216 )
+ga_view_zoom_set( 326.206848 )
+ga_view_center_set( -131.486420, 8.390472 )
+ga_view_zoom_set( 289.961639 )
+ga_view_center_set( -113.375710, -14.295502 )
+ga_view_zoom_set( 257.743683 )
+ga_view_center_set( -97.277451, -34.460831 )
+ga_view_zoom_set( 229.105499 )
+ga_view_center_set( -82.967758, -52.385590 )
+ga_view_zoom_set( 203.649338 )
+ga_view_center_set( -60.072254, -81.065155 )
+ga_view_zoom_set( 162.919464 )
+ga_view_center_set( -41.755852, -104.008835 )
+ga_view_zoom_set( 130.335571 )
+ga_view_center_set( -33.615231, -114.206009 )
+ga_view_zoom_set( 115.853844 )
+ga_view_center_set( -20.590240, -130.521500 )
+ga_view_zoom_set( 92.683075 )
+ga_view_center_set( -10.170246, -143.573883 )
+ga_view_zoom_set( 74.146461 )
+ga_view_center_set( 1.197014, -157.812836 )
+ga_view_zoom_set( 53.924698 )
+ga_view_center_set( 7.259554, -165.406937 )
+ga_view_zoom_set( 43.139759 )
+ga_view_center_set( 9.954008, -168.782074 )
+ga_view_zoom_set( 38.346451 )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Nov-21 18:55:08

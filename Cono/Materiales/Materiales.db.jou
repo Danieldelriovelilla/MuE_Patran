@@ -198,3 +198,57 @@ $# Group "V" created.
 sys_poll_option( 0 )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 27-Nov-21 11:06:19
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 28-Nov-21 11:15:11
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+material.rename( "Plie_Tension", "Plie_Tension" )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Plie_Tension", @
+ 1, "Date: 24-Nov-21           Time: 12:36:33", "2d Orthotropic", 5,  @
+"Directionality", 4, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Modify", 31, "External Flag", FALSE, "Property IDs", ["Elastic Modulus 11" @
+, "Elastic Modulus 22", "Poisson Ratio 12", "Shear Modulus 12",  @
+"Shear Modulus 23", "Shear Modulus 13", "Density"], [2, 3, 5, 8, 9, 10, 16, 0] @
+, "Property Values", ["1.584890820272573e+02", "8.949053741531438",  @
+"0.315611111111111", "4.648791929756596", "4.648791929756596",  @
+"4.648791929756596", "1.58", ""] )
+$# Material Plie_Tension has been successfully modified.  However, it has 
+$# been detected that this material is being used as a constituent for one or 
+$# more composite materials.  Proceeding to update the properties for these 
+$# composites.
+$# ...MODIFIED Constituent is Plie_Tension: UPDATING Composite 
+$# Laminate_Tension_10.
+uil_primary_file.db_save(  )
+material.rename( "Plie_Compression", "Plie_Compression" )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1,  @
+"Plie_Compression", 2, "Date: 24-Nov-21           Time: 12:36:33",  @
+"2d Orthotropic", 5, "Directionality", 4, "Linearity", 0, "Homogeneous", 0,  @
+"Failure", 4, "Model Options & IDs", ["Stress", "Hill", "", "", ""], [6, 2, 0, @
+ 0, 0], "Active Flag", 1, "Modify", 30, "External Flag", FALSE, "Property IDs" @
+, ["Tension Stress Limit 11", "Tension Stress Limit 22",  @
+"Compress Stress Limit 11", "Compress Stress Limit 22", "Shear Stress Limit",  @
+"Bonding Shear Stress Limit"], [99, 102, 100, 103, 101, 132, 0],  @
+"Property Values", ["2.233077856412412", "0.046333120547832",  @
+"1.417907393925760", "0.254726342940573", "0.087935932604777",  @
+"0.087935932604777", ""] )
+$# Material Plie_Compression has been successfully modified.  However, it has 
+$# been detected that this material is being used as a constituent for one or 
+$# more composite materials.  Proceeding to update the properties for these 
+$# composites.
+$# ...MODIFIED Constituent is Plie_Compression: UPDATING Composite 
+$# Laminate_Compresson_10.
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 28-Nov-21 11:40:19
