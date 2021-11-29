@@ -1,4 +1,4 @@
-$ MSC.Nastran input file created on November  29, 2021 at 00:18:14 by
+$ MSC.Nastran input file created on November  29, 2021 at 08:57:54 by
 $ Patran 2021.1  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
@@ -70,6 +70,8 @@ PCOMP    1                      .0879359 HILL
          1       .183    0.      YES     1       .183    0.      YES
          1       .183    0.      YES     1       .183    0.      YES
          1       .183    0.      YES     1       .183    0.      YES
+         1       .183    0.      YES     1       .183    0.      YES
+         1       .183    0.      YES
 $ Pset: "SHell_Ten10" will be imported as: "pcomp.1"
 CQUAD4   1       1       1       2       53      52
 CQUAD4   2       1       2       3       54      53
@@ -171,50 +173,11 @@ CQUAD4   97      1       149     150     201     200
 CQUAD4   98      1       150     151     202     201
 CQUAD4   99      1       151     152     203     202
 CQUAD4   100     1       152     1       52      203
-CQUAD4   101     1       205     206     227     226
-CQUAD4   102     1       206     207     228     227
-CQUAD4   103     1       207     208     229     228
-CQUAD4   104     1       208     209     230     229
-CQUAD4   105     1       209     210     231     230
-CQUAD4   106     1       210     211     232     231
-CQUAD4   107     1       211     212     233     232
-CQUAD4   108     1       212     213     234     233
-CQUAD4   109     1       213     214     235     234
-CQUAD4   110     1       214     215     236     235
-CQUAD4   111     1       215     216     237     236
-CQUAD4   112     1       216     217     238     237
-CQUAD4   113     1       217     218     239     238
-CQUAD4   114     1       218     219     240     239
-CQUAD4   115     1       219     220     241     240
-CQUAD4   116     1       220     221     242     241
-CQUAD4   117     1       221     222     243     242
-CQUAD4   118     1       222     223     244     243
-CQUAD4   119     1       223     224     245     244
-CQUAD4   120     1       224     225     246     245
-CQUAD4   121     1       225     248     269     246
-CQUAD4   122     1       248     249     270     269
-CQUAD4   123     1       249     250     271     270
-CQUAD4   124     1       250     251     272     271
-CQUAD4   125     1       251     252     273     272
-CQUAD4   126     1       252     253     274     273
-CQUAD4   127     1       253     254     275     274
-CQUAD4   128     1       254     255     276     275
-CQUAD4   129     1       255     256     277     276
-CQUAD4   130     1       256     257     278     277
-CQUAD4   131     1       257     258     279     278
-CQUAD4   132     1       258     259     280     279
-CQUAD4   133     1       259     260     281     280
-CQUAD4   134     1       260     261     282     281
-CQUAD4   135     1       261     262     283     282
-CQUAD4   136     1       262     263     284     283
-CQUAD4   137     1       263     264     285     284
-CQUAD4   138     1       264     265     286     285
-CQUAD4   139     1       265     266     287     286
-CQUAD4   140     1       266     205     226     287
 $ Elements and Element Properties for region : SHell_Com10
 $ Composite Property Reference Material: Laminate_Compresson_10
 $ Composite Material Description :
 PCOMP    2                      .0879359 HILL
+         2       .183    0.      YES     2       .183    0.      YES
          2       .183    0.      YES     2       .183    0.      YES
          2       .183    0.      YES     2       .183    0.      YES
          2       .183    0.      YES     2       .183    0.      YES
@@ -3525,6 +3488,46 @@ PCOMP    3                      .0879359 HILL
          1       .183    0.      YES     1       .183    0.      YES
          1       .183    0.      YES     1       .183    0.      YES
 $ Pset: "Shell_Com_05" will be imported as: "pcomp.3"
+CQUAD4   101     3       205     206     227     226
+CQUAD4   102     3       206     207     228     227
+CQUAD4   103     3       207     208     229     228
+CQUAD4   104     3       208     209     230     229
+CQUAD4   105     3       209     210     231     230
+CQUAD4   106     3       210     211     232     231
+CQUAD4   107     3       211     212     233     232
+CQUAD4   108     3       212     213     234     233
+CQUAD4   109     3       213     214     235     234
+CQUAD4   110     3       214     215     236     235
+CQUAD4   111     3       215     216     237     236
+CQUAD4   112     3       216     217     238     237
+CQUAD4   113     3       217     218     239     238
+CQUAD4   114     3       218     219     240     239
+CQUAD4   115     3       219     220     241     240
+CQUAD4   116     3       220     221     242     241
+CQUAD4   117     3       221     222     243     242
+CQUAD4   118     3       222     223     244     243
+CQUAD4   119     3       223     224     245     244
+CQUAD4   120     3       224     225     246     245
+CQUAD4   121     3       225     248     269     246
+CQUAD4   122     3       248     249     270     269
+CQUAD4   123     3       249     250     271     270
+CQUAD4   124     3       250     251     272     271
+CQUAD4   125     3       251     252     273     272
+CQUAD4   126     3       252     253     274     273
+CQUAD4   127     3       253     254     275     274
+CQUAD4   128     3       254     255     276     275
+CQUAD4   129     3       255     256     277     276
+CQUAD4   130     3       256     257     278     277
+CQUAD4   131     3       257     258     279     278
+CQUAD4   132     3       258     259     280     279
+CQUAD4   133     3       259     260     281     280
+CQUAD4   134     3       260     261     282     281
+CQUAD4   135     3       261     262     283     282
+CQUAD4   136     3       262     263     284     283
+CQUAD4   137     3       263     264     285     284
+CQUAD4   138     3       264     265     286     285
+CQUAD4   139     3       265     266     287     286
+CQUAD4   140     3       266     205     226     287
 CQUAD4   7872    3       8784    8785    8826    8825
 CQUAD4   7873    3       8785    8786    8827    8826
 CQUAD4   7874    3       8786    8787    8828    8827
@@ -17353,4 +17356,4 @@ FORCE    1       10000   0       15.     0.      0.      -1.
 $ Nodal Forces of Load Set : L
 MOMENT   3       10000   0       0.      .57735  .57735  .57735
 $ Referenced Coordinate Frames
-ENDDATA f55b2db0
+ENDDATA 2ee039c3
