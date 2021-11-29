@@ -1,4 +1,4 @@
-$ MSC.Nastran input file created on November  29, 2021 at 08:57:54 by
+$ MSC.Nastran input file created on November  29, 2021 at 10:04:12 by
 $ Patran 2021.1  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
@@ -31,14 +31,14 @@ NLSTEP   1
 BCTABL1  0       8001    8002    8003    8004    8005    8006    8007
          8008    8009    8010    8011    8012    8013    8014    8015
 BCONECT  8001    3001            1       1
-BCONECT  8002    3002            2       1
-BCONECT  8003    3003            3       1
-BCONECT  8004    3004            4       1
-BCONECT  8005    3005            5       1
+BCONECT  8002    3002            5       1
+BCONECT  8003    3003            2       1
+BCONECT  8004    3004            3       1
+BCONECT  8005    3005            4       1
 BCONECT  8006    3006            2       2
-BCONECT  8007    3007            3       2
-BCONECT  8008    3008            4       2
-BCONECT  8009    3009            5       2
+BCONECT  8007    3007            5       2
+BCONECT  8008    3008            3       2
+BCONECT  8009    3009            4       2
 BCONECT  8010    3010            3       3
 BCONECT  8011    3011            4       3
 BCONECT  8012    3012            5       3
@@ -46,14 +46,14 @@ BCONECT  8013    3013            4       4
 BCONECT  8014    3014            5       4
 BCONECT  8015    3015            5       5
 BCONPRG  3001            ERROR   5.
-BCONPRG  3002            ERROR   5.      IGLUE   4       ISEARCH 2
-BCONPRG  3003            ERROR   5.      IGLUE   4       ISEARCH 2
+BCONPRG  3002            ERROR   5.      ISEARCH 2
+BCONPRG  3003            ERROR   .02     IGLUE   4       ISEARCH 2
 BCONPRG  3004            ERROR   5.      IGLUE   4       ISEARCH 2
-BCONPRG  3005            ERROR   5.      IGLUE   4       ISEARCH 2
+BCONPRG  3005            ERROR   .03     IGLUE   4       ISEARCH 2
 BCONPRG  3006            ERROR   5.
-BCONPRG  3007            ERROR   5.      IGLUE   4       ISEARCH 2
+BCONPRG  3007            ERROR   5.      ISEARCH 2
 BCONPRG  3008            ERROR   5.      IGLUE   4       ISEARCH 2
-BCONPRG  3009            ERROR   5.      IGLUE   4       ISEARCH 2
+BCONPRG  3009            ERROR   .02     IGLUE   4       ISEARCH 2
 BCONPRG  3010            ERROR   5.
 BCONPRG  3011            ERROR   5.      IGLUE   4       ISEARCH 2
 BCONPRG  3012            ERROR   5.      IGLUE   4       ISEARCH 2
@@ -17356,4 +17356,4 @@ FORCE    1       10000   0       15.     0.      0.      -1.
 $ Nodal Forces of Load Set : L
 MOMENT   3       10000   0       0.      .57735  .57735  .57735
 $ Referenced Coordinate Frames
-ENDDATA 2ee039c3
+ENDDATA 17ef141b
