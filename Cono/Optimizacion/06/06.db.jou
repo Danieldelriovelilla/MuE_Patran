@@ -35266,3 +35266,719 @@ ga_view_zoom_set( 199.472473 )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 30-Nov-21 13:22:19
+$# Appending to existing journal file 
+$# C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.db.jou at 
+$# 30-Nov-21 13:24:37
+$# Synchronizing the User Data Manager
+$# Error reported from application UserDataManager
+$#     The amount of instance data fails to match the template for ud_region
+$? NO 1000020000 
+set_current_dir( "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_import_database_v3( "C:\Users\danie\Desktop\MuE_Patran\Cono\Materiales\" // @
+"Materiales.db", ["Point", "Curve", "Surface", "Solid", "Coordinate Frame",  @
+"Plane", "Vector", "Node", "Element", "MPC", "User Data", "Connector", "Job",  @
+"Material", "Element Property", "Load/BC, Load Case", "Field", "DOF List",  @
+"Super Element", "Group", ""], ["All", "All", "All", "All", "All", "All",  @
+"All", "All", "All", "All", "All", "All", "All", "All", "All", "All", "All",  @
+"All", "All", "All"], [-2000000000, -2000000000, -2000000000, -2000000000,  @
+-2000000000, -2000000000, -2000000000, -2000000000, -2000000000, -2000000000,  @
+-2000000000, -2000000000, -2000000000, 0, 0, 0, 0, 0, 0, 0], ["", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "SM_001_", "SM_001_", "SM_001_", "SM_001_" @
+, "SM_001_", "SM_001_", "SM_001_"], ["DATA_AND_NAME", "DATA_AND_NAME",  @
+"DATA_AND_NAME", "DATA_AND_NAME", "DATA_AND_NAME", "DATA_AND_NAME",  @
+"DATA_AND_NAME"], 3, TRUE, TRUE, "cube", 0.0049999999, TRUE, ["useprim",  @
+"useprim", "useprim"] )
+$# Loading 1 "User Data" entities.
+$# Loading 1 "Job" entities.
+$# Loading 4 "Material" entities.
+$# Loading 2 "Element Property" entities.
+$# Loading 1 "Load/BC, Load Case" entities.
+$# Loading 5 "Group" entities.
+$# Loading all referenced entities.
+$# Saving 14 entities.
+$# Posting all entities.
+ga_view_aa_set( -61.792843, -2.260519, 32.215996 )
+ga_view_aa_set( -63.706257, 0.030035, 36.661606 )
+ga_view_center_set( -60.717842, -49.876678 )
+ga_view_zoom_set( 177.308868 )
+ga_view_center_set( -91.418312, -83.426559 )
+ga_view_zoom_set( 118.205910 )
+ga_view_center_set( -98.077217, -90.882111 )
+ga_view_zoom_set( 105.071922 )
+ga_view_center_set( -107.703453, -109.466156 )
+ga_view_zoom_set( 76.415947 )
+ga_view_center_set( -111.886726, -119.805496 )
+ga_view_zoom_set( 61.132759 )
+ga_view_center_set( -113.703690, -124.379639 )
+ga_view_zoom_set( 54.340229 )
+ga_view_center_set( -117.391426, -134.036865 )
+ga_view_zoom_set( 39.520168 )
+ga_view_center_set( -119.358215, -139.187408 )
+ga_view_zoom_set( 31.616135 )
+ga_view_center_set( -120.232353, -141.476532 )
+ga_view_zoom_set( 28.103231 )
+ga_view_center_set( -119.325447, -139.460571 )
+ga_view_zoom_set( 31.616135 )
+ga_view_center_set( -116.264648, -132.656708 )
+ga_view_zoom_set( 43.472183 )
+ga_view_center_set( -112.056030, -123.301392 )
+ga_view_zoom_set( 59.774254 )
+ga_view_center_set( -108.105148, -114.772171 )
+ga_view_zoom_set( 74.717819 )
+ga_view_aa_set( -75.730232, -0.909952, 33.816723 )
+ga_view_center_set( -105.171036, -110.487228 )
+ga_view_zoom_set( 84.057549 )
+ga_view_center_set( -101.870148, -105.666656 )
+ga_view_zoom_set( 94.564743 )
+ga_view_center_set( -98.156662, -100.243515 )
+ga_view_zoom_set( 106.385338 )
+ga_view_center_set( -93.937607, -94.142487 )
+ga_view_zoom_set( 119.683502 )
+ga_view_aa_set( -76.037125, -3.109236, 25.083654 )
+uil_primary_file.db_save(  )
+mat_create_lam3( "Lam_Ri", "", 1, ["Plie_Tension", "Plie_Tension",  @
+"Plie_Tension", "Plie_Tension", "Plie_Tension", "Plie_Tension", "Plie_Tension" @
+, "Plie_Tension", "Plie_Tension", "Plie_Tension", "Plie_Tension",  @
+"Plie_Tension"], ["  2.000000E-1", "  2.000000E-1", "  2.000000E-1",  @
+"  2.000000E-1", "  2.000000E-1", "  2.000000E-1", "  2.000000E-1",  @
+" 2.000000E-01", " 2.000000E-01", " 2.000000E-01", " 2.000000E-01",  @
+"  2.000000E-1"], ["  0.000000E+0", "  0.000000E+0", "  0.000000E+0",  @
+"  0.000000E+0", "  0.000000E+0", "  0.000000E+0", "  0.000000E+0",  @
+"  0.000000E+0", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+"  0.000000E+0"], ["", "", "", "", "", "", "", "", "", "", "", ""], 12, "",  @
+"Modify" )
+$# Question from application MATERIALS
+$#     "Lam_Ri" does not exist.  Do you wish to create it?
+$? YES 28003301 
+mat_create_lam3( "Lam_R1", "", 1, ["Plie_Tension", "Plie_Tension",  @
+"Plie_Tension", "Plie_Tension", "Plie_Tension", "Plie_Tension"], [ @
+"  2.000000E-1", "  2.000000E-1", "  2.000000E-1", "  2.000000E-1",  @
+"  2.000000E-1", "  2.000000E-1"], ["  0.000000E+0", "  0.000000E+0",  @
+"  0.000000E+0", "  0.000000E+0", "  0.000000E+0", "  0.000000E+0"], ["", "",  @
+"", "", "", ""], 6, "", "Create" )
+mat_create_lam3( "Lam_R2", "", 1, ["Plie_Tension", "Plie_Tension",  @
+"Plie_Tension", "Plie_Tension", "Plie_Tension"], ["  2.000000E-1",  @
+"  2.000000E-1", "  2.000000E-1", "  2.000000E-1", "  2.000000E-1"], [ @
+"  0.000000E+0", "  0.000000E+0", "  0.000000E+0", "  0.000000E+0",  @
+"  0.000000E+0"], ["", "", "", "", ""], 5, "", "Create" )
+mat_create_lam3( "Lam_R3", "", 1, ["Plie_Tension", "Plie_Tension",  @
+"Plie_Tension", "Plie_Tension"], ["  2.000000E-1", "  2.000000E-1",  @
+"  2.000000E-1", "  2.000000E-1"], ["  0.000000E+0", "  0.000000E+0",  @
+"  0.000000E+0", "  0.000000E+0"], ["", "", "", ""], 4, "", "Create" )
+mat_create_lam3( "Lam_Rs", "", 1, ["Plie_Tension", "Plie_Tension",  @
+"Plie_Tension"], ["  2.000000E-1", "  2.000000E-1", "  2.000000E-1"], [ @
+"  0.000000E+0", "  0.000000E+0", "  0.000000E+0"], ["", "", ""], 3, "",  @
+"Create" )
+mat_create_lam3( "Lam_V", "", 1, ["Plie_Compression", "Plie_Compression",  @
+"Plie_Compression", "Plie_Compression", "Plie_Compression", "Plie_Compression" @
+, "Plie_Compression", "Plie_Compression", "Plie_Compression",  @
+"Plie_Compression", ""], ["  2.000000E-1", " 2.000000E-01", " 2.000000E-01",  @
+" 2.000000E-01", " 2.000000E-01", " 2.000000E-01", " 2.000000E-01",  @
+" 2.000000E-01", " 2.000000E-01", " 2.000000E-01", ""], ["  0.000000E+0",  @
+" 0.000000E+00", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00", ""], ["", "", "", "", "", "", "", "", "", "", ""], 10, "",  @
+"Create" )
+mat_create_lam3( "Lam_H", "", 1, ["Plie_Compression", "Plie_Compression",  @
+"Plie_Compression", "Plie_Compression", "Plie_Compression"], ["  2.000000E-1", @
+ " 2.000000E-01", " 2.000000E-01", " 2.000000E-01", " 2.000000E-01"], [ @
+"  0.000000E+0", " 0.000000E+00", " 0.000000E+00", " 0.000000E+00",  @
+" 0.000000E+00"], ["", "", "", "", ""], 5, "", "Create" )
+material.namedelete( ["Laminate_Compresson_10"], "No. of items", 1 )
+$# Acknowledgement requested from application MATERIALS
+$#     Material 'Laminate_Compresson_10' is associated with other data and is 
+$# not deleted.
+$? NO 28003104 
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+$# Warning reported from application Results
+$#     The specified target nodes or elements already have associated results 
+$# data or the specified target is empty or invalid.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Ri"] )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+display_cleanup(  )
+mesh_seed_display_mgr.erase(  )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+elementprops_modify( "Shell_Al", "Shell_Al", 51, 25, 35, 1, 1, 20, [13, 20,  @
+36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407,  @
+4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al", "", @
+ "2.", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Property Set "Shell_Al" modified.
+elementprops_create( "Shell_Ri", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_Ri", "", "",  @
+"", "", "", "", "", ""], "Element 1:4712" )
+$# Property Set "Shell_Ri" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 10, ["H1", "H2",  @
+"R", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R1"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "Shell_R1", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_R1", "", "",  @
+"", "", "", "", "", ""], "Element 4093:4292" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Element 4093 already has been associated to an element property 
+$# region. Overwrite the association?
+$? YESFORALL 29002020 
+$# Property Set "Shell_R1" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R2"] )
+elementprops_create( "Shell_R2", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_R2", "", "",  @
+"", "", "", "", "", ""], "Element 4293:4452" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Element 4293 already has been associated to an element property 
+$# region. Overwrite the association?
+$? YESFORALL 29002020 
+$# Property Set "Shell_R2" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["R3"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "Shell_R3", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_R3", "", "",  @
+"", "", "", "", "", ""], "Element 4453:4592" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Element 4453 already has been associated to an element property 
+$# region. Overwrite the association?
+$? YESFORALL 29002020 
+$# Property Set "Shell_R3" created.
+$# Model tree: Not supported operation
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Ri"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["Rs"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+ga_view_aa_set( -95.035545, -2.797129, 25.062004 )
+elementprops_create( "Shell_Rs", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_Rs", "", "",  @
+"", "", "", "", "", ""], "Element 4593:4712" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Element 4593 already has been associated to an element property 
+$# region. Overwrite the association?
+$? YESFORALL 29002020 
+$# Property Set "Shell_Rs" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["V"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "Shell_V", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_V", "", "",  @
+"", "", "", "", "", ""], "Element 481:680 872:1991" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Element 481 already has been associated to an element property region. 
+$# Overwrite the association?
+$? YESFORALL 29002020 
+$# Property Set "Shell_V" created.
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 0, ["empty"] )
+$# Warning reported from application Group Applications
+$#     There are no groups posted to the viewport.
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["H1"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["H1", "H2"] )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "Shell_H", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Lam_H", "", "",  @
+"", "", "", "", "", ""], "Element 681:871 1992:4092" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     Element 681 already has been associated to an element property region. 
+$# Overwrite the association?
+$? YESFORALL 29002020 
+$# Property Set "Shell_H" created.
+uil_primary_file.db_save(  )
+$# Reclaimed 1.03 MB of 4.66 MB.
+elementprops_delete( ["SHell_Com10"] )
+$# 1 Property Sets deleted.
+elementprops_delete( ["SHell_Ten10"] )
+$# 1 Property Sets deleted.
+material.namedelete( ["Laminate_Tension_10"], "No. of items", 1 )
+material.namedelete( ["Laminate_Compresson_10"], "No. of items", 1 )
+uil_primary_file.db_save(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["H1", "H2",  @
+"R", "R1", "R2", "R3", "Ri", "Rs", "SM_001", "V", "default_group"] )
+ga_view_aa_set( -69.875816, 2.611222, 41.063740 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$#  Beginning analysis of  06
+jobfile.open( "06", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (06) is already defined in the database. Do you wish to 
+$# overwrite?
+$? YES 6016027 
+msc_delete_old_files( "06", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "06".  These files are 06.f04, 06.f06, 06.log, 06.h5, 06.bdf.  Will you 
+$# permit deletion of these files?
+$? YES 6022037 
+$# Warning reported from application APP INTERFACES
+$#     The attachment to the file 
+$# C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.h5 has been 
+$# deleted because that file is being deleted.
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["30-Nov-21" @
+, "13:38:46"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimi" // @
+"zacion\06\06.db" )
+jobfile.writec( "JOBNAME", "06" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 30-Nov-21 at" // @
+" 00:22:03" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\danie" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2021." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 1 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "CONTACT-FRICTION-TYPE", "None" )
+jobfile.writec( "CONTACT-AUGMENTATION-NORMAL METHOD", "None" )
+jobfile.writer( "CONTACT-AUGMENTATION-NORMAL PENALTY", 0. )
+jobfile.writec( "CONTACT-AUGMENTATION-TANGENTIAL METHOD", "0" )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL PENALTY", 0. )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL SLIP", 0. )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\danie" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "ON" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "06", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "06" )
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-NHC7R5K(
+$# c821586ab454) (Windows 6.2 (Build 9200: Service Pack 0)) at 30-Nov-21 
+$# 13:38:47.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.db.
+$# Messages output from the Patran 2021.1  (Student Edition) input deck 
+$# translator on November  30, 2021 at 13:38:47.
+$# 
+$# The NASTRAN input file, 06.bdf, has been successfully opened.
+$# 
+$# Translating 480 elements from the element property region Shell_Ri.
+$# 
+$# Translating 200 elements from the element property region Shell_R1.
+$# 
+$# Translating 160 elements from the element property region Shell_R2.
+$# 
+$# Translating 140 elements from the element property region Shell_R3.
+$# 
+$# Translating 120 elements from the element property region Shell_Rs.
+$# 
+$# Translating 1320 elements from the element property region Shell_V.
+$# 
+$# Translating 2292 elements from the element property region Shell_H.
+$# 
+$# 7 property regions translated.
+$# 
+$# Translating 2 referenced material records.
+$# 
+$# Translating 1 multipoint constraints from the entire model.
+$# 
+$# Translating 9257 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : D_3.
+$# 
+$# Translating nodal constraints in load set : D_12456.
+$# Writing interface element lbcs.
+$# 
+$# Translating nodal forces in load set : L.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.561996
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2021.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 30-Nov-21 13:38:47.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\MscN
+$# astranExecute.exe -j 06 -m bdf -x 2021 -c %%prog=edu%auth=edu%arch=64% -v
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\danie\Desktop\MuE_Patran\Cono\Opt" // @
+"imizacion\06\06.db" )
+msc_dra_add_param( "JOBNAME", "06" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\danie\Desktop\MuE_Patran\Cono" // @
+"\Optimizacion\06\06.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "06", "Attach HDF5 Results File",  @
+"C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.h5", TRUE )
+$# Attaching Direct Results Access file: 
+$# "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static subcase
+$# Processing result sub-case: Static subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+res_display_tool_unpost( "Deformation", "default_Deformation" )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Static subcase", "Displacements", "Translational", "(NON-LAYERED)", "MAG", @
+ "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+ga_view_aa_set( -63.817215, -1.967963, 22.630930 )
+ga_view_center_set( 17.275993, -8.557152 )
+ga_view_zoom_set( 176.568237 )
+ga_view_center_set( 29.053291, -13.286400 )
+ga_view_zoom_set( 156.949539 )
+ga_view_center_set( 47.897057, -20.657867 )
+ga_view_zoom_set( 125.559631 )
+ga_view_center_set( 56.272041, -23.934090 )
+ga_view_zoom_set( 111.608559 )
+ga_view_center_set( 63.716484, -26.846275 )
+ga_view_zoom_set( 99.207611 )
+ga_view_center_set( 70.333755, -29.434898 )
+ga_view_zoom_set( 88.184540 )
+ga_view_center_set( 76.215790, -31.735893 )
+ga_view_zoom_set( 78.386261 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Static subcase", "Displacements", "Translational", "(NON-LAYERED)", "MAG", @
+ "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Static subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -78.763000, 0.128004, 31.295532 )
+ga_view_center_set( 72.985260, -27.758675 )
+ga_view_zoom_set( 88.184540 )
+ga_view_center_set( 69.350906, -23.284309 )
+ga_view_zoom_set( 99.207611 )
+ga_view_center_set( 65.262283, -18.250633 )
+ga_view_zoom_set( 111.608566 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Static subcase", "Displacements", "Translational", "(NON-LAYERED)", "ZZ",  @
+"Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Static subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -81.762177, -0.032526, 30.308500 )
+ga_view_center_set( 53.545975, -14.714050 )
+ga_view_zoom_set( 125.559639 )
+ga_view_center_set( 40.365097, -10.735390 )
+ga_view_zoom_set( 141.254593 )
+ga_view_center_set( 25.536682, -6.259399 )
+ga_view_zoom_set( 158.911423 )
+ga_view_center_set( 32.456573, -19.512329 )
+ga_view_zoom_set( 178.775345 )
+ga_view_center_set( 40.241516, -34.421906 )
+ga_view_zoom_set( 201.122269 )
+ga_view_aa_set( -50.836880, -2.357782, 25.935677 )
+ga_view_center_set( 37.113655, -21.528099 )
+ga_view_zoom_set( 178.775345 )
+ga_view_center_set( 32.220287, -0.341980 )
+ga_view_zoom_set( 143.020279 )
+ga_view_center_set( 30.094879, 9.222389 )
+ga_view_zoom_set( 127.129135 )
+ga_view_center_set( 26.694202, 24.525322 )
+ga_view_zoom_set( 101.703308 )
+ga_view_center_set( 25.182808, 31.326637 )
+ga_view_zoom_set( 90.402939 )
+ga_view_center_set( 23.839336, 37.372246 )
+ga_view_zoom_set( 80.358170 )
+ga_view_center_set( 22.645142, 42.746124 )
+ga_view_zoom_set( 71.429482 )
+ga_view_center_set( 21.583645, 47.522896 )
+ga_view_zoom_set( 63.492874 )
+ga_view_center_set( 21.144772, 51.461693 )
+ga_view_zoom_set( 56.438110 )
+ga_view_center_set( 20.891207, 54.533752 )
+ga_view_zoom_set( 50.167210 )
+ga_view_center_set( 20.665817, 57.264473 )
+ga_view_zoom_set( 44.593075 )
+ga_view_center_set( 20.465467, 59.691772 )
+ga_view_zoom_set( 39.638290 )
+ga_view_aa_set( -51.537537, 8.235861, 39.267284 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Reclaimed 0.74 MB of 4.43 MB.
+ga_view_aa_set( -49.825382, -2.716330, 24.949501 )
+ga_view_center_set( 20.542521, 61.440979 )
+ga_view_zoom_set( 44.593079 )
+ga_view_center_set( 20.629204, 63.408829 )
+ga_view_zoom_set( 50.167213 )
+ga_view_center_set( 20.726736, 65.622665 )
+ga_view_zoom_set( 56.438114 )
+ga_view_center_set( 20.836437, 68.113220 )
+ga_view_zoom_set( 63.492878 )
+ga_view_center_set( 20.959864, 70.915108 )
+ga_view_zoom_set( 71.429489 )
+ga_view_center_set( 21.126492, 74.150551 )
+ga_view_zoom_set( 80.358177 )
+ga_view_center_set( 21.313946, 77.852921 )
+ga_view_zoom_set( 90.402946 )
+ga_view_center_set( 21.524853, 82.018059 )
+ga_view_zoom_set( 101.703316 )
+ga_view_center_set( 21.762096, 86.703850 )
+ga_view_zoom_set( 114.416229 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 30-Nov-21 13:42:31
