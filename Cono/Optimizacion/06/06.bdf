@@ -1,4 +1,4 @@
-$ MSC.Nastran input file created on November  30, 2021 at 10:57:31 by
+$ MSC.Nastran input file created on November  30, 2021 at 11:43:45 by
 $ Patran 2021.1  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
@@ -25,44 +25,71 @@ BEGIN BULK
 $ Direct Text Input for Bulk Data
 MDLPRM   HDF5    0
 PARAM   PRTMAXIM YES
-BCPARA   0       NLGLUE  0
+BCPARA   0       NLGLUE  0       METHOD SEGSMALL IBSEP   2
 NLSTEP   1
 BCTABL1  0       8001    8002    8003    8004    8005    8006    8007
          8008    8009    8010    8011    8012    8013    8014    8015
-         8016    8017    8018    8019    8020
-BCONECT  8001                    1       1
-BCONECT  8002                    5       1
-BCONECT  8003    3003            1       4
-BCONECT  8004    3004            1       6
-BCONECT  8005                    2       2
-BCONECT  8006                    5       2
-BCONECT  8007    3007            2       1
-BCONECT  8008    3008            2       4
-BCONECT  8009    3009            2       6
-BCONECT  8010                    3       3
-BCONECT  8011                    4       3
-BCONECT  8012                    5       3
-BCONECT  8013    3013            3       1
-BCONECT  8014    3014            3       6
-BCONECT  8015                    4       4
-BCONECT  8016                    5       4
-BCONECT  8017                    5       5
+         8016    8017    8018    8019    8020    8021
+BCONECT  8001    3001            1       1
+BCONECT  8002    3002            2       1
+BCONECT  8003    3003            3       1
+BCONECT  8004    3004            4       1
+BCONECT  8005    3005            5       1
+BCONECT  8006    3006            6       1
+BCONECT  8007    3007            2       2
+BCONECT  8008    3008            3       2
+BCONECT  8009    3009            4       2
+BCONECT  8010    3010            5       2
+BCONECT  8011    3011            6       2
+BCONECT  8012    3012            3       3
+BCONECT  8013    3013            4       3
+BCONECT  8014    3014            5       3
+BCONECT  8015    3015            6       3
+BCONECT  8016    3016            4       4
+BCONECT  8017    3017            5       4
 BCONECT  8018    3018            6       4
-BCONECT  8019    3019            6       5
-BCONECT  8020    3020            6       6
-BCONPRG  3003            ERROR   3.      IGLUE   4       ISEARCH 1
-BCONPRG  3004            ERROR   2.      IGLUE   4       ISEARCH 1
-BCONPRG  3007            ERROR   2.      IGLUE   4       ISEARCH 1
-BCONPRG  3008            ERROR   2.      IGLUE   4       ISEARCH 1
-BCONPRG  3009            ERROR   2.      IGLUE   4       ISEARCH 1
-BCONPRG  3013            ERROR   .03     IGLUE   4       ISEARCH 1
-BCONPRG  3014            ERROR   3.      IGLUE   4       ISEARCH 1
-BCONPRG  3018            ERROR   2.      IGLUE   4       ISEARCH 1
-BCONPRG  3019            ERROR   2.      IGLUE   4       ISEARCH 1
-BCONPRG  3020            IGLUE   1
+BCONECT  8019    3019            5       5
+BCONECT  8020    3020            6       5
+BCONECT  8021    3021            6       6
+BCONPRG  3001            ERROR   3.      IGLUE   4       ISEARCH 2
+BCONPRG  3002            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3003            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3004            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3005            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3006            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3007            ERROR   3.      IGLUE   4       ISEARCH 2
+BCONPRG  3008            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3009            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3010            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3011            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3012            ERROR   3.      IGLUE   4       ISEARCH 2
+BCONPRG  3013            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3014            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3015            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3016            ERROR   3.      IGLUE   4       ISEARCH 2
+BCONPRG  3017            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3018            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3019            ERROR   3.      IGLUE   4       ISEARCH 2
+BCONPRG  3020            ERROR   3.      IGLUE   4       ISEARCH 2
+         PENALT  1.
+BCONPRG  3021            ERROR   3.      IGLUE   4       ISEARCH 2
 BCTABL1  1       8001    8002    8003    8004    8005    8006    8007
          8008    8009    8010    8011    8012    8013    8014    8015
-         8016    8017    8018    8019    8020
+         8016    8017    8018    8019    8020    8021
 $ Elements and Element Properties for region : Shell_Al
 PSHELL   1       1       2.      1               1
 $ Pset: "Shell_Al" will be imported as: "pshell.1"
@@ -4781,7 +4808,8 @@ CQUAD4   4712    1       9523    9342    9403    9584
 $ Referenced Material Records
 $ Material Record : Al
 $ Description of Material : Date: 30-Nov-21           Time: 00:22:51
-MAT1     1       70.             .33
+MAT1*    1               70.                             .33
+*        2.7000001-6
 $ Nodes of the Entire Model
 GRID*    1                               -108.7744140625-59.423759460449
 *       4.89443969726563
@@ -23296,13 +23324,30 @@ GRID*    9583                           -42.396343231201-29.298858642578
 GRID*    9584                           -43.871398925781-27.040216445923
 *       275.234954833984
 $ Loads for Load Case : Default
-SPCADD   2       1       3
+SPCADD   2       1       3       4
 LOAD     2       1.      1.      1
 $ Displacement Constraints of Load Set : D_3
 SPC1     1       3       243     THRU    363
 SPC1     1       3       607     THRU    725
 $ Displacement Constraints of Load Set : D_12456
 SPC1     3       123     261
+$ Displacement Constraints of Load Set : Empotrado
+SPC1     4       123456  122     THRU    176
+SPC1     4       123456  243     THRU    363
+SPC1     4       123456  590     THRU    604
+SPC1     4       123456  607     THRU    725
+SPC1     4       123456  1029    1065    1241    1277    1423    1534
+         1645    1756    1867    1978    2089    2200    2311    2422
+         2533    2534    2644    2645    2755    2756    2866    2867
+         2977    2978    3088    3089    3199    3310    3421    3532
+         3643    3754    3865    3976    4087    4123    4295    4331
+         4503    4539    4711    4747    4919    4920    4955    4956
+         5127    5128    5163    5164    5335    5336    5371    5372
+         5543    5579    5751    5787    5959    5995    6167    6203
+         6375    6411    6553    6589    6731    6767    6909    6945
+         7087    7088    7123    7124    7265    7266    7301    7302
+         7443    7444    7479    7480    7621    7657    7799    7835
+         7977    8013    8155    8191
 $ Deform Body Contact LBC set: H1C
 BCBODY1  1               3D      DEFORM  6
 BSURF    6       681     682     683     684     685     686     687
@@ -24031,4 +24076,4 @@ FORCE    1       9521    0       1.      0.      0.      -1.
 FORCE    1       9522    0       1.      0.      0.      -1.
 FORCE    1       9523    0       1.      0.      0.      -1.
 $ Referenced Coordinate Frames
-ENDDATA b3b0255f
+ENDDATA 3896fe08
