@@ -1,95 +1,61 @@
-$ MSC.Nastran input file created on November  30, 2021 at 13:38:47 by
+$ MSC.Nastran input file created on November  30, 2021 at 20:07:41 by
 $ Patran 2021.1  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
 $ Direct Text Input for Executive Control
-$ Linear Static Analysis, Database
-SOL 101
+$ Buckling Analysis, Database
+SOL 105
 CEND
 $ Direct Text Input for Global Case Control Data
 TITLE = MSC.Nastran job created on 30-Nov-21 at 00:22:03
 ECHO = NONE
    BCONTACT = 0
+   BCONCHK = RUN
 SUBCASE 1
    SUBTITLE=Default
-   NLSTEP = 1
-   BCONTACT = 1
    SPC = 2
    LOAD = 2
+   BCONTACT = 1
    DISPLACEMENT(SORT1,REAL)=ALL
    SPCFORCES(SORT1,REAL)=ALL
-   STRESS(SORT1,REAL,VONMISES,BILIN)=ALL
-   BOUTPUT(SORT1,REAL)=ALL
+SUBCASE 2
+   SUBTITLE=Default
+   SPC = 2
+   METHOD = 1
+   BCONTACT = 1
+   VECTOR(SORT1,REAL)=ALL
+   SPCFORCES(SORT1,REAL)=ALL
+   STATSUB = 1
 $ Direct Text Input for this Subcase
 BEGIN BULK
 $ Direct Text Input for Bulk Data
-MDLPRM   HDF5    0
+MDLPRM   HDF5    1
 PARAM   PRTMAXIM YES
-BCPARA   0       NLGLUE  0       METHOD SEGSMALL IBSEP   2
-NLSTEP   1
 BCTABL1  0       8001    8002    8003    8004    8005    8006    8007
-         8008    8009    8010    8011    8012    8013    8014    8015
-         8016    8017    8018    8019    8020    8021
-BCONECT  8001    3001            1       1
-BCONECT  8002    3002            2       1
-BCONECT  8003    3003            3       1
-BCONECT  8004    3004            4       1
-BCONECT  8005    3005            5       1
+         8008    8009    8010
+BCONECT  8001    3001            2       1
+BCONECT  8002    3002            3       1
+BCONECT  8003    3003            3       2
+BCONECT  8004    3004            5       1
+BCONECT  8005    3005            5       2
 BCONECT  8006    3006            6       1
-BCONECT  8007    3007            2       2
-BCONECT  8008    3008            3       2
-BCONECT  8009    3009            4       2
-BCONECT  8010    3010            5       2
-BCONECT  8011    3011            6       2
-BCONECT  8012    3012            3       3
-BCONECT  8013    3013            4       3
-BCONECT  8014    3014            5       3
-BCONECT  8015    3015            6       3
-BCONECT  8016    3016            4       4
-BCONECT  8017    3017            5       4
-BCONECT  8018    3018            6       4
-BCONECT  8019    3019            5       5
-BCONECT  8020    3020            6       5
-BCONECT  8021    3021            6       6
-BCONPRG  3001            ERROR   3.      IGLUE   4       ISEARCH 2
-BCONPRG  3002            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3003            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3004            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3005            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3006            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3007            ERROR   3.      IGLUE   4       ISEARCH 2
-BCONPRG  3008            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3009            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3010            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3011            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3012            ERROR   3.      IGLUE   4       ISEARCH 2
-BCONPRG  3013            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3014            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3015            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3016            ERROR   3.      IGLUE   4       ISEARCH 2
-BCONPRG  3017            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3018            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3019            ERROR   3.      IGLUE   4       ISEARCH 2
-BCONPRG  3020            ERROR   3.      IGLUE   4       ISEARCH 2
-         PENALT  1.
-BCONPRG  3021            ERROR   3.      IGLUE   4       ISEARCH 2
+BCONECT  8007    3007            6       2
+BCONECT  8008    3008            6       3
+BCONECT  8009    3009            6       4
+BCONECT  8010    3010            6       5
+BCONPRG  3001            ERROR   5.      IGLUE   4       ISEARCH 2
+BCONPRG  3002            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3003            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3004            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3005            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3006            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3007            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3008            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3009            ERROR   5.      IGLUE   4       ISEARCH 1
+BCONPRG  3010            ERROR   3.      IGLUE   4       ISEARCH 1
 BCTABL1  1       8001    8002    8003    8004    8005    8006    8007
-         8008    8009    8010    8011    8012    8013    8014    8015
-         8016    8017    8018    8019    8020    8021
+         8008    8009    8010
+EIGRL    1                       6       0
 $ Elements and Element Properties for region : Shell_Ri
 $ Composite Property Reference Material: Lam_Ri
 $ Composite Material Description :
@@ -795,7 +761,7 @@ $ Composite Material Description :
 PCOMP    3                      .0879359 HILL
          1       .2      0.      YES     1       .2      0.      YES
          1       .2      0.      YES     1       .2      0.      YES
-         1       .2      0.      YES
+         1       .2      0.      YES     1       .2      0.      YES
 $ Pset: "Shell_R2" will be imported as: "pcomp.3"
 CQUAD4   4293    3       8736    8737    8818    8817
 CQUAD4   4294    3       8737    8738    8819    8818
@@ -963,6 +929,8 @@ $ Composite Material Description :
 PCOMP    4                      .0879359 HILL
          1       .2      0.      YES     1       .2      0.      YES
          1       .2      0.      YES     1       .2      0.      YES
+         1       .2      0.      YES     1       .2      0.      YES
+         1       .2      0.      YES
 $ Pset: "Shell_R3" will be imported as: "pcomp.4"
 CQUAD4   4453    4       9059    9060    9131    9130
 CQUAD4   4454    4       9060    9061    9132    9131
@@ -1109,6 +1077,7 @@ $ Composite Property Reference Material: Lam_Rs
 $ Composite Material Description :
 PCOMP    5                      .0879359 HILL
          1       .2      0.      YES     1       .2      0.      YES
+         1       .2      0.      YES     1       .2      0.      YES
          1       .2      0.      YES
 $ Pset: "Shell_Rs" will be imported as: "pcomp.5"
 CQUAD4   4593    5       9342    9343    9404    9403
@@ -1240,6 +1209,8 @@ PCOMP    6                      .0879359 HILL
          2       .2      0.      YES     2       .2      0.      YES
          2       .2      0.      YES     2       .2      0.      YES
          2       .2      0.      YES     2       .2      0.      YES
+         2       .2      0.      YES     2       .2      0.      YES
+         2       .2      0.      YES
 $ Pset: "Shell_V" will be imported as: "pcomp.6"
 CQUAD4   481     6       1423    1424    1535    1534
 CQUAD4   482     6       1424    1425    1536    1535
@@ -24023,4 +23994,4 @@ BSURF    4       481     482     483     484     485     486     487
 $ Nodal Forces of Load Set : L
 FORCE    1       10000   0       15.     0.      0.      -1.
 $ Referenced Coordinate Frames
-ENDDATA 1cdd79c5
+ENDDATA 458b58ba
