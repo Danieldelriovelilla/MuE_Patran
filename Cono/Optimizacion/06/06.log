@@ -7,7 +7,7 @@ MEM=527MB      $
 MACH='Intel'
 OPER='Windows 10 Pro'
 OSV='6.2 9200'
-MODEL='Xeon/3033 (DESKTOP-NHC7R5K)'
+MODEL='Xeon/3042 (DESKTOP-NHC7R5K)'
 NPROC='8'
 CONFIG=6
 NPROC=8
@@ -15,8 +15,8 @@ symbol=DELDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast
 symbol=DEMODIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/demo' $(program default)
 symbol=SSSALTERDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/sssalter' $(program default)
 symbol=TPLDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/tpl' $(program default)
-SDIR='c:/scratch/06.T7612_46'
-DBS='c:/scratch/06.T7612_46'
+SDIR='c:/scratch/06.T18200_52'
+DBS='c:/scratch/06.T18200_52'
 SCR='yes'
 SMEM=100
 BPOOL=150
@@ -47,9 +47,9 @@ FPE:         yes
 ----------------------------------------------------------------- 
 Current resource limits:
  Physical memory:                    16268 MB
- Physical memory available:           8220 MB
+ Physical memory available:           8783 MB
  Paging file size:                   18700 MB
- Paging file size available:          7327 MB
+ Paging file size available:          7823 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213511 MB
 ----------------------------------------------------------------- 
@@ -57,8 +57,8 @@ System configuration:
  Hostname:         DESKTOP-NHC7R5K
  Architecture:     win64i8
  Platform:         Intel Windows 10 Pro 6.2 9200 (Windows Compute Cluster)
- Model:            Xeon/3043
- Clock freq.:      3043 MHz
+ Model:            Xeon/3133
+ Clock freq.:      3133 MHz
  Number of CPUs:   8
  Executable:       standard
  Raw model ID:     6
@@ -71,8 +71,8 @@ System configuration:
  Remote shell cmd: "c:/program files/msc.software/napa_se/20211/nastran/msc20211/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
                    <ccs_cmd> (Windows CCS nodes)
 ----------------------------------------------------------------- 
-MSC Nastran started  Tue Nov 30 11:43:46 Her 2021 
- 11:43:47  Beginning Analysis
+MSC Nastran started  Tue Nov 30 13:08:52 Her 2021 
+ 13:08:54  Beginning Analysis
 SCA Kernel 25.0.764713 successfully initialized
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\libimalloc.dll" has been loaded.
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_core.dll" has been loaded.
@@ -80,23 +80,23 @@ BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\w
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_rt.dll" has been loaded.
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\MSCblas.dll" has been loaded.
 
- 11:43:47  MSC Authorization Information - Checkout Successful (1016, 0)
- 11:43:47  -------------------------------------------------------------
- 11:43:47  Acquired 1 license for Student Edition Nastran
+ 13:08:54  MSC Authorization Information - Checkout Successful (1016, 0)
+ 13:08:54  -------------------------------------------------------------
+ 13:08:54  Acquired 1 license for Student Edition Nastran
 
 
 Beginning bulk data processing using the IFPStar component.
 For more information on IFPStar, please see KB article KB8019200
 on our support pages, at http://simcompanion.mscsoftware.com.
 
- 11:43:48  24079 records read from JID file "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.bdf"
+ 13:08:54  24061 records read from JID file "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.bdf"
 
 Processing of bulk data entries is complete.
 
 
- 11:43:48  MSC Authorization Information - System Attributes (1004, 0)
- 11:43:48  -----------------------------------------------------------
-  Date:          Tue Nov 30 11:43:48 2021
+ 13:08:54  MSC Authorization Information - System Attributes (1004, 0)
+ 13:08:54  -----------------------------------------------------------
+  Date:          Tue Nov 30 13:08:54 2021
   LAPI Version:  LAPI 10.6.8 (CL 749681) (FLEXlm 11.16.3.0)
   License Mode:  Student Edition
 
@@ -104,37 +104,37 @@ Processing of bulk data entries is complete.
   * * * * * * * * * * * * * * * * * * * *
   * *                                 * *
   * *   MSC Customer Entitlement ID   * *
-  * *        cb245412-G2140ACE        * *
+  * *        cb245412-G2F8A496        * *
   * *                                 * *
   * * * * * * * * * * * * * * * * * * * *
   * * * * * * * * * * * * * * * * * * * *
 
- 11:43:48  MSC Authorization Information - Checkout Successful (1016, 0)
- 11:43:48  -------------------------------------------------------------
- 11:43:48  Acquired 1 license for Student Edition Nastran Linear Contact
+ 13:08:54  MSC Authorization Information - Checkout Successful (1016, 0)
+ 13:08:54  -------------------------------------------------------------
+ 13:08:54  Acquired 1 license for Student Edition Nastran Linear Contact
 
- 11:43:50  Analysis started.
- 11:43:50  Geometry access/verification to CAD part initiated (if needed).
- 11:43:50  Geometry access/verification to CAD part successfully completed (if needed).
- 11:43:55  Finite element model generation started.
- 11:43:55  Finite element model generated 55536 degrees of freedom.
- 11:43:55  Finite element model generation successfully completed.
- 11:43:55  Application of Loads and Boundary Conditions to the finite element model started.
- 11:43:55  Application of Loads and Boundary Conditions to the finite element model successfully completed.
- 11:43:57  Solution of the system equations for linear statics started.
- 11:43:57  Solution of the system equations for linear statics successfully completed.
- 11:43:58  Linear static analysis completed.
+ 13:08:57  Analysis started.
+ 13:08:57  Geometry access/verification to CAD part initiated (if needed).
+ 13:08:57  Geometry access/verification to CAD part successfully completed (if needed).
+ 13:09:02  Finite element model generation started.
+ 13:09:03  Finite element model generated 55536 degrees of freedom.
+ 13:09:03  Finite element model generation successfully completed.
+ 13:09:03  Application of Loads and Boundary Conditions to the finite element model started.
+ 13:09:03  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 13:09:04  Solution of the system equations for linear statics started.
+ 13:09:04  Solution of the system equations for linear statics successfully completed.
+ 13:09:05  Linear static analysis completed.
  ================================================== 
  Warning/Fatal Message Summary           Occurrence
        USER WARNING MESSAGE      601.6          1 
        USER WARNING MESSAGE     8164.1          1 
  ================================================== 
- 11:43:58  24 records read from JID file "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.bdf"
- 11:43:58  NSEXIT: EXIT(0)
- 11:43:58  Analysis complete  0
-Real:       10.574 seconds ( 0:00:10.574)
-User:        8.656 seconds ( 0:00:08.656)
-Sys:         1.734 seconds ( 0:00:01.734)
+ 13:09:05  24 records read from JID file "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\06.bdf"
+ 13:09:05  NSEXIT: EXIT(0)
+ 13:09:05  Analysis complete  0
+Real:       11.346 seconds ( 0:00:11.346)
+User:        9.734 seconds ( 0:00:09.734)
+Sys:         1.656 seconds ( 0:00:01.656)
  ==================================================
  OS:                           6.2
  OEM ID:                       9
@@ -156,4 +156,4 @@ Sys:         1.734 seconds ( 0:00:01.734)
  Detailed performance information can be found in the 
  "MSC Nastran High Performance Computing User's Guide"
  =====================================================
-MSC Nastran finished Tue Nov 30 11:43:58 Her 2021 
+MSC Nastran finished Tue Nov 30 13:09:05 Her 2021 

@@ -1,4 +1,4 @@
-$ MSC.Nastran input file created on November  30, 2021 at 11:43:45 by
+$ MSC.Nastran input file created on November  30, 2021 at 13:08:51 by
 $ Patran 2021.1  (Student Edition)
 $ Direct Text Input for Nastran System Cell Section
 $ Direct Text Input for File Management Section
@@ -4808,8 +4808,7 @@ CQUAD4   4712    1       9523    9342    9403    9584
 $ Referenced Material Records
 $ Material Record : Al
 $ Description of Material : Date: 30-Nov-21           Time: 00:22:51
-MAT1*    1               70.                             .33
-*        2.7000001-6
+MAT1     1       70.             .33     .0027
 $ Nodes of the Entire Model
 GRID*    1                               -108.7744140625-59.423759460449
 *       4.89443969726563
@@ -23324,30 +23323,13 @@ GRID*    9583                           -42.396343231201-29.298858642578
 GRID*    9584                           -43.871398925781-27.040216445923
 *       275.234954833984
 $ Loads for Load Case : Default
-SPCADD   2       1       3       4
+SPCADD   2       1       3
 LOAD     2       1.      1.      1
 $ Displacement Constraints of Load Set : D_3
 SPC1     1       3       243     THRU    363
 SPC1     1       3       607     THRU    725
 $ Displacement Constraints of Load Set : D_12456
-SPC1     3       123     261
-$ Displacement Constraints of Load Set : Empotrado
-SPC1     4       123456  122     THRU    176
-SPC1     4       123456  243     THRU    363
-SPC1     4       123456  590     THRU    604
-SPC1     4       123456  607     THRU    725
-SPC1     4       123456  1029    1065    1241    1277    1423    1534
-         1645    1756    1867    1978    2089    2200    2311    2422
-         2533    2534    2644    2645    2755    2756    2866    2867
-         2977    2978    3088    3089    3199    3310    3421    3532
-         3643    3754    3865    3976    4087    4123    4295    4331
-         4503    4539    4711    4747    4919    4920    4955    4956
-         5127    5128    5163    5164    5335    5336    5371    5372
-         5543    5579    5751    5787    5959    5995    6167    6203
-         6375    6411    6553    6589    6731    6767    6909    6945
-         7087    7088    7123    7124    7265    7266    7301    7302
-         7443    7444    7479    7480    7621    7657    7799    7835
-         7977    8013    8155    8191
+SPC1     3       12456   261
 $ Deform Body Contact LBC set: H1C
 BCBODY1  1               3D      DEFORM  6
 BSURF    6       681     682     683     684     685     686     687
@@ -24076,4 +24058,4 @@ FORCE    1       9521    0       1.      0.      0.      -1.
 FORCE    1       9522    0       1.      0.      0.      -1.
 FORCE    1       9523    0       1.      0.      0.      -1.
 $ Referenced Coordinate Frames
-ENDDATA 3896fe08
+ENDDATA 8d738303
