@@ -1,0 +1,10 @@
+Ri -> V -> 2
+Ri -> H1 -> 2
+Ri -> H2 -> 2
+
+V -> H1 -> 2
+V -> H2
+
+
+H1 - H2 (double) -> Anillo inferior no hay contact
+

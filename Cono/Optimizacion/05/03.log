@@ -1,22 +1,22 @@
-MSC Nastran V2021.1 (Intel Windows 10 Enterprise 6.2 9200) Control File: 
+MSC Nastran V2021.1 (Intel Windows 10 Pro 6.2 9200) Control File: 
 ----------------------------------------------------------------- 
 Nastran BUFFSIZE=8193 $(c:/program files/msc.software/napa_se/20211/nastran/conf/nast20211.rcf[2])
-JID='C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\05\03.bdf'
+JID='C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\05\03.bdf'
 OUT='./03'
 MEM=527MB      $ 
 MACH='Intel'
-OPER='Windows 10 Enterprise'
+OPER='Windows 10 Pro'
 OSV='6.2 9200'
-MODEL='Xeon/3320 (DESKTOP-ESCFBKS)'
-NPROC='12'
+MODEL='Xeon/3033 (DESKTOP-NHC7R5K)'
+NPROC='8'
 CONFIG=6
-NPROC=12
+NPROC=8
 symbol=DELDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/del' $(program default)
 symbol=DEMODIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/demo' $(program default)
 symbol=SSSALTERDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/sssalter' $(program default)
 symbol=TPLDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/tpl' $(program default)
-SDIR='c:/scratch/03.T13444_33'
-DBS='c:/scratch/03.T13444_33'
+SDIR='c:/scratch/03.T12148_31'
+DBS='c:/scratch/03.T12148_31'
 SCR='yes'
 SMEM=100
 BPOOL=150
@@ -32,13 +32,13 @@ MSGDEST='f06'
 PROG=edu
 NEWS='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/news.txt'
 ----------------------------------------------------------------- 
-MSC_ISHELLPATH=c:\users\usuario\desktop\mue_patran\cono\optimizacion\05 
+MSC_ISHELLPATH=c:\users\danie\desktop\mue_patran\cono\optimizacion\05 
 MSC_JIDPATH= 
-PATH=c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\nCode\bin;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\nvidia;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\lib;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\Perl_msc\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\scasystem_files;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\Perl_msc\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\scasystem_files;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2019a\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\tools\pango;C:\Program Files\Git\cmd;C:\Program Files\AutoFirma\AutoFirma;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;C:\tools\TinyTeX\bin\win32;C:\Users\Usuario\AppData\Local\GitHubDesktop\bin;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code\bin;; 
+PATH=c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\nCode\bin;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\nvidia;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\lib;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\Perl_msc\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\scasystem_files;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\Perl_msc\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\scasystem_files;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\libnvvp;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2020.2.254\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\Git\cmd;C:\Program Files\AutoFirma\AutoFirma;D:\Archivos_De_Programa\MiKTeX\miktex\bin\x64\;D:\Archivos_De_Programa\FFmpeg\bin;D:\Archivos_De_Programa\SoX\sox-14-4-2;C:\Program Files\NVIDIA Corporation\Nsight Compute 2021.3.0\;C:\Users\danie\AppData\Local\Microsoft\WindowsApps;C:\Users\danie\AppData\Local\atom\bin;C:\ProgramData\danie\GitHubDesktop\bin;C:\Users\danie\AppData\Local\GitHubDesktop\bin;C:\Users\danie\AppData\Local\Programs\Microsoft VS Code\bin;; 
 SCA_SERVICE_CATALOG=c:\program files\msc.software\napa_se\20211\nastran\msc20211\res\SCAServiceCatalog.xml 
 SCA_RESOURCE_DIR=c:\program files\msc.software\napa_se\20211\nastran\msc20211\res 
 Cmd Line:    C:\Program Files\MSC.Software\NaPa_SE\20211\Nastran\msc20211\win64i8\nastran.exe 03.bdf prog=edu auth=edu bat=no 
-Current Dir: C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\05 
+Current Dir: C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\05 
 Time Cmd:    c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\msctime 
 Executable:  c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\analysis.exe 
 Arch= Kywd:  64  
@@ -46,33 +46,33 @@ MSC_MSG:     stderr
 FPE:         yes  
 ----------------------------------------------------------------- 
 Current resource limits:
- Physical memory:                    16310 MB
- Physical memory available:           8992 MB
- Paging file size:                   19822 MB
- Paging file size available:          4081 MB
+ Physical memory:                    16268 MB
+ Physical memory available:           8048 MB
+ Paging file size:                   18700 MB
+ Paging file size available:          7744 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213511 MB
 ----------------------------------------------------------------- 
 System configuration:
- Hostname:         DESKTOP-ESCFBKS
+ Hostname:         DESKTOP-NHC7R5K
  Architecture:     win64i8
- Platform:         Intel Windows 10 Enterprise 6.2 9200 (Windows Compute Cluster)
- Model:            Xeon/3267
- Clock freq.:      3267 MHz
- Number of CPUs:   12
+ Platform:         Intel Windows 10 Pro 6.2 9200 (Windows Compute Cluster)
+ Model:            Xeon/3043
+ Clock freq.:      3043 MHz
+ Number of CPUs:   8
  Executable:       standard
  Raw model ID:     6
  Config number:    6
- Physical memory:  16310 MB
- Virtual memory:   19822 MB
+ Physical memory:  16268 MB
+ Virtual memory:   18700 MB
  Numeric format:   64-bit little-endian IEEE.
  Bytes per word:   8
  Disk block size:  512 bytes (64 words)
  Remote shell cmd: "c:/program files/msc.software/napa_se/20211/nastran/msc20211/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
                    <ccs_cmd> (Windows CCS nodes)
 ----------------------------------------------------------------- 
-MSC Nastran started  Mon Nov 29 16:36:34 Her 2021 
- 16:36:34  Beginning Analysis
+MSC Nastran started  Tue Nov 30 00:13:31 Her 2021 
+ 00:13:32  Beginning Analysis
 SCA Kernel 25.0.764713 successfully initialized
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\libimalloc.dll" has been loaded.
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_core.dll" has been loaded.
@@ -80,23 +80,14 @@ BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\w
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_rt.dll" has been loaded.
 BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\MSCblas.dll" has been loaded.
 
- 16:36:34  MSC Authorization Information - Checkout Successful (1016, 0)
- 16:36:34  -------------------------------------------------------------
- 16:36:34  Acquired 1 license for Student Edition Nastran
+ 00:13:33  MSC Authorization Information - Checkout Successful (1016, 0)
+ 00:13:33  -------------------------------------------------------------
+ 00:13:33  Acquired 1 license for Student Edition Nastran
 
 
-Beginning bulk data processing using the IFPStar component.
-For more information on IFPStar, please see KB article KB8019200
-on our support pages, at http://simcompanion.mscsoftware.com.
-
- 16:36:35  17636 records read from JID file "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\05\03.bdf"
-
-Processing of bulk data entries is complete.
-
-
- 16:36:35  MSC Authorization Information - System Attributes (1004, 0)
- 16:36:35  -----------------------------------------------------------
-  Date:          Mon Nov 29 16:36:35 2021
+ 00:13:33  MSC Authorization Information - System Attributes (1004, 0)
+ 00:13:33  -----------------------------------------------------------
+  Date:          Tue Nov 30 00:13:33 2021
   LAPI Version:  LAPI 10.6.8 (CL 749681) (FLEXlm 11.16.3.0)
   License Mode:  Student Edition
 
@@ -104,51 +95,78 @@ Processing of bulk data entries is complete.
   * * * * * * * * * * * * * * * * * * * *
   * *                                 * *
   * *   MSC Customer Entitlement ID   * *
-  * *        26c18e93-G1854D70        * *
+  * *        cb245412-G52DC50C        * *
   * *                                 * *
   * * * * * * * * * * * * * * * * * * * *
   * * * * * * * * * * * * * * * * * * * *
 
- 16:36:35  MSC Authorization Information - Checkout Successful (1016, 0)
- 16:36:35  -------------------------------------------------------------
- 16:36:35  Acquired 1 license for Student Edition Nastran Linear Contact
+ 00:13:33  MSC Authorization Information - Checkout Successful (1016, 0)
+ 00:13:33  -------------------------------------------------------------
+ 00:13:33  Acquired 1 license for Student Edition Nastran
 
- 16:36:35  Analysis started.
- 16:36:35  Geometry access/verification to CAD part initiated (if needed).
- 16:36:35  Geometry access/verification to CAD part successfully completed (if needed).
- 16:36:35  Finite element model generation started.
- 16:36:35  Finite element model generated 40974 degrees of freedom.
- 16:36:35  Finite element model generation successfully completed.
- 16:36:35  Application of Loads and Boundary Conditions to the finite element model started.
- 16:36:35  Application of Loads and Boundary Conditions to the finite element model successfully completed.
- 16:36:35  Solution of the system equations for normal modes started.
- 16:36:36  Solution of the system equations for normal modes successfully completed.
- 16:36:37  Normal modes analysis completed.
- 16:36:37  22 records read from JID file "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\05\03.bdf"
- 16:36:37  NSEXIT: EXIT(0)
- 16:36:37  Analysis complete  0
-Real:        2.629 seconds ( 0:00:02.629)
-User:        1.875 seconds ( 0:00:01.875)
-Sys:         0.703 seconds ( 0:00:00.703)
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.mscsoftware.com.
+
+ 00:13:33  17649 records read from JID file "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\05\03.bdf"
+
+Processing of bulk data entries is complete.
+
+
+ 00:13:33  MSC Authorization Information - Checkout Successful (1016, 0)
+ 00:13:33  -------------------------------------------------------------
+ 00:13:33  Acquired 1 license for Student Edition Nastran Linear Contact
+
+ 00:13:33  Analysis started.
+ 00:13:33  Geometry access/verification to CAD part initiated (if needed).
+ 00:13:33  Geometry access/verification to CAD part successfully completed (if needed).
+ 00:13:33  Finite element model generation started.
+ 00:13:34  Finite element model generated 40974 degrees of freedom.
+ 00:13:34  Finite element model generation successfully completed.
+ 00:13:34  Application of Loads and Boundary Conditions to the finite element model started.
+ 00:13:34  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 00:13:34  Application of Loads and Boundary Conditions to the finite element model started.
+ 00:13:34  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 00:13:34  Solution of the system equations for linear statics started.
+ 00:13:34  Solution of the system equations for linear statics successfully completed.
+ 00:13:35  Solution of the system equations for normal modes started.
+
+ 00:13:35  MSC Authorization Information - Checkout Successful (1016, 0)
+ 00:13:35  -------------------------------------------------------------
+ 00:13:35  Acquired 1 license for Student Edition Nastran
+
+ 00:13:37  Solution of the system equations for normal modes successfully completed.
+ 00:13:37  29 records read from JID file "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\05\03.bdf"
+ 00:13:37  NSEXIT: EXIT(0)
+ 00:13:37  Analysis complete  0
+Real:        4.990 seconds ( 0:00:04.990)
+User:        3.562 seconds ( 0:00:03.562)
+Sys:         1.437 seconds ( 0:00:01.437)
  ==================================================
  OS:                           6.2
  OEM ID:                       9
- Model:                        Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz  
- Number of processors:         12
+ Model:                        Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz  
+ Number of processors:         8
  Page size:                    4096
  Processor type:               8664
  Minimum application address:  10000
  Maximum application address:  fffeffff
- Active processor mask:        4095
+ Active processor mask:        255
  Nsocket:                      1
- Ncore:                        6  ( 1 X 6 )
+ Ncore:                        4  ( 1 X 4 )
  HyperThreading:               On
- Ram:                          16310 Mb
+ Ram:                          16268 Mb
  ==================================================
  Time Summary                 CPU       Wall   ( Time in Seconds )
+ Eigenvalue                   2.6          2 
+ Miscellaneous                2.1          2 
+ -------------------------------------------
+ Total:                       4.7          4 
+ ==================================================
  Consider using SOLVE=AUTO if you have not.
  =====================================================
  Detailed performance information can be found in the 
  "MSC Nastran High Performance Computing User's Guide"
  =====================================================
-MSC Nastran finished Mon Nov 29 16:36:37 Her 2021 
+MSC Nastran finished Tue Nov 30 00:13:38 Her 2021 
