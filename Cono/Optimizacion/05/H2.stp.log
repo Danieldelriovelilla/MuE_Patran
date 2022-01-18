@@ -1,10 +1,10 @@
-Started at : Mon Nov 29 11:50:33 2021
+Started at : Tue Nov 30 01:06:28 2021
 
 ---------------------------------------------------------------------
 STEP AP203 to Patran Express Neutral file format Translator Version 6.6 Build Date : Mar 25 2021 
 ----------------------------------------------------------------------- 
 Created STEP PART42 database. H2_stp.bin
-Reading PART42 file C:\Users\Usuario\Desktop\MuE_Patran\Cono\Optimizacion\05\stp\H2.stp
+Reading PART42 file C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\06\stp\H2.stp
 Starting Translation ... 
 Processing CLASS IV information ... 
 Translating manifold surface shape representation no. :1	Total no. of representation items : 1
@@ -20,7 +20,7 @@ Translation complete.
 Writing PATRAN express neutral file H2.exp
 Translation Completed. 
 ---------------------------------------------------------------------
-Time : Mon Nov 29 11:50:33 2021
+Time : Tue Nov 30 01:06:28 2021
 
 ---------------------------------------------------------------------
  

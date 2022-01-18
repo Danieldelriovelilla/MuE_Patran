@@ -1,0 +1,42 @@
+$# Session file patran.ses.01 started recording at 28-Nov-21 21:40:27
+$# Build: 27.1.801631 Thu Mar 25 06:46:07 PDT 2021
+$# Recorded by: Patran 2021.1  (Student Edition)
+uil_file_open.go( "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\03\" // @
+"03.db" )
+$# Database version 3.22 created by Patran 2021.1  (Student Edition) 
+$# successfully opened.
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\03\03.h5". Please i) 
+$# verify that the file exists and is a valid results file for the current 
+$# analysis preference; or ii) delete the attachment using the Analysis form 
+$# option Delete "Attachment" then re-attach.
+$# Warning reported from application Results
+$#     Unable to build a data object to display results.
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\03\03.h5". Please i) 
+$# verify that the file exists and is a valid results file for the current 
+$# analysis preference; or ii) delete the attachment using the Analysis form 
+$# option Delete "Attachment" then re-attach.
+$# Warning reported from application Results
+$#     Unable to build a data object to display results.
+$# Warning reported in application FILE by application Journal
+$#     Journal file 
+$# C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\03\03.db.jou does not 
+$# exist. No journal file will be created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-NHC7R5K(
+$# c821586ab454) (Windows 6.2 (Build 9200: Service Pack 0)) at 28-Nov-21 
+$# 21:40:28.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\loads_browser.dll
+$# Pì?ÙÄ shared library 'Loads Browser', Version 2021, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Session file patran.ses.01 stopped recording at 28-Nov-21 21:40:43
