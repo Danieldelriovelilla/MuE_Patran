@@ -1,0 +1,39 @@
+$# Session file patran.ses.02 started recording at 02-Feb-22 13:55:32
+$# Build: 27.1.801631 Thu Mar 25 06:46:07 PDT 2021
+$# Recorded by: Patran 2021.1  (Student Edition)
+uil_file_open.go( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Parte_1\DdRV\D" // @
+"dRV.db" )
+$# Database version 3.22 created by Patran 2021.1  (Student Edition) 
+$# successfully opened.
+$# Warning reported in application FILE by application Journal
+$#     Journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Parte_1\DdRV\DdRV.db.jou does not 
+$# exist. No journal file will be created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 02-Feb-22 
+$# 13:55:33.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\loads_browser.dll
+$# Алmю shared library 'Loads Browser', Version 2021, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC0", "A1:Static subcase",  @
+"Contact Forces", "Normal", "(NON-LAYERED)", "MAG", "Default", "DeriveAverage" @
+, "All", "ShapeFunc" )
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "C:\Users\danie\Desktop\MuE_Patran\Cono\Optimizacion\DdRV\desplazamiento.h5
+$# ". Please i) verify that the file exists and is a valid results file for 
+$# the current analysis preference; or ii) delete the attachment using the 
+$# Analysis form option Delete "Attachment" then re-attach.
+$# Error reported from application Results
+$#     Unable to connect to Direct Results Access file. Check command line 
+$# window for possible additional messages!
+$? NO 4012020 
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Session file patran.ses.02 stopped recording at 02-Feb-22 13:55:54

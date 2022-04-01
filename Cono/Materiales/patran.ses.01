@@ -1,0 +1,26 @@
+$# Session file patran.ses.01 started recording at 27-Jan-22 12:56:15
+$# Build: 27.1.801631 Thu Mar 25 06:46:07 PDT 2021
+$# Recorded by: Patran 2021.1  (Student Edition)
+uil_file_open.go( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Mat" // @
+"eriales.db" )
+$# Database version 3.22 created by Patran 2021.1  (Student Edition) 
+$# successfully opened.
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 27-Jan-22 12:56:16
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 27-Jan-22 
+$# 12:56:16.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\loads_browser.dll
+$# 0ÓﬂR} shared library 'Loads Browser', Version 2021, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 27-Jan-22 12:57:09
+$# Session file patran.ses.01 stopped recording at 27-Jan-22 12:57:09

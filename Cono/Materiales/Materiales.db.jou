@@ -252,3 +252,48 @@ uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 28-Nov-21 11:40:19
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 27-Jan-22 12:56:16
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 27-Jan-22 
+$# 12:56:16.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\loads_browser.dll
+$# 0îßR} shared library 'Loads Browser', Version 2021, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 27-Jan-22 12:57:09
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 01-Feb-22 11:47:09
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 01-Feb-22 11:49:31
+$# Appending to existing journal file 
+$# C:\Users\Usuario\Desktop\MuE_Patran\Cono\Materiales\Materiales.db.jou at 
+$# 02-Feb-22 10:21:52
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-ESCFBKS(
+$# 049226c18e93) (Windows 6.2 (Build 9200: Service Pack 0)) at 02-Feb-22 
+$# 10:21:52.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\loads_browser.dll
+$# °ê™† shared library 'Loads Browser', Version 2021, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 02-Feb-22 10:22:08
